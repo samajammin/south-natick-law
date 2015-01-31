@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}
+South Natick Law | {{ post.title }}
+{% endblock %}
+
+{#todo not sure why the nav isn't formatted#}
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <i>Post written by: {{ post.author }}</i><br>
+    <i>Post published on: {{ post.publish_date}}</i><br>
+    <i>Post topic(s):<br>
+        {% for tag in tags %}
+            {{ tag.name }}<br>
+        {% endfor %}
+    </i>
+{#     todo need to format the post#}
+    <p>{{ post.body }}</p>
+
+    {% if comments|length > 0 %}
+    <h4>View comments:</h4>
+    {% for comment in comments %}
+        {% if comment.post == post %}
+        <dl>
+            <dt><b>{{ comment.first_name }} {{ comment.last_name }}</b></dt>
+            <dt><i>{{ comment.submission_date }}</i></dt>
+            <dd>{{ comment.body }}</dd>
+
+        </dl>
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    <h4>Join the conversation!</h4>
+
+    <form method="POST">
+    {% csrf_token %}
+    {{ comment_form.as_p }}
+    <input type="submit" value="Submit comment">
+    </form>
+
+    <p>Return to <a href=" {% url 'blog' %}"> news &amp; resources</a></p>
+{% endblock %}

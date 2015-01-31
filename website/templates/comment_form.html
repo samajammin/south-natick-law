@@ -1,0 +1,7 @@
+{% extends "view_post.html" %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value="Submit comment" />
+</form>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+South Natick Law | News &amp; Resources
+{% endblock %}
+
+{% block content %}
+    <h1>News &amp; Resources</h1>
+    <dl>
+        {% for post in posts %}
+{#            todo get post title in the url in addition to postid#}
+            <dt><a href=" {% url 'view_post' post.id %}">{{ post.title }}</a></dt>
+            <dd>{{ post.make_blurb }}</dd><br>
+        {% endfor %}
+    </dl>
+{% endblock %}

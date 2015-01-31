@@ -1,0 +1,44 @@
+from django.contrib import admin
+
+# Register your models here.
+from django.contrib import admin
+from website.models import Firm, Attorney, Post, PracticeArea, Contact, Comment
+
+class PostInLine(admin.TabularInline):
+    model = Post
+
+class FirmAdmin(admin.ModelAdmin):
+    fields = ('name', 'llp', 'email', 'phone_number', 'street_address', 'city', 'zipcode', 'state', 'domain')
+    list_display = ('name', 'llp', 'email', 'phone_number', 'street_address', 'city', 'zipcode', 'state', 'domain')
+
+class AttorneyAdmin(admin.ModelAdmin):
+    fields = ('first_name', 'last_name', 'title', 'email', 'phone_number', 'phone_extension', 'firm')
+    list_display = ('first_name', 'last_name', 'title', 'email', 'phone_extension')
+    inlines = [PostInLine, ]
+
+class PostAdmin(admin.ModelAdmin):
+    fields = (('title', 'author'), 'tags', 'body')
+    list_display = ('title', 'author', 'publish_date')
+    list_filter = ('author', 'tags')
+    filter_horizontal = ('tags',)
+
+class PracticeAreaAdmin(admin.ModelAdmin):
+    fields = ('name', 'description', 'attorneys')
+    list_display = ('name',)
+    filter_horizontal = ('attorneys',)
+
+class ContactAdmin(admin.ModelAdmin):
+    fields = ('first_name', 'last_name', 'email', 'phone_number', 'practice_area', 'description')
+    list_display = ('first_name', 'last_name', 'email', 'phone_number', 'creation_date', 'description')
+
+class CommentAdmin(admin.ModelAdmin):
+    fields = ('first_name', 'last_name', 'body', 'post')
+    list_display = ('first_name', 'last_name', 'body', 'post')
+
+
+admin.site.register(Attorney, AttorneyAdmin)
+admin.site.register(Post, PostAdmin)
+admin.site.register(PracticeArea, PracticeAreaAdmin)
+admin.site.register(Firm, FirmAdmin)
+admin.site.register(Contact, ContactAdmin)
+admin.site.register(Comment, CommentAdmin)

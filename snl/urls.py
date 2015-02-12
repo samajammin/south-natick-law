@@ -25,6 +25,7 @@ urlpatterns = patterns('',
     # url(r'^about$', 'website.views.about', name='about'),
     # url(r'^resources/', include('resources.urls')),
     url(r'^contact', 'website.views.contact', name='contact'),
+    url(r'^thanks', 'website.views.thanks', name='thanks'),
 
     # url(r'form/$', 'website.views.comment_view', name='comment_view'),
 

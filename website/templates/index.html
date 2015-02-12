@@ -5,14 +5,25 @@
 {% endblock %}
 
 {% block content %}
-    <h1>
-        Small Firm Attention. Big Firm Sophistication.
-    </h1>
+{#<div class="container">#}
+    <div class="jumbotron">
+      <h1>South Natick Law</h1>
+      <p class="lead">Small Firm Attention. Big Firm Sophistication.</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="{{ 'about' }}">
+          Meet the team
+        </a>
+                  <a class="btn btn-primary btn-lg" href="{{ 'contact' }}">
+          Schedule a Free Consultation
+        </a>
+      </p>
+    </div>
+
     <p>
-        At McLaughlin, Richards, Biller &amp; Schindel, LLP, we have the patience to listen to you. We take the time to understand your problems and the outcomes you hope to achieve. Our goal is to design and implement a plan to effectively and efficiently address your legal issues and achieve your goals. We believe that when the attorney and client work together as a team the sky is the limit.
+        At South Natick Law we have the patience to listen to you. We take the time to understand your problems and the outcomes you hope to achieve. Our goal is to design and implement a plan to effectively and efficiently address your legal issues and achieve your goals. We believe that when the attorney and client work together as a team the sky is the limit.
     </p>
     <p>
-        Our attorneys possess over 100 years of combined experience in domestic relations, estate planning, real estate, probate and tax law. Whether your problem is complex or simple, we have the experience and expertise to find workable solutions at a reasonable cost.
+        <a href="{{ 'about' }}"> Our attorneys</a> possess over 100 years of combined experience in domestic relations, estate planning, real estate, probate and tax law. Whether your problem is complex or simple, we have the experience and expertise to find workable solutions at a reasonable cost.
     </p>
     <p>
         Over the years, we have developed four pillars of practice that guide us in our representation of you:
@@ -24,4 +35,5 @@
         </ol>
         In short, we utilize our combined knowledge and skill to obtain successful results for our clients both in and out of court.
     </p>
+{#</div>#}
 {% endblock%}

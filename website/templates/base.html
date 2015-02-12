@@ -7,7 +7,7 @@
     <title>{% block title %}South Natick Law | MetroWest Attorneys{% endblock %}</title>
 
     <!-- Bootstrap -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,27 +18,35 @@
   </head>
   <body>
 
-      <nav class="navbar navbar-default">
-      <div class="container-fluid">
+{#todo add col functionality for xs devices hide hero for small screens#}
+
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+
+{#            I believe this is for collapse but it's already working#}
+{#          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">#}
+{#            <span class="sr-only">Toggle navigation</span>#}
+{#            <span class="icon-bar"></span>#}
+{#            <span class="icon-bar"></span>#}
+{#            <span class="icon-bar"></span>#}
+{#          </button>#}
           <a class="navbar-brand" href="{% url 'index' %}">South Natick Law</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+{#not sure what this is for#}
+{#          <ul class="nav navbar-nav">#}
 {#            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>#}
 {#            <li><a href="#">Link</a></li>#}
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="{% url 'index' %}">Home</a></li>
+{#          </ul>#}
+
+{#            for no shodowing on hover...#}
+{#            <ul class="nav navbar-nav navbar-right">#}
+          <ul class="nav nav-pills navbar-right">
+{#              <li><a href="{% url 'index' %}">Home</a></li>#}
               <li><a href="{% url 'about' %}">About Us</a></li>
               <li><a href="{% url 'aop' %}">Areas of Practice</a></li>
               <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
@@ -47,25 +55,54 @@
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
+   </nav>
+  <div class="container">
 
-  {% block content %}
-    <h1>Hello, world!</h1>
-  {% endblock content %}
+    {#      todo consider having all block content take up 3/4 of the page width and a contact form on every page (left sidebar) #}
+{#    <div class="hero-unit">#}
+      {% block content %}
+        <h1>Hello, world!</h1>
+      {% endblock content %}
+{#    </div>#}
 
-  <h4>Want to speak to a human? <a href=" {% url 'contact' %}">Contact us</a> for a free consultation!</h4>
-
-  <div class="footer" align="center">
-      <p>
-          8E Pleasant St., South Natick, MA 01760 &bull; 508-651-1000
-          <br/>
-          Copyright &copy; 2015 McLaughlin, Richards, Biller & Schindel, LLP. All Rights Reserved.
-          <br/>
-      </p>
   </div>
+
+  <div class="footer well">
+      <div class="container">
+      <div class="row">
+          <div class="col-sm-3">
+              <dl>
+                  <dt>Quick Links</dt>
+                  <dd><a href="https://plus.google.com/109804537626517034946/about?hl=en">Google+</a></dd>
+                  <dd><a href="https://www.linkedin.com/company/6380429">LinkedIn</a></dd>
+                  <dd>Facebook</dd>
+                  <dd><a href="http://www.yelp.com/biz/south-natick-law-south-natick">Yelp</a></dd>
+              </dl>
+          </div>
+          <div class="col-sm-6 text-center tex">
+{#              <h4>Want to speak to a human? <a href=" {% url 'contact' %}">Contact us</a> for a free consultation!</h4>#}
+{#              <h5>info@southnaticklaw.com</h5>#}
+              <p>
+                  8E Pleasant St., South Natick, MA 01760 &bull; 508-651-1000
+                  <br/>
+                  Copyright &copy; 2015 McLaughlin, Richards, Biller & Schindel, LLP. All Rights Reserved.
+                  <br/>
+              </p>
+          </div>
+          <div class="col-sm-3 text-right">
+                  <dt>About Us</dt>
+                  <dt>Blog</dt>
+                  <dt>Testimonials</dt>
+                  <dt>Areas of Practice</dt>
+                  <dt>FAQs</dt>
+              </dl>
+          </div>
+  </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+  </div>
   </body>
 </html>

@@ -1,37 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Want to get in touch?</h2>
-    <h3>Address:</h3>
-    <h4>
-        South Natick Law <br>
-        McLaughlin, Richards, Biller & Schindel, LLP <br>
-        8E Pleasant Street <br>
-        Natick, MA 01760 <br>
-    </h4>
-    <h3>Office Hours:</h3>
-    <h4>Monday - Friday: 9:00AM - 5:00PM</h4>
-    <h3>Phone:</h3>
-    <h4>508-651-1000</h4>
-    <h3>Email:</h3>
-    <h4>info@southnaticklaw.com</h4>
-
-    <h2>Or enter your information below and one of <a href="{% url 'about' %}">our attorneys</a> will reach out to you directly.</h2>
-
-    <div>
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Let's get in touch!</h1>
+        <h2>Call today or fill out a form below for a free consultation with one of <a href="{% url 'about' %}">our attorneys</a></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+            <br>
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <input type="submit" value="Get in touch!">
             </form>
     </div>
-
-    Previous contacts:
-    {% for contact in contacts %}
-        <ul>
-            <li>{{ contact.email }}</li>
-        </ul>
-    {% endfor %}
+    <div class="col-sm-6">
+        <h3>Office Address:</h3>
+        <h4>
+            South Natick Law <br>
+            McLaughlin, Richards, Biller & Schindel, LLP <br>
+            8E Pleasant Street <br>
+            Natick, MA 01760 <br>
+        </h4>
+        <h3>Business Hours:</h3>
+        <h4>Monday - Friday: 9:00AM - 5:00PM</h4>
+        <h3>Phone:</h3>
+        <h4>508-651-1000</h4>
+        <h3>Email:</h3>
+        <h4>info@southnaticklaw.com</h4>
+    </div>
+</div>
+{#    Previous contacts:#}
+{#    {% for contact in contacts %}#}
+{#        <ul>#}
+{#            <li>{{ contact.email }}</li>#}
+{#        </ul>#}
+{#    {% endfor %}#}
 {% endblock %}
 
 # format

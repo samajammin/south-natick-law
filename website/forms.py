@@ -9,6 +9,8 @@ __author__ = 'samrichards'
 class ContactForm(ModelForm):
     class Meta:
         model = Contact
+        # fields = ['first_name', 'last_name', 'email', 'phone_number', 'practice_area', 'description']
+        exclude = ['description']
 
 class CommentForm(ModelForm):
     class Meta:

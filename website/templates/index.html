@@ -34,40 +34,57 @@
 
 <div class="row features">
     <div class="col-sm-4 text-center">
-          <a href="{% url 'about' %}"><i class="fa fa-university fa-3x"></i></a>
-{#        <a href="{% url 'about' %}"><i class="fa fa-users fa-4x"></i></a>#}
-        <h2 class="text-center"><a href="{% url 'about' %}">Meet our Team</a></h2>
-      <p>
-        Our attorneys possess over 100 years of combined experience...
-      </p>
+        <div class="panel panel-default">
+            <div class="panel panel-heading"><h3><i class="fa fa-university fa-1.5x"></i>   Meet Our Team</h3></div>
+            <div class="panel panel-body">
+                <a href="{% url 'about' %}"><i class="fa fa-university fa-3x"></i></a>
+                {#        <a href="{% url 'about' %}"><i class="fa fa-users fa-4x"></i></a>#}
+    {#            <h2 class="text-center"><a href="{% url 'about' %}">Meet our Team</a></h2>#}
+                <p>
+                Our attorneys possess over 100 years of combined experience...
+                </p>
+                <button type="button" class="btn btn-default"><a href="{% url 'about' %}">Learn More</a></button>
+
+            </div>
+        </div>
     </div>
     <div class="col-sm-4 text-center">
+        <div class="panel panel-default">
+            <div class="panel panel-heading"><h3>Areas of Expertise</h3></div>
+            <div class="panel panel-body">
 {#        <i class="fa fa-briefcase fa-4x fa-align-center"></i>#}
-        <a href="{% url 'aop' %}"><i class="fa fa-gavel fa-3x fa-align-center"></i></a>
-        <h2 class="text-center"><a href="{% url 'aop' %}">Areas of Expertise</a></h2>
-      <p>
-        We focus domestic relations, estate planning, real estate, probate and tax law and more...
-      </p>
+                <a href="{% url 'aop' %}"><i class="fa fa-gavel fa-3x fa-align-center"></i></a>
+                  <p>
+                    We focus domestic relations, estate planning, real estate, probate and tax law and more...
+                  </p>
+                <button type="button" class="btn btn-default"><a href="{% url 'aop' %}">Learn More</a></button>
+            </div>
+        </div>
     </div>
     <div class="col-sm-4 text-center">
 {#        todo rotating testimonial here vs. an entire page would be great#}
-        <a href="{% url 'testimonials' %}"><i class="fa fa-comments fa-3x fa-align-center"></i></a>
-        <h2 class="text-center"><a href="{% url 'testimonials' %}">Customer Testomnials</a></h2>
-      <p>
-        We're lawyers, we like to talk. But we also like to let our customers do the selling for us...
-      </p>
-        <br>
+        <div class="panel panel-default">
+            <div class="panel panel-heading"><h3>Customer Testimonials</h3></div>
+            <div class="panel panel-body">
+                <a href="{% url 'testimonials' %}"><i class="fa fa-comments fa-3x fa-align-center"></i></a>
+                  <p>
+                    We're lawyers, we like to talk. But we let our customers do the selling for us...
+                  </p>
+                <button type="button" class="btn btn-default"><a href="{% url 'testimonials' %}">Learn More</a></button>
+            </div>
+        </div>
     </div>
 </div>
 
 {#todo optional CTA box#}
+
 <div class="row">
-    <div class="col-sm-12">
-        <div class="cta-box">
+    <div class="col-sm-12 text-center">
+        <div class="cta-box text-center">
             <div class="cta-text text-center">
-              <p>
+              <h3>
                 Ready to speak to an attorney? Call 508-651-1000 for a quick chat.
-              </p>
+              </h3>
             </div>
         </div>
     </div>

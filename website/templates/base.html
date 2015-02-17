@@ -56,6 +56,7 @@
           <ul class="nav nav-pills navbar-right">
 {#              <li><a href="{% url 'index' %}">Home</a></li>#}
               <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
               <li><a href="{% url 'aop' %}">Areas of Practice</a></li>
               <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
               <li><a href="{% url 'faq' %}">FAQ</a></li>
@@ -77,51 +78,38 @@
 
   <div class="footer well">
       <div class="container">
-      <div class="row">
-          <div class="col-sm-4">
-              <dl>
-                  <dt>South Natick Law</dt>
-{#                  <dd>McLaughlin, Richards, Biller & Schindel, LLP</dd>#}
-                  <dd>8E Pleasant Street</dd>
-                  <dd>South Natick, MA 01760</dd>
-                  <dd>508-651-1000</dd>
-              </dl>
-          </div>
-          <div class="col-sm-2">
-{#              <dl>#}
-{#                  <dt>Quick Links</dt>#}
-{#                  <dd><a href="https://plus.google.com/109804537626517034946/about?hl=en">Google+</a></dd>#}
-{#                  <dd><a href="https://www.linkedin.com/company/6380429">LinkedIn</a></dd>#}
-{#                  <dd>Facebook</dd>#}
-{#                  <dd><a href="http://www.yelp.com/biz/south-natick-law-south-natick">Yelp</a></dd>#}
-{#              </dl>#}
-          </div>
-          <div class="col-sm-3">
-              <dl>
-                  <dt>Quick Links</dt>
-                  <dd><a href="https://plus.google.com/109804537626517034946/about?hl=en">Google+</a></dd>
-                  <dd><a href="https://www.linkedin.com/company/6380429">LinkedIn</a></dd>
-                  <dd>Facebook</dd>
-                  <dd><a href="http://www.yelp.com/biz/south-natick-law-south-natick">Yelp</a></dd>
-              </dl>
-          </div>
-          <div class="col-sm-3 text-right">
-                  <dt>Company</dt>
-                  <dt>Contact Us</dt>
-                  <dt>Blog</dt>
-                  <dt>Testimonials</dt>
-                  <dt>FAQs</dt>
-              </dl>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-12 text-center tex">
-              <p>
-              Copyright &copy; 2015 McLaughlin, Richards, Biller & Schindel, LLP. All Rights Reserved.
-              </p>
+          <div class="row">
+              <div class="col-sm-3">
+                  <address>
+                      <strong>South Natick Law</strong><br>
+    {#                  McLaughlin, Richards, Biller & Schindel, LLP<br>#}
+                      8E Pleasant Street<br>
+                      South Natick, MA 01760<br>
+                      <abbr title="Phone">P:</abbr> (508) 651-1000
+                  </address>
+              </div>
+              <div class="col-sm-6 text-center">
+                <strong>Questions?</strong> Email us at info@southnaticklaw.com<br><br>
+                Copyright &copy; 2015 McLaughlin, Richards, Biller & Schindel, LLP. <br> All Rights Reserved.
+              </div>
+              <div class="col-sm-3 text-right">
+                  <dl>
+                      <dt>We're Social</dt>
+                      <dd><a href="https://plus.google.com/109804537626517034946/about?hl=en">Google+</a></dd>
+                      <dd><a href="https://www.linkedin.com/company/6380429">LinkedIn</a></dd>
+    {#                  <dd>Facebook</dd>#}
+                      <dd><a href="http://www.yelp.com/biz/south-natick-law-south-natick">Yelp</a></dd>
+                  </dl>
+              </div>
           </div>
       </div>
   </div>
+{#      <div class="row">#}
+{#          <div class="col-sm-12 text-center tex">#}
+{#              #}
+{#          </div>#}
+{#      </div>#}
+{#  </div>#}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

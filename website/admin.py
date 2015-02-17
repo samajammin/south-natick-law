@@ -3,6 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from django.contrib import admin
 from website.models import Firm, Attorney, Post, PracticeArea, Contact, Comment
+from django_markdown.admin import MarkdownModelAdmin
 
 class PostInLine(admin.TabularInline):
     model = Post
@@ -16,11 +17,12 @@ class AttorneyAdmin(admin.ModelAdmin):
     list_display = ('first_name', 'last_name', 'title', 'email', 'phone_extension')
     inlines = [PostInLine, ]
 
-class PostAdmin(admin.ModelAdmin):
-    fields = (('title', 'author'), 'tags', 'body')
-    list_display = ('title', 'author', 'publish_date')
-    list_filter = ('author', 'tags')
-    filter_horizontal = ('tags',)
+class PostAdmin(MarkdownModelAdmin):
+    # fields = (('title', 'author'), 'tags', 'body' , 'slug')
+    prepopulated_fields = {'slug': ('title',)}
+    list_display = ('title', 'author', 'published_date')
+    # list_filter = ('author', 'tags')
+    # filter_horizontal = ('tags',)
 
 class PracticeAreaAdmin(admin.ModelAdmin):
     fields = ('name', 'description', 'attorneys')

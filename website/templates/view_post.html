@@ -4,7 +4,7 @@
 South Natick Law | {{ post.title }}
 {% endblock %}
 
-{#todo not sure why the nav isn't formatted#}
+{#todo page formatting#}
 {% block content %}
     <h1>{{ post.title }}</h1>
     <i>Post written by: {{ post.author }}</i><br>
@@ -14,7 +14,6 @@ South Natick Law | {{ post.title }}
             {{ tag.name }}<br>
         {% endfor %}
     </i>
-{#     todo need to format the post#}
     <p>{{ post.body }}</p>
 
     {% if comments|length > 0 %}

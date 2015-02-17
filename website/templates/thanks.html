@@ -5,8 +5,7 @@ South Natick Law | Thank You
 {% endblock %}
 
 {% block content %}
-    <h3>Thanks for your request!</h3>
-    <p>We've sent a confirmation email to your account. One of our attorneys will reach out directly to set up a time to chat. We look forward to meeting you!</p>
-    <p>Best,</p>
-    <p>South Natick Law</p>
+    <h3>Thanks for your request, {{ contact_info.first_name }}!</h3>
+    <p>We've sent a confirmation email to {{ contact_info.email }}. One of our attorneys will reach out directly to set up a time to chat. We look forward to meeting you!</p>
+    <p>Best, <br> South Natick Law</p>
 {% endblock %}

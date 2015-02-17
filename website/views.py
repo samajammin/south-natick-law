@@ -61,13 +61,14 @@ def contact(request):
             msg = EmailMultiAlternatives("{}'s Request with South Natick Law".format(user.first_name), text_content, settings.DEFAULT_FROM_EMAIL, [user.email])
             msg.attach_alternative(html_content, "text/html")
             msg.send()
-            request.session['_old_post'] = request.POST
+            request.session['contact_info'] = request.POST
             # After saving, redirect the user to the confirmation page
-            # todo find out how to pass data to thankyou page... post redirect get
             return redirect("thanks.html")
+
     # Else if the user is looking at the form page
     else:
         form = ContactForm()
+
     contacts = Contact.objects.all()
     data = {'form': form,
             'contacts': contacts
@@ -75,5 +76,5 @@ def contact(request):
     return render(request, "contact.html", data)
 
 def thanks(request):
-    old_post = request.session.get('_old_post')
-    return render(request, 'thanks.html', {'data':old_post})
+    contact_info = request.session.get('contact_info')
+    return render(request, 'thanks.html', {'contact_info':contact_info})

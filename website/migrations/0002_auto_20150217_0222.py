@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
+import datetime
 
 
 class Migration(migrations.Migration):
@@ -11,10 +12,10 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='attorney',
-            name='phone_number',
-            field=models.BigIntegerField(default=5086511000),
+        migrations.AlterField(
+            model_name='post',
+            name='modified_date',
+            field=models.DateField(default=datetime.datetime(2015, 2, 17, 2, 22, 58, 752277), auto_now=True),
             preserve_default=True,
         ),
     ]

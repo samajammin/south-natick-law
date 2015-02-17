@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
-    'django_extensions'
+    'django_extensions',
+    'django_markdown',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,10 +59,10 @@ WSGI_APPLICATION = 'snl.wsgi.application'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'growthlean@gmail.com'
-EMAIL_HOST_PASSWORD = 'mobtesting'
-DEFAULT_FROM_MAIL = 'growthlean@gmail.com'
-DEFAULT_FROM_EMAIL = 'growthlean@gmail.com'
+EMAIL_HOST_USER = 'SouthNatickLaw@gmail.com'
+EMAIL_HOST_PASSWORD = '@BGrowing'
+DEFAULT_FROM_MAIL = 'SouthNatickLaw@gmail.com'
+DEFAULT_FROM_EMAIL = 'SouthNatickLaw@gmail.com'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

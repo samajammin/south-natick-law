@@ -1,4 +1,6 @@
+from datetime import datetime
 from django.db import models
+from django_markdown.models import MarkdownField
 
 class Firm(models.Model):
     name = models.CharField(max_length=120)
@@ -37,11 +39,20 @@ class PracticeArea(models.Model):
     def __unicode__(self):
         return u"{}".format(self.name)
 
+class PostQuerySet(models.QuerySet):
+    def published(self):
+        return self._filter(published = True)
+
 class Post(models.Model):
     title = models.CharField(max_length=120)
-    body = models.TextField()
+    body = MarkdownField()
+    # url friendly posts
+    # todo need default value for existing slugs... but they must be unique??
+    slug = models.SlugField(max_length=150, unique=True)
     author = models.ForeignKey(Attorney, related_name='posts')
-    publish_date = models.DateField(auto_now_add="True")
+    publish = models.BooleanField(default=True)
+    published_date = models.DateField(auto_now_add=True)
+    modified_date = models.DateField(auto_now=True, default= datetime.now())
     tags = models.ManyToManyField(PracticeArea, related_name='posts')
 
     def make_blurb(self):
@@ -49,6 +60,11 @@ class Post(models.Model):
 
     def __unicode__(self):
         return u"{}".format(self.title)
+
+    class Meta:
+        verbose_name = 'Blog Entry'
+        verbose_name_plural = 'Blog Entries'
+        ordering = ['-published_date']
 
 class Contact(models.Model):
     first_name = models.CharField(max_length=20)

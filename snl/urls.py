@@ -30,6 +30,7 @@ urlpatterns = patterns('',
     # url(r'form/$', 'website.views.comment_view', name='comment_view'),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^markdown/', include('django_markdown.urls')),
 )
 
 if settings.DEBUG:

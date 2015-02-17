@@ -1,16 +1,22 @@
 {% extends "base.html" %}
+{% load django_markdown %}
 
 {% block title %}
 South Natick Law | News &amp; Resources
 {% endblock %}
 
+{#todo need markup for this & blog pages#}
 {% block content %}
-    <h1>News &amp; Resources</h1>
-    <dl>
-        {% for post in posts %}
-{#            todo get post title in the url in addition to postid#}
-            <dt><a href=" {% url 'view_post' post.id %}">{{ post.title }}</a></dt>
-            <dd>{{ post.make_blurb }}</dd><br>
-        {% endfor %}
-    </dl>
+<div class="row">
+    <div class="col-sm-12">
+        <h1>News &amp; Resources</h1>
+        <dl>
+            {% for post in posts %}
+                <dt><a href=" {% url 'view_post' post.id %}">{{ post.title }}</a></dt>
+                <dd>{{ post.published_date }}</dd>
+                <dd>{{ post.make_blurb |markdown}}</dd><br>
+            {% endfor %}
+        </dl>
+    </div>
+ </div>
 {% endblock %}

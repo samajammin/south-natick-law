@@ -1,10 +1,12 @@
 {% extends "base.html" %}
+{% load django_markdown %}
 
 {% block title %}
 South Natick Law | {{ post.title }}
 {% endblock %}
 
 {#todo page formatting#}
+{#            todo get post title in the url in addition to postid#}
 {% block content %}
     <h1>{{ post.title }}</h1>
     <i>Post written by: {{ post.author }}</i><br>

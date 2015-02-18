@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,13 +9,13 @@
     <title>{% block title %}South Natick Law | MetroWest Attorneys{% endblock %}</title>
 
     <!-- Bootstrap -->
-    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 {#todo css sheets from bounce#}
 {#    <link href="../static/css/core.css" rel="stylesheet">#}
 {#    <link href="../static/css/blue.css" rel="stylesheet">#}
 {#  personal css#}
-    <link href="../static/css/main.css" rel="stylesheet">
+    <link href=" {% static "css/main.css"%}" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,15 +67,11 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
    </nav>
-  <div class="container">
 
-    {#      todo consider having all block content take up 3/4 of the page width and a contact form on every page (left sidebar) #}
-{#    <div class="hero-unit">#}
+  <div class="container">
       {% block content %}
         <h1>Hello, world!</h1>
       {% endblock content %}
-{#    </div>#}
-
   </div>
 
   <div class="footer well">
@@ -89,32 +87,35 @@
                   </address>
               </div>
               <div class="col-sm-6 text-center">
-                <strong>Questions?</strong> Email us at info@southnaticklaw.com<br><br>
+                <strong>Questions?</strong> Email us at <a href="mailto:info@southnaticklaw.com">info@southnaticklaw.com</a><br><br>
                 Copyright &copy; 2015 McLaughlin, Richards, Biller & Schindel, LLP. <br> All Rights Reserved.
               </div>
               <div class="col-sm-3 text-right">
-                  <dl>
-                      <dt>We're Social</dt>
-                      <dd><a href="https://plus.google.com/109804537626517034946/about?hl=en">Google+</a></dd>
-                      <dd><a href="https://www.linkedin.com/company/6380429">LinkedIn</a></dd>
-    {#                  <dd>Facebook</dd>#}
-                      <dd><a href="http://www.yelp.com/biz/south-natick-law-south-natick">Yelp</a></dd>
-                  </dl>
+                  <strong>Visit Us on Social Media:</strong>
+                  <br><br>
+                    <ul class="list-unstyled list-inline list-social-icons">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/6380429"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.yelp.com/biz/south-natick-law-south-natick"><i class="fa fa-yelp fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/109804537626517034946/about?hl=en"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                        </li>
+                    </ul>
               </div>
           </div>
       </div>
   </div>
-{#      <div class="row">#}
-{#          <div class="col-sm-12 text-center tex">#}
-{#              #}
-{#          </div>#}
-{#      </div>#}
-{#  </div>#}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../static/js/bootstrap.js"></script>
-  </div>
+    <script src=" {% static "js/bootstrap.js" %}"></script>
+
   </body>
 </html>

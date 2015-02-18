@@ -39,7 +39,7 @@ def view_post(request, post_id):
         form = CommentForm()
     comments = Comment.objects.all()
     data = {"post": post, "comment_form": form, "comments": comments, "tags": tags}
-    return render(request, "view_post.html", data)
+    return render(request, 'view_post.html', data)
 
 def faq(request):
     return render(request, 'faq.html')

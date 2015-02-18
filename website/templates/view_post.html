@@ -1,44 +1,189 @@
 {% extends "base.html" %}
 {% load django_markdown %}
+{% load bootstrap %}
 
 {% block title %}
 South Natick Law | {{ post.title }}
 {% endblock %}
 
-{#todo page formatting#}
-{#            todo get post title in the url in addition to postid#}
+{# todo page formatting#}
+{# todo get post title in the url in addition to postid#}
+{##}
 {% block content %}
-    <h1>{{ post.title }}</h1>
-    <i>Post written by: {{ post.author }}</i><br>
-    <i>Post published on: {{ post.publish_date}}</i><br>
-    <i>Post topic(s):<br>
-        {% for tag in tags %}
-            {{ tag.name }}<br>
-        {% endfor %}
-    </i>
-    <p>{{ post.body }}</p>
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{ post.title }}
+                    <small>by <a href="{% url 'profile' post.author.first_name %}">{{ post.author }}</a>
+                    </small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
 
-    {% if comments|length > 0 %}
-    <h4>View comments:</h4>
-    {% for comment in comments %}
-        {% if comment.post == post %}
-        <dl>
-            <dt><b>{{ comment.first_name }} {{ comment.last_name }}</b></dt>
-            <dt><i>{{ comment.submission_date }}</i></dt>
-            <dd>{{ comment.body }}</dd>
+        <!-- Content Row -->
+        <div class="row">
 
-        </dl>
-        {% endif %}
-    {% endfor %}
-    {% endif %}
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
 
-    <h4>Join the conversation!</h4>
+                <!-- Date/Time -->
+                <p><i class="fa fa-clock-o"></i> Posted on {{ post.published_date }}</p>
 
-    <form method="POST">
-    {% csrf_token %}
-    {{ comment_form.as_p }}
-    <input type="submit" value="Submit comment">
-    </form>
+                <i>Categories:
+                    {% for tag in tags %}
+                        {{ tag.name }},
+                    {% endfor %}
+                </i>
+                <hr>
 
-    <p>Return to <a href=" {% url 'blog' %}"> news &amp; resources</a></p>
+                <!-- Preview Image -->
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+                todo loop through paragraphs in body?
+                <p>{{ post.body }}</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+{#            todo comment form#}
+
+{#            my form#}
+{#                {% if comments|length > 0 %}#}
+{#                <h4>View comments:</h4>#}
+{#                {% for comment in comments %}#}
+{#                {% if comment.post == post %}#}
+{#                <dl>#}
+{#                <dt><b>{{ comment.first_name }} {{ comment.last_name }}</b></dt>#}
+{#                <dt><i>{{ comment.submission_date }}</i></dt>#}
+{#                <dd>{{ comment.body }}</dd>#}
+{#                #}
+{#                </dl>#}
+{#                {% endif %}#}
+{#                {% endfor %}#}
+{#                {% endif %}#}
+{#                #}
+{#                <h4>Join the conversation!</h4>#}
+{#                #}
+{#                <form method="POST">#}
+{#                {% csrf_token %}#}
+{#                {{ comment_form | bootstrap }}#}
+{#                <input type="submit" value="Submit comment">#}
+{#                </form>#}
+
+{#            bootstrap form#}
+
+{#                <div class="well">#}
+{#                    <h4>Leave a Comment:</h4>#}
+{#                    <form role="form">#}
+{#                        <div class="form-group">#}
+{#                            <textarea class="form-control" rows="3"></textarea>#}
+{#                        </div>#}
+{#                        <button type="submit" class="btn btn-primary">Submit</button>#}
+{#                    </form>#}
+{#                </div>#}
+{##}
+{#                <p>Return to <a href=" {% url 'blog' %}">News &amp; Resources</a></p>#}
+{##}
+{#                <hr>#}
+{##}
+{#                <!-- Posted Comments -->#}
+{##}
+{#                <!-- Comment -->#}
+{#                <div class="media">#}
+{#                    <a class="pull-left" href="#">#}
+{#                        <img class="media-object" src="http://placehold.it/64x64" alt="">#}
+{#                    </a>#}
+{#                    <div class="media-body">#}
+{#                        <h4 class="media-heading">Start Bootstrap#}
+{#                            <small>August 25, 2014 at 9:30 PM</small>#}
+{#                        </h4>#}
+{#                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <!-- Comment -->#}
+{#                <div class="media">#}
+{#                    <a class="pull-left" href="#">#}
+{#                        <img class="media-object" src="http://placehold.it/64x64" alt="">#}
+{#                    </a>#}
+{#                    <div class="media-body">#}
+{#                        <h4 class="media-heading">Start Bootstrap#}
+{#                            <small>August 25, 2014 at 9:30 PM</small>#}
+{#                        </h4>#}
+{#                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
+{#                        <!-- Nested Comment -->#}
+{#                        <div class="media">#}
+{#                            <a class="pull-left" href="#">#}
+{#                                <img class="media-object" src="http://placehold.it/64x64" alt="">#}
+{#                            </a>#}
+{#                            <div class="media-body">#}
+{#                                <h4 class="media-heading">Nested Start Bootstrap#}
+{#                                    <small>August 25, 2014 at 9:30 PM</small>#}
+{#                                </h4>#}
+{#                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <!-- End Nested Comment -->#}
+{#                    </div>#}
+{#                    <br>#}
+{#                </div>#}
+{##}
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Side Widget Well</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
 {% endblock %}

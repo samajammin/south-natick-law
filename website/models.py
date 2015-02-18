@@ -31,7 +31,7 @@ class Attorney(models.Model):
 
 # categories for blog post tags, attorney practice areas & contact form topic inqueries
 class PracticeArea(models.Model):
-    name = models.CharField(max_length=120)
+    name = models.CharField(max_length=120, unique=True)
     description = models.TextField()
     # posts = models.ManyToManyField(Post, related_name='practice_areas')
     attorneys = models.ManyToManyField(Attorney, related_name='practice_areas')

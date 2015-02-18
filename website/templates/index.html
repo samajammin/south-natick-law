@@ -35,11 +35,12 @@
 <div class="row features">
     <div class="col-sm-4 text-center">
         <div class="panel panel-default">
-            <div class="panel panel-heading"><h3><i class="fa fa-university fa-1.5x"></i>   Meet Our Team</h3></div>
+            <div class="panel panel-heading"><h3>Meet Our Team</h3></div>
             <div class="panel panel-body">
-                <a href="{% url 'about' %}"><i class="fa fa-university fa-3x"></i></a>
+                <i class="fa fa-university fa-3x"></i><br>
                 {#        <a href="{% url 'about' %}"><i class="fa fa-users fa-4x"></i></a>#}
     {#            <h2 class="text-center"><a href="{% url 'about' %}">Meet our Team</a></h2>#}
+                <br>
                 <p>
                 Our attorneys possess over 100 years of combined experience...
                 </p>
@@ -53,10 +54,12 @@
             <div class="panel panel-heading"><h3>Areas of Expertise</h3></div>
             <div class="panel panel-body">
 {#        <i class="fa fa-briefcase fa-4x fa-align-center"></i>#}
-                <a href="{% url 'aop' %}"><i class="fa fa-gavel fa-3x fa-align-center"></i></a>
-                  <p>
+                <i class="fa fa-gavel fa-3x fa-align-center"></i>
+                <br>
+                <br>
+                <p>
                     We focus domestic relations, estate planning, real estate, probate and tax law and more...
-                  </p>
+                </p>
                 <button type="button" class="btn btn-default"><a href="{% url 'aop' %}">Learn More</a></button>
             </div>
         </div>
@@ -66,10 +69,12 @@
         <div class="panel panel-default">
             <div class="panel panel-heading"><h3>Customer Testimonials</h3></div>
             <div class="panel panel-body">
-                <a href="{% url 'testimonials' %}"><i class="fa fa-comments fa-3x fa-align-center"></i></a>
-                  <p>
+                <i class="fa fa-comments fa-3x fa-align-center"></i>
+                <br>
+                <br>
+                <p>
                     We're lawyers, we like to talk. But we let our customers do the selling for us...
-                  </p>
+                </p>
                 <button type="button" class="btn btn-default"><a href="{% url 'testimonials' %}">Learn More</a></button>
             </div>
         </div>
@@ -79,7 +84,7 @@
 {#todo optional CTA box#}
 
 <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-sm-12">
         <div class="cta-box text-center">
             <div class="cta-text text-center">
               <h3>

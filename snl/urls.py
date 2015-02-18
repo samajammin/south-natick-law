@@ -4,6 +4,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from website import feed
 
+# added for markdown
+# from django_markdown import flatpages
+# admin.autodiscover()
+# flatpages.register()
+
 urlpatterns = patterns('',
     url(r'^$', 'website.views.index', name='index'),
     url(r'^about$', 'website.views.about', name='about'),

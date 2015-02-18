@@ -56,7 +56,7 @@ class Post(models.Model):
     tags = models.ManyToManyField(PracticeArea, related_name='posts')
 
     def make_blurb(self):
-        return self.body[:150] + "..."
+        return self.body[:180] + "..."
 
     def get_absolute_url(self):
         return reverse('view_post', kwargs={'slug': self.slug})

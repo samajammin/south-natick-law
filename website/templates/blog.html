@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{#{% load markdown_deux_tags %}#}
 {% load django_markdown %}
 
 {% block title %}
@@ -30,12 +31,12 @@ South Natick Law | News &amp; Resources
                 </p>
                 <p><i class="fa fa-clock-o"></i> Posted on {{ post.published_date }}</p>
                 <hr>
-                <a href=" {% url 'view_post' post.id %}">
+                <a href=" {% url 'view_post' slug=post.slug %}">
                     <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
                 </a>
                 <hr>
-                <p>{{ post.make_blurb | markdown}}</p>
-                <a class="btn btn-primary" href=" {% url 'view_post' post.id %}">Read More <i class="fa fa-angle-right"></i></a>
+                <p>{{ post.make_blurb|markdown}}</p>
+                <a class="btn btn-primary" href=" {% url 'view_post' slug=post.slug %}">Read More <i class="fa fa-angle-right"></i></a>
 
                 <hr>
             {% endfor %}

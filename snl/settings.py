@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'website',
     'django_extensions',
     'django_markdown',
+    # 'markdown_deux',
     'bootstrapform',
 )
 
@@ -57,6 +58,7 @@ ROOT_URLCONF = 'snl.urls'
 
 WSGI_APPLICATION = 'snl.wsgi.application'
 
+# todo email confirmation from @southnaticklaw.com email
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587

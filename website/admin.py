@@ -39,7 +39,10 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Attorney, AttorneyAdmin)
+# todo figure out postadmin
+# https://github.com/klen/django_markdown
 admin.site.register(Post, PostAdmin)
+# admin.site.register(Post, MarkdownModelAdmin)
 admin.site.register(PracticeArea, PracticeAreaAdmin)
 admin.site.register(Firm, FirmAdmin)
 admin.site.register(Contact, ContactAdmin)

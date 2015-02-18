@@ -2,6 +2,7 @@ from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
 from django.contrib import admin
+from website import feed
 
 urlpatterns = patterns('',
     url(r'^$', 'website.views.index', name='index'),
@@ -20,7 +21,9 @@ urlpatterns = patterns('',
 
     # logic to match specific resources posts first
     url(r'^blog$', 'website.views.blog', name='blog'),
-    url(r'^blog/(?P<post_id>\w+)/$', 'website.views.view_post', name='view_post'),
+    # url(r'^blog/(?P<post_id>\w+)/$', 'website.views.view_post', name='view_post'),
+
+    url(r'^blog/(?P<slug>\S+)/$', 'website.views.view_post', name='view_post'),
 
     # url(r'^about$', 'website.views.about', name='about'),
     # url(r'^resources/', include('resources.urls')),
@@ -30,6 +33,7 @@ urlpatterns = patterns('',
     # url(r'form/$', 'website.views.comment_view', name='comment_view'),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^feed/$', feed.LatestPosts(), name='feed'),
     url(r'^markdown/', include('django_markdown.urls')),
 )
 

@@ -6,8 +6,7 @@
 South Natick Law | {{ post.title }}
 {% endblock %}
 
-{# todo page formatting#}
-{# todo get post title in the url in addition to postid#}
+{# todo page formatting... post body#}
 {##}
 {% block content %}
         <!-- Page Heading/Breadcrumbs -->
@@ -30,10 +29,8 @@ South Natick Law | {{ post.title }}
                 <!-- Date/Time -->
                 <p><i class="fa fa-clock-o"></i> Posted on {{ post.published_date }}</p>
 
-                <i>Categories:
-                    {% for tag in tags %}
-                        {{ tag.name }},
-                    {% endfor %}
+                <i>Tagged under:
+                    {{ post.tags.all | join:", " }}
                 </i>
                 <hr>
 

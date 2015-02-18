@@ -1,5 +1,7 @@
 from datetime import datetime
+from django.core.urlresolvers import reverse
 from django.db import models
+from django.template.defaultfilters import slugify
 from django_markdown.models import MarkdownField
 
 class Firm(models.Model):
@@ -46,8 +48,6 @@ class PostQuerySet(models.QuerySet):
 class Post(models.Model):
     title = models.CharField(max_length=120)
     body = MarkdownField()
-    # url friendly posts
-    # todo need default value for existing slugs... but they must be unique??
     slug = models.SlugField(max_length=150, unique=True)
     author = models.ForeignKey(Attorney, related_name='posts')
     publish = models.BooleanField(default=True)
@@ -57,6 +57,14 @@ class Post(models.Model):
 
     def make_blurb(self):
         return self.body[:150] + "..."
+
+    def get_absolute_url(self):
+        return reverse('view_post', kwargs={'slug': self.slug})
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super(Post, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return u"{}".format(self.title)

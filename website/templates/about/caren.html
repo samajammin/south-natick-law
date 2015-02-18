@@ -1,14 +1,67 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block title %}
 Caren Schindel | Natick MA Elder Law Attorney
 {% endblock %}
 
 {% block content %}
-<p style="text-align: right;"><img style="margin-right: 10px; margin-bottom: 10px; float: left;" alt="South Natick Law - Caren Z. Schindel, Esq." src="../../static/img/schindel_full.png"/><a target="_blank" href="http://www.facebook.com/CarenSLaw"><img alt="South Natick Law - Caren Schindel Facebook" src="/images/smi_facebook.png" height="30" width="30" /></a>&nbsp;&nbsp;<a target="_blank" href="http://carenslaw.blogspot.com"><img alt="South Natick Law - Caren Schindel Blogspot" src="/images/blogspot_logo.jpg" height="30" width="81" /></a></p>
-<p><em><strong>CAREN Z. SCHINDEL, Esq.</strong></em> has been a principal with the firm since 2008. Prior to joining the firm she was the owner of the Law Offices of Caren Z. Schindel in Framingham, MA. Attorney Schindel graduated from Buffalo Law School in 1982. In 2004, she went back to law school to obtain a Masters' degree in Taxation, and in 2009 she graduated from Boston University Law School with an LLM in taxation.</p>
-<p>She is a member of the Massachusetts Bar Association Family Law and Probate Section, the Women's Bar Association, Senior Practice Committee, the Boston Estate Planning Council (BEPC) and the National Association of Elder Law Attorneys (NAELA). Attorney Schindel is a frequent speaker on topics related to elder, estate planning and domestic relations law. Each year, she prepares income tax returns for low income seniors through the AARP Volunteer Income Tax Advocate (VITA) program.</p>
-<p>What sets Attorney Schindel apart from other attorneys is her desire to help families handle the most emotionally complex, conflict ridden situations. She is able to use her undergraduate degree in psychology, her master's in tax law and her understanding of legal and financial issues to resolve complicated family problems. With thirty years of experience as a family law and probate attorney, she is able to help clients through the process of divorce. She also handles post-divorce issues such as revising parenting plans, increasing and decreasing support and alimony obligations and allocating college costs.</p>
-<p>Another family journey Attorney Schindel handles is establishing plans for transferring assets from the older generation to the younger generation. This process involves elder law, tax planning, government benefits planning and document preparation. Attorney Schindel's ability to facilitate a family consensus allows her to help families discuss options and select the most beneficial plan. If court involvement is required, Attorney Schindel handles all probate matters, including guardianships, conservatorships and probate litigation. When tax issues arise, Attorney Schindel works to resolve the issues with the IRS, DOR or other taxing authority.</p>
-<p>Patience, attention to detail and a zealous pursuit of her client's goals ensure successful results for Attorney Schindel's clients.</p>
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Caren Schindel <small>Elder Law Attorney</small></h1>
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive" src="{% static "img/schindel_full.png" %}" alt="Caren Schindel">
+            <br>
+            <h3>Contact Details</h3>
+            <p><i class="fa fa-phone"></i>
+                <abbr title="Phone">P</abbr>: (508) 651-1000</p>
+            <p><i class="fa fa-envelope-o"></i>
+                <abbr title="Email">E</abbr>: <a href="mailto:cshindel@southnaticklaw.com">cschindel@southnaticklaw.com</a>
+            </p>
+            <p><i class="fa fa-clock-o"></i>
+                <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+                <li>
+                    <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-md-8">
+            <p><em><strong>CAREN Z. SCHINDEL, Esq.</strong></em> has been a principal with the firm since 2008. Prior to joining the firm she was the owner of the Law Offices of Caren Z. Schindel in Framingham, MA. Attorney Schindel graduated from Buffalo Law School in 1982. In 2004, she went back to law school to obtain a Masters' degree in Taxation, and in 2009 she graduated from Boston University Law School with an LLM in taxation.</p>
+            <p>She is a member of the Massachusetts Bar Association Family Law and Probate Section, the Women's Bar Association, Senior Practice Committee, the Boston Estate Planning Council (BEPC) and the National Association of Elder Law Attorneys (NAELA). Attorney Schindel is a frequent speaker on topics related to elder, estate planning and domestic relations law. Each year, she prepares income tax returns for low income seniors through the AARP Volunteer Income Tax Advocate (VITA) program.</p>
+            <p>What sets Attorney Schindel apart from other attorneys is her desire to help families handle the most emotionally complex, conflict ridden situations. She is able to use her undergraduate degree in psychology, her master's in tax law and her understanding of legal and financial issues to resolve complicated family problems. With thirty years of experience as a family law and probate attorney, she is able to help clients through the process of divorce. She also handles post-divorce issues such as revising parenting plans, increasing and decreasing support and alimony obligations and allocating college costs.</p>
+            <p>Another family journey Attorney Schindel handles is establishing plans for transferring assets from the older generation to the younger generation. This process involves elder law, tax planning, government benefits planning and document preparation. Attorney Schindel's ability to facilitate a family consensus allows her to help families discuss options and select the most beneficial plan. If court involvement is required, Attorney Schindel handles all probate matters, including guardianships, conservatorships and probate litigation. When tax issues arise, Attorney Schindel works to resolve the issues with the IRS, DOR or other taxing authority.</p>
+            <p>Patience, attention to detail and a zealous pursuit of her client's goals ensure successful results for Attorney Schindel's clients.</p>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="well">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Reach Caren directly at at cschindel@southnaticklaw.com or call her at her direct line:</h4>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-primary btn-block" href="mailto:cshindel@southnaticklaw.com">Send Caren an Email</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
 {% endblock %}

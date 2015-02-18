@@ -20,10 +20,10 @@ South Natick Law | News &amp; Resources
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            {% for post in posts %}
+            {% for post in posts|dictsortreversed:'published_date' %}
             <!-- First Blog Post -->
                 <h2>
-                    <a href="{% url 'view_post' post.id %}">{{ post.title }}</a>
+                    <a href="{% url 'view_post' slug=post.slug %}">{{ post.title }}</a>
                 </h2>
                 <p class="lead">
                     by <a href="{% url 'profile' post.author.first_name %}">{{ post.author }}</a>

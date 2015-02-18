@@ -24,8 +24,8 @@ def blog(request):
     posts = Post.objects.all()
     return render(request, 'blog.html', {'posts': posts})
 
-def view_post(request, post_id):
-    post = Post.objects.get(id=post_id)
+def view_post(request, slug):
+    post = Post.objects.get(slug=slug)
     tags = post.tags.all()
     if request.method == "POST":
         form = CommentForm(request.POST)

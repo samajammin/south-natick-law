@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block title %}
     South Natick Law | About Our Firm
@@ -7,7 +8,6 @@
 {% block content %}
 
 {#    todo bootstrap about pages#}
-{#    todo replace URL image srcs#}
 {#    todo social profile links & direct phone lines#}
 
     <!-- Page Content -->
@@ -23,7 +23,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <img class="img-responsive" src="../../static/img/beacher-house.jpg" alt="">
+                <img class="img-responsive" src=" {% static "img/beacher-house.jpg"%} " alt="Harriet Beecher Stowe House">
             </div>
             <div class="col-sm-8">
                 <h2>
@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 text-center">
                 <a href="{% url 'profile' 'george'%}">
-                    <img class="img-circle img-responsive img-center" src="../../static/img/richards_full.png" alt="">
+                    <img class="img-circle img-responsive img-center" src="{% static "img/richards_full.png" %}" alt="George L Richards III">
                 </a>
 
                 <a href="{% url 'profile' 'george'%}">
@@ -68,7 +68,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
                 <a href="{% url 'profile' 'james'%}">
-                <img class="img-circle img-responsive img-center" src="../../static/img/mclaughlin_full.png" alt="">
+                <img class="img-circle img-responsive img-center" src="{% static "img/mclaughlin_full.png" %}" alt="James McLaughlin">
                 </a>
                 <a href="{% url 'profile' 'james'%}">
                     <h3>James McLaughlin
@@ -87,7 +87,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
                 <a href="{% url 'profile' 'richard'%}">
-                    <img class="img-circle img-responsive img-center" src="../../static/img/biller_full.png" alt="">
+                    <img class="img-circle img-responsive img-center" src=" {% static "img/biller_full.png" %}" alt="Richard Biller">
                 </a>
                 <a href="{% url 'profile' 'richard'%}">
                     <h3>Richard Biller
@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 text-center">
                 <a href="{% url 'profile' 'caren'%}">
-                <img class="img-circle img-responsive img-center" src="../../static/img/schindel_full.png" alt="">
+                <img class="img-circle img-responsive img-center" src=" {% static "img/schindel_full.png" %}" alt="Caren Schindel">
                 </a>
                 <a href="{% url 'profile' 'caren'%}">
                     <h3>Caren Schindel
@@ -128,7 +128,7 @@
 {#            todo center image#}
             <div class="col-lg-4 col-sm-6 text-center">
                 <a href="{% url 'profile' 'leah'%}">
-                <img class="img-circle img-responsive img-center" src="http://www.southnaticklaw.com/images/kaine_full.png" alt="">
+                <img class="img-circle img-responsive img-center" src="{% static "img/kaine_full.png"%}" alt="Leah Kane">
                 </a>
                 <a href="{% url 'profile' 'leah'%}">
                     <h3>Leah Kaine

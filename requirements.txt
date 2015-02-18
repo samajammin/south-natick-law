@@ -2,8 +2,11 @@ bpython==0.13.2
 cffi==0.8.6
 cryptography==0.7.2
 Django==1.7.4
+django-bootstrap-form==3.1
 django-extensions==1.5.0
+django-markdown==0.8.4
 enum34==1.0.4
+Markdown==2.5.2
 ndg-httpsclient==0.3.3
 Pillow==2.7.0
 psycopg2==2.5.4

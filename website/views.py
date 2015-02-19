@@ -15,8 +15,8 @@ def about(request):
     return render(request, 'about/about.html')
 
 # renders any about/name profile pages
-def profile(request, name):
-    return render(request, 'about/' + name + '.html')
+def profile(request, slug):
+    return render(request, 'about/' + slug + '.html')
 
 def aop(request):
     return render(request, 'areas-of-practice.html')
@@ -39,10 +39,9 @@ def blog(request):
 
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
 
-# todo confirm its working
 def tag_index(request, slug):
-    tag = PracticeArea.objects.get(slug=slug)
-    post_list = Post.objects.filter(tags=tag)
+    tag = PracticeArea.objects.get(slug = slug)
+    post_list = Post.objects.filter(tags = tag)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
     authors = Attorney.objects.all()
@@ -59,8 +58,8 @@ def tag_index(request, slug):
 
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
 
-def author_index(request, first_name):
-    author = Attorney.objects.get(first_name=first_name)
+def author_index(request, slug):
+    author = Attorney.objects.get(slug = slug)
     post_list = Post.objects.filter(author = author)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()

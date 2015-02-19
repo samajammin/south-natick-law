@@ -43,6 +43,15 @@ South Natick Law | {{ post.title }}
                 <p>{{ post.body|markdown}}</p>
                 <hr>
 
+            <ul class="pager">
+                <li class="previous">
+                    <a href="#">&larr; Older</a>
+                </li>
+                <li class="next">
+                    <a href="#">Newer &rarr;</a>
+                </li>
+            </ul>
+
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->
@@ -83,7 +92,7 @@ South Natick Law | {{ post.title }}
 {#                    </form>#}
 {#                </div>#}
 {##}
-{#                <p>Return to <a href=" {% url 'blog' %}">News &amp; Resources</a></p>#}
+
 {##}
 {#                <hr>#}
 {##}

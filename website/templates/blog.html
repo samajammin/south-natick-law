@@ -30,7 +30,12 @@ South Natick Law | News &amp; Resources
                     by <a href="{% url 'profile' post.author.first_name %}">{{ post.author }}</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i> Posted on {{ post.published_date }}</p>
-                <hr>
+
+{#                <i>Tagged under:#}
+{#                    {{ post.tags.all | join:", " }}#}
+{#                </i>#}
+{#                <hr>#}
+
                 <a href=" {% url 'view_post' slug=post.slug %}">
                     <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
                 </a>
@@ -62,12 +67,19 @@ South Natick Law | News &amp; Resources
 
             <!-- Pager -->
             <ul class="pager">
-                <li class="previous">
-                    <a href="#">&larr; Older</a>
+                {% if posts.has_next %}
+                    <li class="previous">
+                        <a href="?page={{ posts.next_page_number }}">&larr; Older</a>
+                    </li>
+                {% endif %}
+                <li class="current">
+                    Page {{ posts.number }} of {{ posts.paginator.num_pages }}
                 </li>
-                <li class="next">
-                    <a href="#">Newer &rarr;</a>
-                </li>
+                {% if posts.has_previous %}
+                    <li class="next">
+                        <a href="?page={{ posts.previous_page_number}}">Newer &rarr;</a>
+                    </li>
+                {% endif %}
             </ul>
 
         </div>
@@ -76,32 +88,35 @@ South Natick Law | News &amp; Resources
         <div class="col-md-4">
 
             <!-- Blog Categories Well -->
+{#            todo filtering blog list by category#}
             <div class="well">
                 <h4>Blog Categories</h4>
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
+                            {% for tag in tags %}
+                                <li><a href="#">{{ tag.name }}</a>
+                                </li>
+{#                                <li><a href="#">Category Name</a>#}
+{#                                </li>#}
+{#                                <li><a href="#">Category Name</a>#}
+{#                                </li>#}
+{#                                <li><a href="#">Category Name</a>#}
+{#                                </li>#}
+                            {% endfor %}
                         </ul>
                     </div>
                     <!-- /.col-lg-6 -->
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
+{#                            <li><a href="#">Category Name</a>#}
+{#                            </li>#}
+{#                            <li><a href="#">Category Name</a>#}
+{#                            </li>#}
+{#                            <li><a href="#">Category Name</a>#}
+{#                            </li>#}
+{#                            <li><a href="#">Category Name</a>#}
+{#                            </li>#}
                         </ul>
                     </div>
                     <!-- /.col-lg-6 -->
@@ -111,7 +126,7 @@ South Natick Law | News &amp; Resources
 
             <!-- Side Widget Well -->
             <div class="well">
-                <h4>Side Widget Well</h4>
+                <h4>Blog description</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
             </div>
 

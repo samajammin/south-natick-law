@@ -22,6 +22,7 @@ class Firm(models.Model):
 class Attorney(models.Model):
     first_name = models.CharField(max_length=120)
     last_name = models.CharField(max_length=120)
+    # slug = models.SlugField(max_length=200, unique=True)
     title = models.CharField(max_length=120)
     email = models.EmailField()
     phone_number = models.BigIntegerField(default=5086511000)
@@ -31,6 +32,11 @@ class Attorney(models.Model):
 
     def __unicode__(self):
         return u"{} {}".format(self.first_name, self.last_name)
+
+    # def save(self, *args, **kwargs):
+    #     if not self.slug:
+    #         self.slug = slugify(self.first_name)
+    #     super(Post, self).save(*args, **kwargs)
 
 
 # categories for blog post tags, attorney practice areas & contact form topic inqueries

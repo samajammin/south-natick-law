@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from website.forms import ContactForm, CommentForm
-from website.models import Contact, Post, Comment, PracticeArea
+from website.models import Contact, Post, Comment, PracticeArea, Attorney
 
 
 def index(request):
@@ -25,6 +25,7 @@ def blog(request):
     post_list = Post.objects.all()
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
+    authors = Attorney.objects.all()
 
     page = request.GET.get('page')
     try:
@@ -36,7 +37,7 @@ def blog(request):
         # If page is out of range (e.g. 9999), deliver last page of results.
         posts = paginator.page(paginator.num_pages)
 
-    return render(request, 'blog.html', {'posts': posts, 'tags': tags})
+    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
 
 # todo confirm its working
 def tag_index(request, slug):
@@ -44,6 +45,7 @@ def tag_index(request, slug):
     post_list = Post.objects.filter(tags=tag)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
+    authors = Attorney.objects.all()
 
     page = request.GET.get('page')
     try:
@@ -55,7 +57,26 @@ def tag_index(request, slug):
         # If page is out of range (e.g. 9999), deliver last page of results.
         posts = paginator.page(paginator.num_pages)
 
-    return render(request, 'blog.html', {'posts': posts, 'tags': tags})
+    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
+
+def author_index(request, first_name):
+    author = Attorney.objects.get(first_name=first_name)
+    post_list = Post.objects.filter(author = author)
+    paginator = Paginator(post_list, 3) # number of posts to show per page
+    tags = PracticeArea.objects.all()
+    authors = Attorney.objects.all()
+
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        posts = paginator.page(paginator.num_pages)
+
+    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
 
 def view_post(request, slug):
     post = Post.objects.get(slug=slug)

@@ -21,10 +21,27 @@ def profile(request, name):
 def aop(request):
     return render(request, 'areas-of-practice.html')
 
-# todo pagination
-# https://docs.djangoproject.com/en/1.7/topics/pagination/
 def blog(request):
     post_list = Post.objects.all()
+    paginator = Paginator(post_list, 3) # number of posts to show per page
+    tags = PracticeArea.objects.all()
+
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        posts = paginator.page(paginator.num_pages)
+
+    return render(request, 'blog.html', {'posts': posts, 'tags': tags})
+
+# todo confirm its working
+def tag_index(request, slug):
+    tag = PracticeArea.objects.get(slug=slug)
+    post_list = Post.objects.filter(tags=tag)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
 

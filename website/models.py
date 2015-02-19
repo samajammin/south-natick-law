@@ -18,6 +18,7 @@ class Firm(models.Model):
     def __unicode__(self):
         return u"{}".format(self.name)
 
+
 class Attorney(models.Model):
     first_name = models.CharField(max_length=120)
     last_name = models.CharField(max_length=120)
@@ -31,24 +32,36 @@ class Attorney(models.Model):
     def __unicode__(self):
         return u"{} {}".format(self.first_name, self.last_name)
 
+
 # categories for blog post tags, attorney practice areas & contact form topic inqueries
 class PracticeArea(models.Model):
-    name = models.CharField(max_length=120, unique=True)
+    name = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=150, unique=True)
     description = models.TextField()
     # posts = models.ManyToManyField(Post, related_name='practice_areas')
     attorneys = models.ManyToManyField(Attorney, related_name='practice_areas')
 
+    def get_absolute_url(self):
+        return reverse('tag_index', kwargs={'slug': self.slug})
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super(PracticeArea, self).save(*args, **kwargs)
+
     def __unicode__(self):
         return u"{}".format(self.name)
+
 
 class PostQuerySet(models.QuerySet):
     def published(self):
         return self._filter(published = True)
 
+
 class Post(models.Model):
-    title = models.CharField(max_length=120)
+    title = models.CharField(max_length=150)
     body = MarkdownField()
-    slug = models.SlugField(max_length=150, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(Attorney, related_name='posts')
     publish = models.BooleanField(default=True)
     published_date = models.DateField(auto_now_add=True)
@@ -70,9 +83,10 @@ class Post(models.Model):
         return u"{}".format(self.title)
 
     class Meta:
-        verbose_name = 'Blog Entry'
-        verbose_name_plural = 'Blog Entries'
+        verbose_name = 'Blog Post'
+        verbose_name_plural = 'Blog Posts'
         ordering = ['-published_date']
+
 
 class Contact(models.Model):
     first_name = models.CharField(max_length=20)
@@ -84,6 +98,7 @@ class Contact(models.Model):
     description = models.TextField(blank=True)
     def __unicode__(self):
         return u"{}".format(self.email)
+
 
 class Comment(models.Model):
     first_name = models.CharField(max_length=120)

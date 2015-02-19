@@ -28,7 +28,10 @@ urlpatterns = patterns('',
     url(r'^blog$', 'website.views.blog', name='blog'),
     # url(r'^blog/(?P<post_id>\w+)/$', 'website.views.view_post', name='view_post'),
 
+    url(r'^blog/tag/(?P<slug>\S+)/$', 'website.views.tag_index', name='tag_index'),
     url(r'^blog/(?P<slug>\S+)/$', 'website.views.view_post', name='view_post'),
+
+
 
     # url(r'^about$', 'website.views.about', name='about'),
     # url(r'^resources/', include('resources.urls')),

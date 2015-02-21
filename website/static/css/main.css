@@ -23,16 +23,31 @@
 	padding: 30px 20px 20px 20px;
 }
 
+body {
+	background-color: #F2F2F2;
+}
+
+h3, .h3 {
+	font-size: 24px;
+	color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+	background-color: #4F6E91;
+}
+
+
 /*todo jumbotron editing*/
-/*.jumbotron {*/
-	/*background-size: cover;*/
+#hero {
+	background-size: cover;
 	/*background-image: url("../img/South_Natick_Law_home.png");*/
-/*}*/
+	background-image: url("../img/library.jpg");
+}
 
-/*.jumbotron p{*/
-	/*color: #ffffff;*/
-/*}*/
+.jumbotron p{
+	color: #ffffff;
+}
 
-/*.jumbotron h1{*/
-	/*color: #ffffff;*/
-/*}*/
+.jumbotron h1{
+	color: #ffffff;
+}

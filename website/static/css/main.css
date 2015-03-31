@@ -54,7 +54,7 @@ body {
 }
 
 #jumbo-box {
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .footer.well {
@@ -85,6 +85,10 @@ color: #eeeeee;
 .navbar-default {
 background-color: #4F6E91;
 border-color: #e7e7e7;
+}
+
+#tint {
+      background-color: rgba(0,0,0,0.4);
 }
 
 /*palettes*/

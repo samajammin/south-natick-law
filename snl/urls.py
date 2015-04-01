@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^newbase$', 'website.views.newbase', name='newbase'),
     url(r'^newhome$', 'website.views.newhome', name='newhome'),
     url(r'^newabout$', 'website.views.newabout', name='newabout'),
+    url(r'^newcontact$', 'website.views.newcontact', name='newcontact'),
 
 
     url(r'^about$', 'website.views.about', name='about'),

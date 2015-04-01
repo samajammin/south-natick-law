@@ -45,10 +45,11 @@ Typography
 ========================================================================== */
 /* * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome. */
- 
-h1 { font-size: 2em; margin: 0.67em 0; color: #353535; }
-h2 { font-size: 1.5em; margin: 0.83em 0; }
-h3 { font-size: 1.17em; margin: 1em 0; }
+
+/*todo fill h1*/
+h2 { font-size: 2em; margin: 0.67em 0; color: #353535; }
+h3 { font-size: 1.5em; margin: 0.83em 0; }
+/*h3 { font-size: 1.17em; margin: 1em 0; }*/
 h4 { font-size: 1em; margin: 1.33em 0; }
 h5 { font-size: 0.83em; margin: 1.67em 0; }
 h6 { font-size: 0.75em; margin: 2.33em 0; }
@@ -80,7 +81,7 @@ sub { bottom: -0.25em; }
 Lists
 ========================================================================== */
 /* * Addresses margins set differently in IE 6/7. */
- 
+
 dl, menu, ol, ul { margin: 1em 0; }
 dd { margin: 0 0 0 40px; }
 /* * Addresses paddings set differently in IE 6/7. */
@@ -92,7 +93,7 @@ Embedded content
 ========================================================================== */
 /* * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
 * 2. Improves image quality when scaled in IE 7. */
- 
+
 img { border: 0; /* 1 */
 -ms-interpolation-mode: bicubic; /* 2 */ }
 /* * Corrects overflow displayed oddly in IE 9. */
@@ -101,13 +102,13 @@ svg:not(:root) { overflow: hidden; }
 Figures
 ========================================================================== */
 /* * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11. */
- 
+
 figure { margin: 0; }
 /* ==========================================================================
 Forms
 ========================================================================== */
 /* * Corrects margin displayed oddly in IE 6/7. */
- 
+
 form { margin: 0; }
 /* * Define consistent border, margin, and padding. */
 fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
@@ -174,8 +175,8 @@ Global Styles
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
-h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
-h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px auto; }
+h3 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
+h3::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px auto; }
 .section-padding { padding: 90px 0 100px }
 .dark-bg { background: #f3f5f8; }
 .light-bg { background-color: #fff; }
@@ -223,7 +224,7 @@ Intro
 ========================================================================== */
 .intro { background: #f3f5f8; }
 .intro p { margin: 50px 0 0; }
-h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
+h2.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 /* ==========================================================================
 Features
 ========================================================================== */
@@ -240,8 +241,8 @@ iPhone Section
 Swag
 ========================================================================== */
 .swag { background: url('../img/plants-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
-.swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
-.swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
+.swag h2 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag h2 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: rgba(61, 201, 179, 1); }
 /* ==========================================================================
@@ -268,8 +269,8 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 Subscribe
 ========================================================================== */
 .subscribe { background: url('../img/keyboard-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 120px 0 140px; }
-.subscribe h1 { color: #fff; margin-bottom: 40px; }
-.subscribe h1 span { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; margin-top: 20px; letter-spacing: 1px; }
+.subscribe h2 { color: #fff; margin-bottom: 40px; }
+.subscribe h2 span { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; margin-top: 20px; letter-spacing: 1px; }
 .subscribe input[type=text] { background-color: rgba(255, 255, 255, 0.1); border: solid 1px #fff; padding: 20px; width: 30%; color: #fff; }
 .subscribe input[type=submit] { background: rgba(61, 201, 179, 0.5); border: solid 1px rgba(61, 201, 179, 0.5); padding: 20px; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 .subscribe input[type=submit]:hover { background: rgba(61, 201, 179, 1); border: solid 1px rgba(61, 201, 179, 1); color: #fff; }
@@ -295,8 +296,8 @@ Contact
 .up-btn { width: 50px; height: 50px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.5); display: block; margin: 0 auto; color: #fff; font-size: 18px; line-height: 46px; text-align: center; position: absolute; top: -26px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
 .up-btn:hover, up-btn:focus { color: #fff; background: rgba(61, 201, 179, 1); }
 .contact-details { margin: 70px 0; }
-.contact-details h2 { font-size: 20px; }
-.contact-details h2 span { display: block; color: #3dc9b3; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
+.contact-details h3 { font-size: 20px; }
+.contact-details h3 span { display: block; color: #3dc9b3; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
 .contact-wrap { position: relative; }
 /* ==========================================================================
 Footer

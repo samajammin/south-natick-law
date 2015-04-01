@@ -11,6 +11,9 @@ from website.models import Contact, Post, Comment, PracticeArea, Attorney
 def index(request):
     return render(request, 'index.html')
 
+def newindex(request):
+    return render(request, 'newindex.html')
+
 def about(request):
     return render(request, 'about/about.html')
 

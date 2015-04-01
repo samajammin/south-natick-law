@@ -11,7 +11,13 @@ from website import feed
 
 urlpatterns = patterns('',
     url(r'^$', 'website.views.index', name='index'),
+
     url(r'^new$', 'website.views.newindex', name='newindex'),
+    url(r'^newbase$', 'website.views.newbase', name='newbase'),
+    url(r'^newhome$', 'website.views.newhome', name='newhome'),
+    url(r'^newabout$', 'website.views.newabout', name='newabout'),
+
+
     url(r'^about$', 'website.views.about', name='about'),
 
     # catch name as a parameter & pass into view for url assignment

@@ -11,8 +11,16 @@ from website.models import Contact, Post, Comment, PracticeArea, Attorney
 def index(request):
     return render(request, 'index.html')
 
+
 def newindex(request):
     return render(request, 'newindex.html')
+def newbase(request):
+    return render(request, 'new-base.html')
+def newhome(request):
+    return render(request, 'new-home.html')
+def newabout(request):
+    return render(request, 'new-about.html')
+
 
 def about(request):
     return render(request, 'about/about.html')

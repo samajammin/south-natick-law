@@ -4,11 +4,11 @@
     <list default="true" id="272b08fb-8d07-4f4c-8564-4f8b8e4bc1f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/about/about.html" afterPath="$PROJECT_DIR$/website/templates/about/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/areas-of-practice.html" afterPath="$PROJECT_DIR$/website/templates/areas-of-practice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/contact.html" afterPath="$PROJECT_DIR$/website/templates/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/custom.css" afterPath="$PROJECT_DIR$/website/static/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/new-about.html" afterPath="$PROJECT_DIR$/website/templates/new-about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/new-base.html" afterPath="$PROJECT_DIR$/website/templates/new-base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/new-contact.html" afterPath="$PROJECT_DIR$/website/templates/new-contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/about/caren-schindel.html" afterPath="$PROJECT_DIR$/website/templates/about/caren-schindel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/about/george-richards.html" afterPath="$PROJECT_DIR$/website/templates/about/george-richards.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/about/james-mclaughlin.html" afterPath="$PROJECT_DIR$/website/templates/about/james-mclaughlin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/new-home.html" afterPath="$PROJECT_DIR$/website/templates/new-home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/about/richard-biller.html" afterPath="$PROJECT_DIR$/website/templates/about/richard-biller.html" />
     </list>
     <ignored path="snl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="areas-of-practice.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="areas-of-practice.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/areas-of-practice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.051987767" vertical-offset="2159" max-vertical-offset="3043">
-              <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="3043">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
       <file leaf-file-name="new-home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/new-home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5576925" vertical-offset="561" max-vertical-offset="5848">
-              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="170" max-vertical-offset="5848">
+              <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -82,21 +82,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="2176">
-              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="35" />
+            <state vertical-scroll-proportion="-15.692307" vertical-offset="544" max-vertical-offset="2176">
+              <caret line="56" column="104" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="104" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/templates/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="36.307693" vertical-offset="1029" max-vertical-offset="1683">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="31" />
-              <folding>
-                <element signature="e#3466#3483#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +92,48 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/about/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2261">
-              <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2261">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="george-richards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/about/george-richards.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="986">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="caren-schindel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/about/caren-schindel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5" vertical-offset="77" max-vertical-offset="1020">
+              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="james-mclaughlin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/templates/about/james-mclaughlin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8180428" vertical-offset="196" max-vertical-offset="952">
+              <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="richard-biller.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/about/richard-biller.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5" vertical-offset="51" max-vertical-offset="1003">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -119,10 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/local_settings.py" />
-        <option value="$PROJECT_DIR$/website/templates/includes/blogroll.html" />
-        <option value="$PROJECT_DIR$/website/templates/includes/profile.html" />
-        <option value="$PROJECT_DIR$/website/templates/testimonials.html" />
         <option value="$PROJECT_DIR$/website/templates/resources.html" />
         <option value="$PROJECT_DIR$/website/templates/george.html" />
         <option value="$PROJECT_DIR$/website/templates/richard.html" />
@@ -162,14 +186,18 @@
         <option value="$PROJECT_DIR$/snl/urls.py" />
         <option value="$PROJECT_DIR$/website/views.py" />
         <option value="$PROJECT_DIR$/website/static/css/styles.css" />
-        <option value="$PROJECT_DIR$/website/templates/new-home.html" />
         <option value="$PROJECT_DIR$/website/templates/new-contact.html" />
         <option value="$PROJECT_DIR$/website/templates/contact.html" />
         <option value="$PROJECT_DIR$/website/templates/new-about.html" />
-        <option value="$PROJECT_DIR$/website/templates/about/about.html" />
         <option value="$PROJECT_DIR$/website/static/css/custom.css" />
         <option value="$PROJECT_DIR$/website/templates/new-base.html" />
         <option value="$PROJECT_DIR$/website/templates/areas-of-practice.html" />
+        <option value="$PROJECT_DIR$/website/templates/new-home.html" />
+        <option value="$PROJECT_DIR$/website/templates/about/about.html" />
+        <option value="$PROJECT_DIR$/website/templates/about/george-richards.html" />
+        <option value="$PROJECT_DIR$/website/templates/about/caren-schindel.html" />
+        <option value="$PROJECT_DIR$/website/templates/about/richard-biller.html" />
+        <option value="$PROJECT_DIR$/website/templates/about/james-mclaughlin.html" />
       </list>
     </option>
   </component>
@@ -699,13 +727,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/snl/lib/python2.7/site-packages/django_markdown/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21398601" vertical-offset="0" max-vertical-offset="715">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
@@ -780,20 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="918">
           <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/about/caren-schindel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/about/richard-biller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7307693" vertical-offset="40" max-vertical-offset="1190">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1006,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/about/george-richards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="697" max-vertical-offset="1921">
-          <caret line="55" column="124" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/new-about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11352254" vertical-offset="0" max-vertical-offset="2244">
@@ -1038,29 +1037,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/about/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2261">
-          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="36.307693" vertical-offset="1029" max-vertical-offset="1683">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="31" />
           <folding>
-            <element signature="e#3466#3483#0#HTML" expanded="true" />
+            <element signature="e#3466#3483#0#HTML" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="2176">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,6 +1051,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1700">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/areas-of-practice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="3043">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307" vertical-offset="544" max-vertical-offset="2176">
+          <caret line="56" column="104" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="104" />
           <folding />
         </state>
       </provider>
@@ -1082,16 +1081,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/new-home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5576925" vertical-offset="561" max-vertical-offset="5848">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="170" max-vertical-offset="5848">
+          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/areas-of-practice.html">
+    <entry file="file://$PROJECT_DIR$/website/templates/about/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.051987767" vertical-offset="2159" max-vertical-offset="3043">
-          <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2261">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/about/george-richards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="986">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/about/caren-schindel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="77" max-vertical-offset="1020">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/about/richard-biller.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="51" max-vertical-offset="1003">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/about/james-mclaughlin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8180428" vertical-offset="196" max-vertical-offset="952">
+          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding />
         </state>
       </provider>

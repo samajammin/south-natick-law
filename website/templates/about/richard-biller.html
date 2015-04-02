@@ -1,65 +1,54 @@
-{% extends "base.html" %}
+{% extends "new-base.html" %}
 {% load staticfiles %}
 
 {% block title %}
-Richard Biller | Natick MA Domestic Relations Attorney
+    Richard Biller | Natick MA Domestic Relations Attorney
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Richard Biller <small>Domestic Relations Attorney</small></h1>
-        </div>
-        <div class="col-md-4">
-            <img class="img-responsive" src="{% static "img/biller_full.png" %}" alt="Richard Biller">
-            <br>
-            <h3>Contact Details</h3>
-            <p><i class="fa fa-phone"></i>
-                <abbr title="Phone">P</abbr>: (508) 651-1000</p>
-            <p><i class="fa fa-envelope-o"></i>
-                <abbr title="Email">E</abbr>: <a href="mailto:rbiller@southnaticklaw.com">rbiller@southnaticklaw.com</a>
-            </p>
-            <p><i class="fa fa-clock-o"></i>
-                <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li>
-                    <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
 
-        </div>
-        <div class="col-md-8">
-            <p><em><strong>RICHARD C. BILLER, Esq.</strong></em> has been a member of the firm since 1995. He is a graduate of the University of Virginia School of Law and Sarah Lawrence College. Mr. Biller is a member of the Massachusetts Bar and is admitted to practice in the U.S. District Court of Massachusetts, the First Circuit Court of Appeals and The Supreme Court.</p>
-            <p>Mr. Biller is a member of the Family Law Section of the Massachusetts Bar Association, has been a frequent lecturer on Domestic Relations law for Massachusetts Legal Education and serves on the Board of Metrowest Legal Services. Mr. Biller has been an attorney for 25 years and his practice focuses on domestic relations and employment law.</p>
-        </div>
-
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Call to Action Section -->
-    <div class="well">
+<section class="section-padding">
+    <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <h4>Reach Caren directly at at cschindel@southnaticklaw.com or call her at her direct line:</h4>
+            <div class="col-lg-12">
+                <h1 class="page-header">Richard Biller <small>Domestic Relations Attorney</small></h1>
             </div>
             <div class="col-md-4">
-                <a class="btn btn-lg btn-primary btn-block" href="mailto:cshindel@southnaticklaw.com">Send Caren an Email</a>
-            </div>
-        </div>
-    </div>
+                <img class="img-responsive  img-rounded" src="{% static "img/biller_full.png" %}" alt="Richard Biller">
+                <br>
+                <h3>Contact Details</h3>
+                <p><i class="fa fa-phone"></i>
+                    <abbr title="Phone">P</abbr>: (508) 651-1000</p>
+                <p><i class="fa fa-envelope-o"></i>
+                    <abbr title="Email">E</abbr>: <a href="mailto:rbiller@southnaticklaw.com">rbiller@southnaticklaw.com</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i>
+                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
 
-    <hr>
+            </div>
+            <div class="col-md-8">
+                <p><em><strong>RICHARD C. BILLER, Esq.</strong></em> has been a member of the firm since 1995. He is a graduate of the University of Virginia School of Law and Sarah Lawrence College. Mr. Biller is a member of the Massachusetts Bar and is admitted to practice in the U.S. District Court of Massachusetts, the First Circuit Court of Appeals and The Supreme Court.</p>
+                <p>Mr. Biller is a member of the Family Law Section of the Massachusetts Bar Association, has been a frequent lecturer on Domestic Relations law for Massachusetts Legal Education and serves on the Board of Metrowest Legal Services. Mr. Biller has been an attorney for 25 years and his practice focuses on domestic relations and employment law.</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
 
 
 {% endblock %}

@@ -1,9 +1,51 @@
-{% extends "base.html" %}
+{% extends "new-base.html" %}
+{% load staticfiles %}
 
 {% block title %}
-James A. McLaughlin| Natick MA Domestic Relations Attorney
+    James A. McLaughlin| Natick MA Domestic Relations Attorney
 {% endblock %}
 
 {% block content %}
-<p><img style="margin-right: 10px; margin-bottom: 10px; float: left;" alt="South Natick Law - James A. McLaughlin, Esq." src="http://www.southnaticklaw.com/images/mclaughlin_full.png" height="241" width="360" /><em><strong>JAMES A. McLAUGHLIN, Esq.</strong></em> has been a member of the firm since 1980. He received his law degree from Suffolk University Law School and also has a Master's Degree in Taxation from Boston University. Mr. McLaughlin has served as law clerk to the Chief Justice of the Probate Courts and as Assistant Clerk for the Norfolk Probate and Family Court. His areas of specialization are domestic relations, tax and estate planning and real estate. He has lectured on Estate Planning for four years for Massachusetts Legal Education and taught Domestic Relations Law in the Paralegal Program at Bentley College.</p>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">James McLaughlin <small>Domestic Relations Law Attorney</small></h1>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive  img-rounded" src="{% static "img/mclaughlin_full.png" %}" alt="James McLaughlin">
+                    <br>
+                    <h3>Contact Details</h3>
+                    <p><i class="fa fa-phone"></i>
+                        <abbr title="Phone">P</abbr>: (508) 651-1000</p>
+                    <p><i class="fa fa-envelope-o"></i>
+                        <abbr title="Email">E</abbr>: <a href="mailto:jmclaughlin@southnaticklaw.com">jmclaughlin@southnaticklaw.com</a>
+                    </p>
+                    <p><i class="fa fa-clock-o"></i>
+                        <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                    <ul class="list-unstyled list-inline list-social-icons">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-8">
+                    <p><em><strong>JAMES A. McLAUGHLIN, Esq.</strong></em> has been a member of the firm since 1980. He received his law degree from Suffolk University Law School and also has a Master's Degree in Taxation from Boston University. Mr. McLaughlin has served as law clerk to the Chief Justice of the Probate Courts and as Assistant Clerk for the Norfolk Probate and Family Court. His areas of specialization are domestic relations, tax and estate planning and real estate. He has lectured on Estate Planning for four years for Massachusetts Legal Education and taught Domestic Relations Law in the Paralegal Program at Bentley College.</p>
+                </div>
+            </div>
+        <!-- /.row -->
+        </div>
+    </section>
+
 {% endblock %}

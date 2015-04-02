@@ -91,6 +91,10 @@
     padding-bottom: 20px;
 }
 
+#arrow-head-row {
+    margin-bottom: 30px;
+}
+
 /* Icon Hover Effects */
 /*.icon i {*/
 	/*color: #eea303;*/
@@ -113,8 +117,8 @@
 
 /* Effect 2a */
 /*todo change color on hover. tried both the div and the i, nothing changed*/
-.icon:hover i {
-	color: #967762;
+.icon:hover {
+	background: #967762;
 }
 
 /*.icon:hover:after i {*/
@@ -154,3 +158,7 @@ rgb(150,119,98)
 rgba(150,119,98, 1)
 button 3d shadow: #785f4e
 */
+
+.media .text-primary {
+  color: #242830;
+}

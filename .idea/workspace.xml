@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="272b08fb-8d07-4f4c-8564-4f8b8e4bc1f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/keyboard-bg.jpg" afterPath="$PROJECT_DIR$/website/static/img/keyboard-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/about/about.html" afterPath="$PROJECT_DIR$/website/templates/about/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/areas-of-practice.html" afterPath="$PROJECT_DIR$/website/templates/areas-of-practice.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/custom.css" afterPath="$PROJECT_DIR$/website/static/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/new-base.html" afterPath="$PROJECT_DIR$/website/templates/new-base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/new-home.html" afterPath="$PROJECT_DIR$/website/templates/new-home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/styles.css" afterPath="$PROJECT_DIR$/website/static/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="snl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,21 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new-contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/templates/new-contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1700">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="areas-of-practice.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/areas-of-practice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.75" vertical-offset="782" max-vertical-offset="3060">
-              <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+            <state vertical-scroll-proportion="-0.41975307" vertical-offset="153" max-vertical-offset="3315">
+              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -90,8 +81,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.269231" vertical-offset="3590" max-vertical-offset="5916">
-              <caret line="233" column="77" selection-start-line="233" selection-start-column="77" selection-end-line="233" selection-end-column="77" />
+            <state vertical-scroll-proportion="-8.384615" vertical-offset="870" max-vertical-offset="5916">
+              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -100,8 +91,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/static/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2737">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="2873">
+              <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -110,8 +101,8 @@
       <file leaf-file-name="new-base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/templates/new-base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36391437" vertical-offset="663" max-vertical-offset="2924">
-              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.4938838" vertical-offset="884" max-vertical-offset="2924">
+              <caret line="71" column="94" selection-start-line="71" selection-start-column="94" selection-end-line="71" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -122,6 +113,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-149.07692" vertical-offset="0" max-vertical-offset="4046">
               <caret line="228" column="10" selection-start-line="228" selection-start-column="10" selection-end-line="228" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/about/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.320988" vertical-offset="0" max-vertical-offset="2278">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -184,17 +185,17 @@
         <option value="$PROJECT_DIR$/website/templates/new-contact.html" />
         <option value="$PROJECT_DIR$/website/templates/contact.html" />
         <option value="$PROJECT_DIR$/website/templates/new-about.html" />
-        <option value="$PROJECT_DIR$/website/templates/about/about.html" />
         <option value="$PROJECT_DIR$/website/templates/about/george-richards.html" />
         <option value="$PROJECT_DIR$/website/templates/about/caren-schindel.html" />
         <option value="$PROJECT_DIR$/website/templates/about/richard-biller.html" />
         <option value="$PROJECT_DIR$/website/templates/about/james-mclaughlin.html" />
         <option value="$PROJECT_DIR$/website/templates/blog.html" />
         <option value="$PROJECT_DIR$/website/templates/view_post.html" />
-        <option value="$PROJECT_DIR$/website/templates/areas-of-practice.html" />
-        <option value="$PROJECT_DIR$/website/static/css/styles.css" />
         <option value="$PROJECT_DIR$/website/templates/new-home.html" />
+        <option value="$PROJECT_DIR$/website/static/css/styles.css" />
         <option value="$PROJECT_DIR$/website/static/css/custom.css" />
+        <option value="$PROJECT_DIR$/website/templates/areas-of-practice.html" />
+        <option value="$PROJECT_DIR$/website/templates/about/about.html" />
         <option value="$PROJECT_DIR$/website/templates/new-base.html" />
       </list>
     </option>
@@ -282,6 +283,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1028,14 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/about/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23394495" vertical-offset="0" max-vertical-offset="2261">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/static/img/hero-bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1073,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/areas-of-practice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.75" vertical-offset="782" max-vertical-offset="3060">
-          <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="3060">
@@ -1097,26 +1104,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/static/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/website/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2737">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.384615" vertical-offset="870" max-vertical-offset="5916">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/static/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/website/static/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.269231" vertical-offset="3590" max-vertical-offset="5916">
-          <caret line="233" column="77" selection-start-line="233" selection-start-column="77" selection-end-line="233" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="2873">
+          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/areas-of-practice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.41975307" vertical-offset="153" max-vertical-offset="3315">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/about/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.320988" vertical-offset="0" max-vertical-offset="2278">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/new-base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36391437" vertical-offset="663" max-vertical-offset="2924">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.4938838" vertical-offset="884" max-vertical-offset="2924">
+          <caret line="71" column="94" selection-start-line="71" selection-start-column="94" selection-end-line="71" selection-end-column="94" />
           <folding />
         </state>
       </provider>

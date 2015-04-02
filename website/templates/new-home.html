@@ -48,24 +48,39 @@
                 <h2 class="arrow">Love what you do, and you'll do it well</h2>
                 <div class="features-wrapper">
                   <div class="col-md-4 wp2">
+{#                      todo where is link better? icon or favicon?#}
+                      <a href="{% url 'about' %}">
                     <div class="icon">
+{#                        <a href="{% url 'about' %}">#}
                       <i class="fa fa-university shadow"></i>
+{#                            </a>#}
                     </div>
-                        <h3>Meet the Team</h3>
+{#                          </a>#}
+                        <a href="{% url 'about' %}">
+                            <h3>Meet the Team</h3>
+                        </a>
                         <p>Our attorneys possess over 100 years of combined experience...</p>
                   </div>
                   <div class="col-md-4 wp2 delay-05s">
+                      <a href="{% url 'aop' %}">
                     <div class="icon">
                       <i class="fa fa-gavel shadow"></i>
                     </div>
+                      </a>
+                      <a href="{% url 'aop' %}">
                         <h3>Areas of Practice</h3>
+                      </a>
                         <p>Domestic relations, estate planning, real estate, probate, tax law and more...</p>
                   </div>
                   <div class="col-md-4 wp2 delay-1s">
+                      <a href="{% url 'blog' %}">
                     <div class="icon">
                       <i class="fa fa-book shadow"></i>
                     </div>
+                      </a>
+                      <a href="{% url 'blog' %}">
                         <h3>Resources</h3>
+                      </a>
                         <p>Not sure where to begin? Learn what questions to ask...</p>
                   </div>
                   <div class="clearfix"></div>

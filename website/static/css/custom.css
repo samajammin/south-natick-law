@@ -85,3 +85,46 @@
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
+/* Icon Hover Effects */
+/*.icon i {*/
+	/*color: #eea303;*/
+	/*box-shadow: 0 0 0 3px #fff;*/
+	/*-webkit-transition: color 0.3s;*/
+	/*-moz-transition: color 0.3s;*/
+	/*transition: color 0.3s;*/
+/*}*/
+
+/*.icon:after i {*/
+	/*top: -2px;*/
+	/*left: -2px;*/
+	/*padding: 2px;*/
+	/*z-index: -1;*/
+	/*background: #fff;*/
+	/*-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;*/
+	/*-moz-transition: -moz-transform 0.2s, opacity 0.2s;*/
+	/*transition: transform 0.2s, opacity 0.2s;*/
+/*}*/
+
+/* Effect 2a */
+/*todo change color on hover. tried both the div and the i, nothing changed*/
+.icon:hover div {
+	color: black;
+}
+
+/*.icon:hover:after i {*/
+	/*-webkit-transform: scale(0.85);*/
+	/*-moz-transform: scale(0.85);*/
+	/*-ms-transform: scale(0.85);*/
+	/*transform: scale(0.85);*/
+/*}*/
+
+/*his colors:
+
+Green: #3DC9B3
+Dark: #242830
+
+Dark: #3C4650
+Brown: #967762
+
+*/

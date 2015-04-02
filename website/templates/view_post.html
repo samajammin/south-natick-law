@@ -1,227 +1,232 @@
-{% extends "base.html" %}
+{% extends "new-base.html" %}
 {% load django_markdown %}
 {#{% load markdown_deux_tags %}#}
 {% load bootstrap %}
 
 {% block title %}
-South Natick Law | {{ post.title }}
+    South Natick Law | {{ post.title }}
 {% endblock %}
 
 {# todo page formatting... post body#}
 {##}
 {% block content %}
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">{{ post.title }}
-                    <small>by <a href="{% url 'profile' post.author.first_name %}">{{ post.author }}</a>
-                    </small>
-                </h1>
+
+<section class="section-padding">
+    <div class="container">
+            <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">{{ post.title }}
+                        <small>by <a href="{% url 'profile' post.author.first_name %}">{{ post.author }}</a>
+                        </small>
+                    </h1>
+                </div>
             </div>
+            <!-- /.row -->
+
+            <!-- Content Row -->
+            <div class="row">
+
+                <!-- Blog Post Content Column -->
+                <div class="col-lg-8">
+
+                    <!-- Date/Time -->
+                    <p><i class="fa fa-clock-o"></i> Posted on {{ post.published_date }}</p>
+
+                    <i>Tagged under:
+                        {{ post.tags.all | join:", " }}
+                    </i>
+                    <hr>
+
+                    <!-- Preview Image -->
+                    <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                    <hr>
+
+                    <!-- Post Content -->
+                    <p>{{ post.body|markdown}}</p>
+                    <hr>
+
+                <ul class="pager">
+                    <li class="previous">
+                        <a href="#">&larr; Older</a>
+                    </li>
+                    <li class="next">
+                        <a href="#">Newer &rarr;</a>
+                    </li>
+                </ul>
+
+                    <!-- Blog Comments -->
+
+                    <!-- Comments Form -->
+    {#            todo comment form#}
+
+    {#            my form#}
+    {#                {% if comments|length > 0 %}#}
+    {#                <h4>View comments:</h4>#}
+    {#                {% for comment in comments %}#}
+    {#                {% if comment.post == post %}#}
+    {#                <dl>#}
+    {#                <dt><b>{{ comment.first_name }} {{ comment.last_name }}</b></dt>#}
+    {#                <dt><i>{{ comment.submission_date }}</i></dt>#}
+    {#                <dd>{{ comment.body }}</dd>#}
+    {#                #}
+    {#                </dl>#}
+    {#                {% endif %}#}
+    {#                {% endfor %}#}
+    {#                {% endif %}#}
+    {#                #}
+    {#                <h4>Join the conversation!</h4>#}
+    {#                #}
+    {#                <form method="POST">#}
+    {#                {% csrf_token %}#}
+    {#                {{ comment_form | bootstrap }}#}
+    {#                <input type="submit" value="Submit comment">#}
+    {#                </form>#}
+
+    {#            bootstrap form#}
+
+    {#                <div class="well">#}
+    {#                    <h4>Leave a Comment:</h4>#}
+    {#                    <form role="form">#}
+    {#                        <div class="form-group">#}
+    {#                            <textarea class="form-control" rows="3"></textarea>#}
+    {#                        </div>#}
+    {#                        <button type="submit" class="btn btn-primary">Submit</button>#}
+    {#                    </form>#}
+    {#                </div>#}
+    {##}
+
+    {##}
+    {#                <hr>#}
+    {##}
+    {#                <!-- Posted Comments -->#}
+    {##}
+    {#                <!-- Comment -->#}
+    {#                <div class="media">#}
+    {#                    <a class="pull-left" href="#">#}
+    {#                        <img class="media-object" src="http://placehold.it/64x64" alt="">#}
+    {#                    </a>#}
+    {#                    <div class="media-body">#}
+    {#                        <h4 class="media-heading">Start Bootstrap#}
+    {#                            <small>August 25, 2014 at 9:30 PM</small>#}
+    {#                        </h4>#}
+    {#                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
+    {#                    </div>#}
+    {#                </div>#}
+    {##}
+    {#                <!-- Comment -->#}
+    {#                <div class="media">#}
+    {#                    <a class="pull-left" href="#">#}
+    {#                        <img class="media-object" src="http://placehold.it/64x64" alt="">#}
+    {#                    </a>#}
+    {#                    <div class="media-body">#}
+    {#                        <h4 class="media-heading">Start Bootstrap#}
+    {#                            <small>August 25, 2014 at 9:30 PM</small>#}
+    {#                        </h4>#}
+    {#                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
+    {#                        <!-- Nested Comment -->#}
+    {#                        <div class="media">#}
+    {#                            <a class="pull-left" href="#">#}
+    {#                                <img class="media-object" src="http://placehold.it/64x64" alt="">#}
+    {#                            </a>#}
+    {#                            <div class="media-body">#}
+    {#                                <h4 class="media-heading">Nested Start Bootstrap#}
+    {#                                    <small>August 25, 2014 at 9:30 PM</small>#}
+    {#                                </h4>#}
+    {#                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <!-- End Nested Comment -->#}
+    {#                    </div>#}
+    {#                    <br>#}
+    {#                </div>#}
+    {##}
+                </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+    {#            todo filtering blog list by category#}
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                {% for tag in tags %}
+    {#                                 todo confirm this is setup correctly for tag_index view#}
+                                    <li><a href="{% url 'tag_index' slug=tag.slug %}">{{ tag.name }}</a>
+                                    </li>
+    {#                                <li><a href="#">Category Name</a>#}
+    {#                                </li>#}
+    {#                                <li><a href="#">Category Name</a>#}
+    {#                                </li>#}
+    {#                                <li><a href="#">Category Name</a>#}
+    {#                                </li>#}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Blog Contributors Well -->
+    {#            todo filtering blog list by category#}
+                <div class="well">
+                    <h4>Blog Authors</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                {% for author in authors %}
+                                    <li><a href="{% url 'author_index' slug=author.slug%}">{{ author}}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+    {#                            <li><a href="#">Category Name</a>#}
+    {#                            </li>#}
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Blog description</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div>
+
+            </div>
+
         </div>
         <!-- /.row -->
-
-        <!-- Content Row -->
-        <div class="row">
-
-            <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
-
-                <!-- Date/Time -->
-                <p><i class="fa fa-clock-o"></i> Posted on {{ post.published_date }}</p>
-
-                <i>Tagged under:
-                    {{ post.tags.all | join:", " }}
-                </i>
-                <hr>
-
-                <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-                <hr>
-
-                <!-- Post Content -->
-                <p>{{ post.body|markdown}}</p>
-                <hr>
-
-            <ul class="pager">
-                <li class="previous">
-                    <a href="#">&larr; Older</a>
-                </li>
-                <li class="next">
-                    <a href="#">Newer &rarr;</a>
-                </li>
-            </ul>
-
-                <!-- Blog Comments -->
-
-                <!-- Comments Form -->
-{#            todo comment form#}
-
-{#            my form#}
-{#                {% if comments|length > 0 %}#}
-{#                <h4>View comments:</h4>#}
-{#                {% for comment in comments %}#}
-{#                {% if comment.post == post %}#}
-{#                <dl>#}
-{#                <dt><b>{{ comment.first_name }} {{ comment.last_name }}</b></dt>#}
-{#                <dt><i>{{ comment.submission_date }}</i></dt>#}
-{#                <dd>{{ comment.body }}</dd>#}
-{#                #}
-{#                </dl>#}
-{#                {% endif %}#}
-{#                {% endfor %}#}
-{#                {% endif %}#}
-{#                #}
-{#                <h4>Join the conversation!</h4>#}
-{#                #}
-{#                <form method="POST">#}
-{#                {% csrf_token %}#}
-{#                {{ comment_form | bootstrap }}#}
-{#                <input type="submit" value="Submit comment">#}
-{#                </form>#}
-
-{#            bootstrap form#}
-
-{#                <div class="well">#}
-{#                    <h4>Leave a Comment:</h4>#}
-{#                    <form role="form">#}
-{#                        <div class="form-group">#}
-{#                            <textarea class="form-control" rows="3"></textarea>#}
-{#                        </div>#}
-{#                        <button type="submit" class="btn btn-primary">Submit</button>#}
-{#                    </form>#}
-{#                </div>#}
-{##}
-
-{##}
-{#                <hr>#}
-{##}
-{#                <!-- Posted Comments -->#}
-{##}
-{#                <!-- Comment -->#}
-{#                <div class="media">#}
-{#                    <a class="pull-left" href="#">#}
-{#                        <img class="media-object" src="http://placehold.it/64x64" alt="">#}
-{#                    </a>#}
-{#                    <div class="media-body">#}
-{#                        <h4 class="media-heading">Start Bootstrap#}
-{#                            <small>August 25, 2014 at 9:30 PM</small>#}
-{#                        </h4>#}
-{#                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#                <!-- Comment -->#}
-{#                <div class="media">#}
-{#                    <a class="pull-left" href="#">#}
-{#                        <img class="media-object" src="http://placehold.it/64x64" alt="">#}
-{#                    </a>#}
-{#                    <div class="media-body">#}
-{#                        <h4 class="media-heading">Start Bootstrap#}
-{#                            <small>August 25, 2014 at 9:30 PM</small>#}
-{#                        </h4>#}
-{#                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
-{#                        <!-- Nested Comment -->#}
-{#                        <div class="media">#}
-{#                            <a class="pull-left" href="#">#}
-{#                                <img class="media-object" src="http://placehold.it/64x64" alt="">#}
-{#                            </a>#}
-{#                            <div class="media-body">#}
-{#                                <h4 class="media-heading">Nested Start Bootstrap#}
-{#                                    <small>August 25, 2014 at 9:30 PM</small>#}
-{#                                </h4>#}
-{#                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <!-- End Nested Comment -->#}
-{#                    </div>#}
-{#                    <br>#}
-{#                </div>#}
-{##}
-            </div>
-
-        <!-- Blog Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-            <!-- Blog Categories Well -->
-{#            todo filtering blog list by category#}
-            <div class="well">
-                <h4>Blog Categories</h4>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            {% for tag in tags %}
-{#                                 todo confirm this is setup correctly for tag_index view#}
-                                <li><a href="{% url 'tag_index' slug=tag.slug %}">{{ tag.name }}</a>
-                                </li>
-{#                                <li><a href="#">Category Name</a>#}
-{#                                </li>#}
-{#                                <li><a href="#">Category Name</a>#}
-{#                                </li>#}
-{#                                <li><a href="#">Category Name</a>#}
-{#                                </li>#}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-                        </ul>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                </div>
-                <!-- /.row -->
-            </div>
-
-            <!-- Blog Contributors Well -->
-{#            todo filtering blog list by category#}
-            <div class="well">
-                <h4>Blog Authors</h4>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            {% for author in authors %}
-                                <li><a href="{% url 'author_index' slug=author.slug%}">{{ author}}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-{#                            <li><a href="#">Category Name</a>#}
-{#                            </li>#}
-                        </ul>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                </div>
-                <!-- /.row -->
-            </div>
-
-            <!-- Side Widget Well -->
-            <div class="well">
-                <h4>Blog description</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-            </div>
-
-        </div>
-
     </div>
-    <!-- /.row -->
+</section>
 
-    <hr>
+        <hr>
 {% endblock %}

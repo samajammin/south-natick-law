@@ -1,5 +1,5 @@
 {% extends "new-base.html" %}
-{#{% load staticfiles %}#}
+{% load staticfiles %}
 
 {% block title %}
     South Natick Law | About Our Firm
@@ -15,90 +15,101 @@
               </div>
             </div>
             <div class="row">
-              <div class="team-wrapper">
-                <div id="teamSlider">
-                  <ul class="slides">
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="../static/img/team-01.png" alt="Team Member">
-                        <h2>Jon Snow</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="../static/img/team-02.png" alt="Team Member">
-                        <h2>Cersei Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="../static/img/team-03.png" alt="Team Member">
-                        <h2>Jamie Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="../static/img/team-01.png" alt="Team Member">
-                        <h2>Jon Snow</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="../static/img/team-02.png" alt="Team Member">
-                        <h2>Cersei Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="../static/img/team-03.png" alt="Team Member">
-                        <h2>Jamie Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                <div class="col-sm-12">
+                    <p>Our firm presently consists of five full time in-house attorneys: four shareholders and one associate. The firm maintains e-mail access, state-of-the-art computerized word processing, legal research and conveyancing systems with computerized access to the all the Registries of Deeds in Barnstable, Bristol, Worcester, Middlesex, Suffolk, Norfolk, Plymouth and Essex Counties. Each attorney has their own areas of specialization and all attorneys maintain and expand their areas of expertise by attending frequent continuing legal education courses and keeping active in various bar associations. As each advances within one's field, additional staff is employed to handle the case load as needed.</p>
                 </div>
-              </div>
             </div>
+            <div class="row" id="team-row">
+{#              <div class="team-wrapper">#}
+{#                <div id="teamSlider">#}
+{#                  <ul class="slides">#}
+{#                    <li>#}
+                      <div class="col-md-4 wp5">
+                          <img class="img-circle img-responsive img-center" src="{% static "img/mclaughlin_full.png" %}" alt="James McLaughlin">
+{#                        <img src="../static/img/team-01.png" alt="Team Member">#}
+                        <h2>Jon Snow</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-05s">
+{#                        <img src="../static/img/team-02.png" alt="Team Member">#}
+                          <img class="img-circle img-responsive img-center" src="{% static "img/richards_full.png" %}" alt="George L Richards III">
+                        <h2>Cersei Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-1s">
+                        <img src="../static/img/team-03.png" alt="Team Member">
+                        <h2>Jamie Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+{#                    </li>#}
+{#                    <li>#}
+                </div>
+                <div class="row" id="team-row">
+                      <div class="col-md-4 wp5">
+{#                        <img src="../static/img/team-01.png" alt="Team Member">#}
+                          <img class="img-circle img-responsive img-center" src=" {% static "img/biller_full.png" %}" alt="Richard Biller">
+                        <h2>Jon Snow</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-05s">
+{#                        <img src="../static/img/team-02.png" alt="Team Member">#}
+                          <img class="img-circle img-responsive img-center" src=" {% static "img/schindel_full.png" %}" alt="Caren Schindel">
+                        <h2>Cersei Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-1s">
+                        <img src="../static/img/team-03.png" alt="Team Member">
+                        <h2>Jamie Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+{#                    </li>#}
+{#                  </ul>#}
+                    </div>
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
           </div>
         </section>
 

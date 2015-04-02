@@ -1,5 +1,6 @@
 {% extends "new-base.html" %}
 {#{% load staticfiles %}#}
+{% load bootstrap %}
 
 {% block title %}
     South Natick Law | MetroWest Attorneys
@@ -50,25 +51,22 @@
                     <div class="icon">
                       <i class="fa fa-university shadow"></i>
                     </div>
-                    <h3>Digital Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                        <h3>Meet the Team</h3>
+                        <p>Our attorneys possess over 100 years of combined experience...</p>
                   </div>
                   <div class="col-md-4 wp2 delay-05s">
                     <div class="icon">
                       <i class="fa fa-gavel shadow"></i>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                        <h3>Areas of Practice</h3>
+                        <p>Domestic relations, estate planning, real estate, probate, tax law and more...</p>
                   </div>
                   <div class="col-md-4 wp2 delay-1s">
                     <div class="icon">
                       <i class="fa fa-book shadow"></i>
                     </div>
-                    <h3>Creative Direction</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
+                        <h3>Resources</h3>
+                        <p>Not sure where to begin? Learn what questions to ask...</p>
                   </div>
                   <div class="clearfix"></div>
                 </div>
@@ -76,45 +74,48 @@
             </div>
           </div>
         </section>
-        <section class="text-center" id="responsive">
-          <div class="container-fluid nopadding responsive-services">
-            <div class="wrapper">
-              <div class="iphone">
-                <div class="wp3"></div>
-              </div>
-              <div class="fluid-white"></div>
-            </div>
-            <div class="container designs">
-              <div class="row">
-                <div class="col-md-5 col-md-offset-7">
-                  <div id="servicesSlider">
-                    <ul class="slides">
-                      <li>
-                        <h2 class="arrow">Responsive Design Specialists</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>
-                        <p>
-                        Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>
-                        <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
-                      </li>
-                      <li>
-                        <h2 class="arrow">Bootstrap Professionals</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>
-                        <p>
-                        Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>
-                        <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+{#        <section class="text-center" id="responsive">#}
+{#          <div class="container-fluid nopadding responsive-services">#}
+{#            <div class="wrapper">#}
+{#              <div class="iphone">#}
+{#                <div class="wp3"></div>#}
+{#              </div>#}
+{#              <div class="fluid-white"></div>#}
+{#            </div>#}
+{#            <div class="container designs">#}
+{#              <div class="row">#}
+{#                <div class="col-md-5 col-md-offset-7">#}
+{#                  <div id="servicesSlider">#}
+{#                    <ul class="slides">#}
+{#                      <li>#}
+{#                        <h2 class="arrow">Responsive Design Specialists</h2>#}
+{#                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>#}
+{#                        <p>#}
+{#                        Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>#}
+{#                        <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>#}
+{#                      </li>#}
+{#                      <li>#}
+{#                        <h2 class="arrow">Bootstrap Professionals</h2>#}
+{#                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>#}
+{#                        <p>#}
+{#                        Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>#}
+{#                        <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>#}
+{#                      </li>#}
+{#                    </ul>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{#        </section>#}
+
+
         <section class="swag text-center">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
-                <h2>I got 99 Problems<span>but <em>design</em> 'aint one</span></h2>
+                <h2>Over 100 Years <span>of combined experience</span></h2>
                 <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
               </div>
             </div>
@@ -315,6 +316,7 @@
             </div>
           </div>
         </section>
+
         <section class="subscribe text-center">
           <div class="container">
             <h2><i class="fa fa-paper-plane"></i>
@@ -323,14 +325,23 @@
               <input type="text" name="" value="" placeholder="" required>
               <input type="submit" name="" value="Send">
             </form>
+{#              todo form integration on home page#}
+{#                <div class="col-md-12 col-sm-12">#}
+{#                        <form method="post">#}
+{#                            {% csrf_token %}#}
+{#                            {{ form }}#}
+{#                            <input type="submit">Get in Touch!>#}
+{#                        </form>#}
+{#                </div>#}
           </div>
         </section>
+
         <section class="dark-bg text-center section-padding contact-wrap" id="contact">
           <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h2 class="arrow">Drop us a line</h2>
+                <h2 class="arrow">Get in Touch</h2>
               </div>
             </div>
             <div class="row contact-details">
@@ -338,31 +349,33 @@
                 <div class="light-box box-hover">
                   <h3><i class="fa fa-home fa-2x"></i><span>Address</span></h3>
 {#                    <h3><i class="fa fa-map-marker"></i><span>Address</span></h3>#}
-                  <p>Level 6, 23 Pitt St, Sydney</p>
+                  <address>
+                      8E Pleasant Street, Natick, MA 01760
+                  </address>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h3><i class="fa fa-phone fa-2x"></i><span>Phone</span></h3>
 {#                    <h3><i class="fa fa-mobile"></i><span>Phone</span></h3>#}
-                  <p>+61 9 211 3747</p>
+                  <p>(508) 651-1000</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h3><i class="fa fa-envelope fa-2x"></i><span>Email</span></h3>
 {#                    <h3><i class="fa fa-paper-plane"></i><span>Email</span></h3>#}
-                  <p><a href="#">hey@halcyondays.com</a></p>
+                  <p><a href="mailto:info@southnaticklaw.com">info@southnaticklaw.com</a></p>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <ul class="social-buttons">
-                  <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/6380429" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" class="social-btn"><i class="fa fa-yelp"></i></a></li>
-                  <li><a href="#" class="social-btn"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="http://www.yelp.com/biz/south-natick-law-south-natick" class="social-btn"><i class="fa fa-yelp"></i></a></li>
+                  <li><a href="https://plus.google.com/109804537626517034946/about?hl=en" class="social-btn"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
               </div>
             </div>

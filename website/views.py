@@ -17,7 +17,32 @@ def newindex(request):
 def newbase(request):
     return render(request, 'new-base.html')
 def newhome(request):
-    return render(request, 'new-home.html')
+    # If the user is submitting the form
+    if request.method == "POST":
+        # Get the instance of the form filled with the submitted data
+        form = ContactForm(request.POST)
+        # Django will check the form's validity for you
+        if form.is_valid():
+            user = form.save()
+            text_content = 'Thank you, {}, for requesting a free consultation'.format(user.first_name)
+            html_content = '<h2>{}, thanks for requesting a free consultation!</h2> ' \
+                           '<div>One of our attorneys will connect with you shortly</div>'.format(user.first_name)
+            msg = EmailMultiAlternatives("{}'s Request with South Natick Law".format(user.first_name), text_content, settings.DEFAULT_FROM_EMAIL, [user.email])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+            request.session['contact_info'] = request.POST
+            # After saving, redirect the user to the confirmation page
+            return redirect("thanks.html")
+
+    # Else if the user is looking at the form page
+    else:
+        form = ContactForm()
+
+    contacts = Contact.objects.all()
+    data = {'form': form,
+            'contacts': contacts
+    }
+    return render(request, 'new-home.html', data)
 def newabout(request):
     return render(request, 'new-about.html')
 def newcontact(request):

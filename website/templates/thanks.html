@@ -1,15 +1,19 @@
-{% extends "base.html" %}
+{% extends "new-base.html" %}
 
 {% block title %}
 South Natick Law | Thank You
 {% endblock %}
 
 {% block content %}
-    <div class="alert alert-success">
-        <p>You succesfully submited your request!</p>
-    </div>
-    <h3>Thank you {{ contact_info.first_name }},</h3>
-    <p>We've sent a confirmation email to <strong>{{ contact_info.email }}</strong>.</p>
-    <p>One of our attorneys will reach out directly to set up a time to chat. We look forward to meeting you!</p>
-    <p>Best, <br> South Natick Law</p>
+    <section class="section-padding">
+        <div class="container">
+            <div class="alert alert-success text-center">
+                <h2>You've succesfully submited your request.</h2>
+            </div>
+            <p>Thank you {{ contact_info.first_name }},</p>
+            <p>We've sent a confirmation email to <strong>{{ contact_info.email }}</strong>. Please let us know if that address is incorrect.</p>
+            <p>One of our attorneys will reach out directly to set up a time to chat. We look forward to meeting you!</p>
+            <p>Best, <br> South Natick Law</p>
+        </div>
+    </section>
 {% endblock %}

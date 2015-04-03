@@ -43,7 +43,7 @@ html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgb
 html, button, input, select, textarea { font-family: 'Roboto Slab', sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 /*body { margin: 0; font-family: 'Varela Round', sans-serif; }*/
-body { margin: 0; font-family: 'Roboto Slab', sans-serif; }
+body { margin: 0; font-family: 'Roboto Slab', sans-serif; font-size: 16px;}
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -186,8 +186,9 @@ Global Styles
 ========================================================================== */
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #967762; text-decoration: none; }
-p { color: #717880; word-spacing: 1px; line-height: 25px; font-size: 14px; }
-h3 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
+/*p { color: #717880; word-spacing: 1px; line-height: 25px; font-size: 16px; }*/
+p { color: rgb(51, 51, 51); word-spacing: 1px; line-height: 25px; font-size: 16px; }
+h3 { font-size: 18px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h3::after { content: " "; border: solid 2px #967762; display: block; width: 35px; margin: 25px auto; }
 .section-padding { padding: 90px 0 100px }
 .dark-bg { background: #f3f5f8; }
@@ -226,7 +227,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 Hero
 ========================================================================== */
 .hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
+.hero h1 { font-size: 48px; letter-spacing: 8px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(150,119,98, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #785f4e; -moz-box-shadow: 0px 3px 0px 0px #785f4e; box-shadow: 0px 3px 0px 0px #785f4e; margin: 60px 0 0; font-weight: bold; }
@@ -239,7 +240,7 @@ Intro
 .intro { background: #f3f5f8; }
 .intro p { margin: 50px 0 0; }
 h1.arrow { font-size: 25px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
-h2.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
+h2.arrow { font-size: 18px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 /* ==========================================================================
 Features
 ========================================================================== */
@@ -269,7 +270,7 @@ Portfolio
 .effects .img:first-child { margin-left: -15px; }
 .effects .img:last-child { margin-right: 0; }
 .effects .img img { display: block; margin: 0; padding: 0; height: auto; }
-.overlay { display: block; position: absolute; z-index: 20; background: rgba(100, 194, 158, 0.8); overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
+.overlay { display: block; position: absolute; z-index: 20; background: rgba(60,70,80,.8); overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
 a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
 a.close-overlay.hidden { display: none; }
 a.expand { display: block; position: absolute; z-index: 100; text-align: center; color: #fff; font-weight: 600; font-size: 14px; text-transform: uppercase; line-height: 30px; }
@@ -340,4 +341,6 @@ Waypoints
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+.delay-15s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
+.delay-25s { animation-delay: 2s; -webkit-animation-delay: 2s; }
 .wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }

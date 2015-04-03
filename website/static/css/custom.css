@@ -165,6 +165,10 @@ rgba(150,119,98, 1)
 button 3d shadow: #785f4e
 */
 
-.media .text-primary {
+.text-primary {
   color: #242830;
+}
+
+button.learn-more-btn {
+    margin-top: 10px;
 }

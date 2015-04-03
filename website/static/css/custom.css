@@ -25,6 +25,13 @@
     color: #fff;
 }
 
+.navbar-custom .navbar-brand:hover {
+    outline: 0;
+    /*color: rgba(255,255,255,.8);*/
+    color: rgba(150,119,98, .9);
+    background-color: transparent;
+}
+
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
@@ -66,26 +73,6 @@
     color: #fff;
 }
 
-/*todo want this transition?*/
-
-/*@media(min-width:768px) {*/
-    /*.navbar-custom {*/
-        /*padding: 20px 0;*/
-        /*border-bottom: 0;*/
-        /*letter-spacing: 1px;*/
-        /*background: 0 0;*/
-        /*-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;*/
-        /*-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;*/
-        /*transition: background .5s ease-in-out,padding .5s ease-in-out;*/
-    /*}*/
-
-    /*.navbar-custom.top-nav-collapse {*/
-        /*padding: 0;*/
-        /*border-bottom: 1px solid rgba(255,255,255,.3);*/
-        /*background: #000;*/
-    /*}*/
-/*}*/
-
 #team-row {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -99,38 +86,32 @@
     margin-bottom: 30px;
 }
 
-/* Icon Hover Effects */
-/*.icon i {*/
-	/*color: #eea303;*/
-	/*box-shadow: 0 0 0 3px #fff;*/
-	/*-webkit-transition: color 0.3s;*/
-	/*-moz-transition: color 0.3s;*/
-	/*transition: color 0.3s;*/
-/*}*/
-
-/*.icon:after i {*/
-	/*top: -2px;*/
-	/*left: -2px;*/
-	/*padding: 2px;*/
-	/*z-index: -1;*/
-	/*background: #fff;*/
-	/*-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;*/
-	/*-moz-transition: -moz-transform 0.2s, opacity 0.2s;*/
-	/*transition: transform 0.2s, opacity 0.2s;*/
-/*}*/
-
-/* Effect 2a */
-/*todo change color on hover. tried both the div and the i, nothing changed*/
 .icon:hover {
 	background: #967762;
 }
 
-/*.icon:hover:after i {*/
-	/*-webkit-transform: scale(0.85);*/
-	/*-moz-transform: scale(0.85);*/
-	/*-ms-transform: scale(0.85);*/
-	/*transform: scale(0.85);*/
-/*}*/
+.text-primary {
+  color: #242830;
+}
+
+button.learn-more-btn {
+    margin-top: 10px;
+}
+
+span.roman {
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 28px;
+}
+
+i.roman {
+    z-index: -2;
+}
+
+div.roman {
+    margin-bottom: 20px;
+}
 
 /*his colors:
 
@@ -164,11 +145,3 @@ rgb(150,119,98)
 rgba(150,119,98, 1)
 button 3d shadow: #785f4e
 */
-
-.text-primary {
-  color: #242830;
-}
-
-button.learn-more-btn {
-    margin-top: 10px;
-}

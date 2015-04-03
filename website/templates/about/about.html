@@ -1,4 +1,6 @@
 {% extends "new-base.html" %}
+{% load staticfiles %}
+
 {% block title %}
     South Natick Law | About Our Firm
 {% endblock %}
@@ -25,7 +27,7 @@
 {#                    <li>#}
                       <div class="col-md-6 wp5">
                         <a href="{% url 'profile' 'james-mclaughlin'%}">
-                            <img class="img-circle img-responsive img-center center-block" src="{% static "img/mclaughlin_full.png" %}" alt="James McLaughlin">
+                            <img class="img-thumbnail img-responsive center-block" src="{% static "img/mclaughlin_full.png" %}" alt="James McLaughlin">
                         </a>
 {#                        <img src="../static/img/team-01.png" alt="Team Member">#}
                         <h2>James McLaughlin</h2>
@@ -41,7 +43,7 @@
                       <div class="col-md-6 wp5 delay-05s">
 {#                        <img src="../static/img/team-02.png" alt="Team Member">#}
                         <a href="{% url 'profile' 'george-richards'%}">
-                            <img class="img-circle img-responsive img-center center-block" src="{% static "img/richards_full.png" %}" alt="George L Richards III">
+                            <img class="img-thumbnail img-responsive center-block" src="{% static "img/richards_full.png" %}" alt="George L Richards III">
                         </a>
                         <h2>George Richards III</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -73,7 +75,7 @@
                       <div class="col-md-6 wp5">
 {#                        <img src="../static/img/team-01.png" alt="Team Member">#}
                         <a href="{% url 'profile' 'richard-biller'%}">
-                            <img class="img-circle img-responsive img-center center-block" src=" {% static "img/biller_full.png" %}" alt="Richard Biller">
+                            <img class="img-thumbnail img-responsive center-block" src=" {% static "img/biller_full.png" %}" alt="Richard Biller">
                         </a>
                         <h2>Richard Biller</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -88,7 +90,7 @@
                       <div class="col-md-6 wp5 delay-05s">
 {#                        <img src="../static/img/team-02.png" alt="Team Member">#}
                         <a href="{% url 'profile' 'caren-schindel'%}">
-                            <img class="img-circle img-responsive img-center center-block" src=" {% static "img/schindel_full.png" %}" alt="Caren Schindel">
+                            <img class="img-thumbnail img-responsive center-block" src=" {% static "img/schindel_full.png" %}" alt="Caren Schindel">
                         </a>
                         <h2>Caren Schindel</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>

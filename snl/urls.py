@@ -10,15 +10,7 @@ from website import feed
 # flatpages.register()
 
 urlpatterns = patterns('',
-    url(r'^$', 'website.views.index', name='index'),
-
-    url(r'^new$', 'website.views.newindex', name='newindex'),
-    url(r'^newbase$', 'website.views.newbase', name='newbase'),
-    url(r'^newhome$', 'website.views.newhome', name='newhome'),
-    url(r'^newabout$', 'website.views.newabout', name='newabout'),
-    url(r'^newcontact$', 'website.views.newcontact', name='newcontact'),
-
-
+    url(r'^$', 'website.views.home', name='home'),
     url(r'^about$', 'website.views.about', name='about'),
 
     # catch name as a parameter & pass into view for url assignment
@@ -29,8 +21,10 @@ urlpatterns = patterns('',
     # url(r'^about/george', 'website.views.george', name='george'),
 
     url(r'^areas-of-practice', 'website.views.aop', name='aop'),
-    url(r'^testimonials$', 'website.views.testimonials', name='testimonials'),
-    url(r'^faq$', 'website.views.faq', name='faq'),
+
+    # todo content for FAQs and testimonials
+    # url(r'^testimonials$', 'website.views.testimonials', name='testimonials'),
+    # url(r'^faq$', 'website.views.faq', name='faq'),
 
     # logic to match specific resources posts first
     url(r'^blog$', 'website.views.blog', name='blog'),
@@ -39,8 +33,6 @@ urlpatterns = patterns('',
     url(r'^blog/author/(?P<slug>\S+)/$', 'website.views.author_index', name='author_index'),
     url(r'^blog/tag/(?P<slug>\S+)/$', 'website.views.tag_index', name='tag_index'),
     url(r'^blog/(?P<slug>\S+)/$', 'website.views.view_post', name='view_post'),
-
-
 
     # url(r'^about$', 'website.views.about', name='about'),
     # url(r'^resources/', include('resources.urls')),

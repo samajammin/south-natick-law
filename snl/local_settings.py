@@ -9,6 +9,8 @@ import os
 #     }
 # }
 
+# todo encrypt password!
+
 if 'RDS_DB_NAME' in os.environ:
     DATABASES = {
         'default': {

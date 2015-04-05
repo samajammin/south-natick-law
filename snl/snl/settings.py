@@ -93,21 +93,6 @@ USE_TZ = True
 
 SITE_ID = 2
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
-
-# STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'website', 'static')
-
-STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
-STATIC_URL = '/static/'
-
-
-STATICFILES_DIRS = (
-
-)
-
 MARKDOWN_EDITOR_SKIN = 'simple'
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
@@ -117,6 +102,23 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'website/templates/'),
 )
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.7/howto/static-files/
+
+
+# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'website', 'static')
+# STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
+STATIC_URL = '/static/'
+
+
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'website', 'static'),
+)
+
+
 
 try:
     from local_settings import *

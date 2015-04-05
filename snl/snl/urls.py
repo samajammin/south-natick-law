@@ -2,12 +2,13 @@ from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
 from django.contrib import admin
-from website import feed
 
 # added for markdown
 # from django_markdown import flatpages
 # admin.autodiscover()
 # flatpages.register()
+from django.views.generic import TemplateView
+# from snl.website import feed
 
 urlpatterns = patterns('',
     url(r'^$', 'website.views.home', name='home'),
@@ -42,8 +43,9 @@ urlpatterns = patterns('',
     # url(r'form/$', 'website.views.comment_view', name='comment_view'),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^feed/$', feed.LatestPosts(), name='feed'),
+    # url(r'^feed/$', feed.LatestPosts(), name='feed'),
     url(r'^markdown/', include('django_markdown.urls')),
+    url(r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt'), name="robots"),
 )
 
 if settings.DEBUG:

@@ -24,7 +24,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['.southnaticklaw.com.']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

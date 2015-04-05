@@ -1,3 +1,4 @@
 Sitemap: http://www.southnaticklaw.com/sitemap.xml
 User-agent: *
+Disallow: /admin
 Disallow: /admin/

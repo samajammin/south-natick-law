@@ -21,7 +21,7 @@ urlpatterns = patterns('',
     # url(r'^about/caren', 'website.views.caren', name='caren'),
     # url(r'^about/george', 'website.views.george', name='george'),
 
-    url(r'^areas-of-practice', 'website.views.aop', name='aop'),
+    url(r'^areas-of-practice$', 'website.views.aop', name='aop'),
 
     # todo content for FAQs and testimonials
     # url(r'^testimonials$', 'website.views.testimonials', name='testimonials'),
@@ -37,8 +37,8 @@ urlpatterns = patterns('',
 
     # url(r'^about$', 'website.views.about', name='about'),
     # url(r'^resources/', include('resources.urls')),
-    url(r'^contact', 'website.views.contact', name='contact'),
-    url(r'^thanks', 'website.views.thanks', name='thanks'),
+    url(r'^contact$', 'website.views.contact', name='contact'),
+    url(r'^thanks$', 'website.views.thanks', name='thanks'),
 
     # url(r'form/$', 'website.views.comment_view', name='comment_view'),
 
@@ -46,6 +46,7 @@ urlpatterns = patterns('',
     # url(r'^feed/$', feed.LatestPosts(), name='feed'),
     url(r'^markdown/', include('django_markdown.urls')),
     url(r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt'), name="robots"),
+    url(r'^sitemap\.xml$', TemplateView.as_view(template_name='sitemap.xml'), name="sitemap"),
 )
 
 if settings.DEBUG:

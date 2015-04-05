@@ -106,8 +106,8 @@ TEMPLATE_DIRS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'website', 'static')
+# todo static file 500 error on local dev server
+# STATIC_ROOT = os.path.join(BASE_DIR, "website", "static")
 # STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")

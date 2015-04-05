@@ -1,0 +1,513 @@
+Retrieving logs...
+============= i-35bca0f6 ==============
+-------------------------------------
+/var/log/eb-version-deployment.log
+-------------------------------------
+2015-04-03 16:54:38,908 [INFO] Found the latest version manifest file <Key: elasticbeanstalk-us-west-1-313804292763,resources/environments/e-sbrrm2m6rp/_runtime/versions/manifest_1428079412832> from bucket elasticbeanstalk-us-west-1-313804292763 and prefix resources/environments/e-sbrrm2m6rp/_runtime/versions/
+2015-04-03 16:54:38,972 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-03 16:54:39,707 [INFO] Downloaded version label 1b05 from s3 key <Key: elasticbeanstalk-us-west-1-313804292763,resources/environments/e-sbrrm2m6rp/_runtime/_versions/aws-southnaticklaw/1b05>
+2015-04-03 17:03:55,302 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-sbrrm2m6rp/_runtime/versions/manifest_1428080629053
+2015-04-03 17:03:55,383 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-03 17:03:55,877 [INFO] Downloaded version label f95d from s3 key <Key: elasticbeanstalk-us-west-1-313804292763,resources/environments/e-sbrrm2m6rp/_runtime/_versions/aws-southnaticklaw/f95d>
+2015-04-03 17:31:10,971 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-sbrrm2m6rp/_runtime/versions/manifest_1428082226615
+2015-04-03 17:31:11,034 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-03 17:31:11,565 [INFO] Downloaded version label 4beb from s3 key <Key: elasticbeanstalk-us-west-1-313804292763,resources/environments/e-sbrrm2m6rp/_runtime/_versions/aws-southnaticklaw/4beb>
+2015-04-03 17:33:36,791 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-sbrrm2m6rp/_runtime/versions/manifest_1428082411915
+2015-04-03 17:33:36,845 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-03 17:33:37,257 [INFO] Downloaded version label b971 from s3 key <Key: elasticbeanstalk-us-west-1-313804292763,resources/environments/e-sbrrm2m6rp/_runtime/_versions/aws-southnaticklaw/b971>
+2015-04-03 17:42:06,478 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-sbrrm2m6rp/_runtime/versions/manifest_1428082921805
+2015-04-03 17:42:06,533 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-03 17:42:07,205 [INFO] Downloaded version label 902d from s3 key <Key: elasticbeanstalk-us-west-1-313804292763,resources/environments/e-sbrrm2m6rp/_runtime/_versions/aws-southnaticklaw/902d>
+
+
+
+-------------------------------------
+/opt/python/log/httpd.out
+-------------------------------------
+[Fri Apr 03 17:07:10.462806 2015] [so:warn] [pid 7086] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:10:27.182427 2015] [so:warn] [pid 7280] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:17:54.217866 2015] [so:warn] [pid 7575] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:20:17.429454 2015] [so:warn] [pid 7754] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:23:30.686523 2015] [so:warn] [pid 7940] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:26:39.205137 2015] [so:warn] [pid 8130] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:44:41.280746 2015] [so:warn] [pid 32122] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:46:54.210432 2015] [so:warn] [pid 32307] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:08:58.489780 2015] [so:warn] [pid 32675] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:10:54.972103 2015] [so:warn] [pid 396] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:16:25.591689 2015] [so:warn] [pid 627] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:18:53.558727 2015] [so:warn] [pid 808] AH01574: module wsgi_module is already loaded, skipping
+
+
+
+-------------------------------------
+/var/log/httpd/error_log
+-------------------------------------
+[Fri Apr 03 17:17:54.249879 2015] [lbmethod_heartbeat:notice] [pid 7575] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 17:17:54.250000 2015] [:warn] [pid 7575] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 17:17:54.250017 2015] [:warn] [pid 7575] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 17:17:54.318919 2015] [mpm_prefork:notice] [pid 7575] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 17:17:54.318986 2015] [core:notice] [pid 7575] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 17:17:56.920620 2015] [:error] [pid 7579] [client 127.0.0.1:45795] Target WSGI script not found or unable to stat: /opt/python/current/app/south-natick-law
+[Fri Apr 03 17:20:16.326405 2015] [mpm_prefork:notice] [pid 7575] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 17:20:17.436599 2015] [suexec:notice] [pid 7754] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 17:20:17.458778 2015] [so:warn] [pid 7754] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:20:17.460837 2015] [auth_digest:notice] [pid 7754] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 17:20:17.461864 2015] [lbmethod_heartbeat:notice] [pid 7754] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 17:20:17.461986 2015] [:warn] [pid 7754] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 17:20:17.462004 2015] [:warn] [pid 7754] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 17:20:17.529378 2015] [mpm_prefork:notice] [pid 7754] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 17:20:17.529462 2015] [core:notice] [pid 7754] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 17:20:20.142272 2015] [:error] [pid 7758] [client 127.0.0.1:45810] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 17:23:29.585053 2015] [mpm_prefork:notice] [pid 7754] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 17:23:30.693983 2015] [suexec:notice] [pid 7940] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 17:23:30.715977 2015] [so:warn] [pid 7940] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:23:30.718138 2015] [auth_digest:notice] [pid 7940] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 17:23:30.719201 2015] [lbmethod_heartbeat:notice] [pid 7940] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 17:23:30.719323 2015] [:warn] [pid 7940] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 17:23:30.719341 2015] [:warn] [pid 7940] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 17:23:30.794918 2015] [mpm_prefork:notice] [pid 7940] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 17:23:30.794995 2015] [core:notice] [pid 7940] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 17:23:33.395784 2015] [:error] [pid 7944] [client 127.0.0.1:45828] Target WSGI script not found or unable to stat: /opt/python/current/app/south-natick-law
+[Fri Apr 03 17:26:38.102127 2015] [mpm_prefork:notice] [pid 7940] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 17:26:39.213999 2015] [suexec:notice] [pid 8130] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 17:26:39.236256 2015] [so:warn] [pid 8130] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:26:39.238395 2015] [auth_digest:notice] [pid 8130] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 17:26:39.239462 2015] [lbmethod_heartbeat:notice] [pid 8130] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 17:26:39.239572 2015] [:warn] [pid 8130] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 17:26:39.239589 2015] [:warn] [pid 8130] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 17:26:39.312305 2015] [mpm_prefork:notice] [pid 8130] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 17:26:39.312380 2015] [core:notice] [pid 8130] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 17:26:41.912530 2015] [:error] [pid 8134] [client 127.0.0.1:45845] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 17:29:41.368678 2015] [:error] [pid 8135] [client 172.31.27.42:5920] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 17:32:13.033151 2015] [:error] [pid 8135] [client 172.31.27.42:5963] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 17:36:55.495183 2015] [:error] [pid 8232] [client 172.31.27.42:6057] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 17:44:40.177683 2015] [mpm_prefork:notice] [pid 8130] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 17:44:41.289321 2015] [suexec:notice] [pid 32122] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 17:44:41.310907 2015] [so:warn] [pid 32122] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:44:41.312911 2015] [auth_digest:notice] [pid 32122] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 17:44:41.313928 2015] [lbmethod_heartbeat:notice] [pid 32122] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 17:44:41.314035 2015] [:warn] [pid 32122] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 17:44:41.314051 2015] [:warn] [pid 32122] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 17:44:41.386893 2015] [mpm_prefork:notice] [pid 32122] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 17:44:41.386980 2015] [core:notice] [pid 32122] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 17:44:43.985073 2015] [authz_core:error] [pid 32126] [client 127.0.0.1:46019] AH01630: client denied by server configuration: /snl
+[Fri Apr 03 17:46:53.106736 2015] [mpm_prefork:notice] [pid 32122] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 17:46:54.217613 2015] [suexec:notice] [pid 32307] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 17:46:54.239194 2015] [so:warn] [pid 32307] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 17:46:54.241208 2015] [auth_digest:notice] [pid 32307] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 17:46:54.242225 2015] [lbmethod_heartbeat:notice] [pid 32307] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 17:46:54.242398 2015] [:warn] [pid 32307] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 17:46:54.242420 2015] [:warn] [pid 32307] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 17:46:54.310807 2015] [mpm_prefork:notice] [pid 32307] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 17:46:54.314921 2015] [core:notice] [pid 32307] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 17:46:56.922848 2015] [:error] [pid 32311] [client 127.0.0.1:46034] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 18:08:57.386600 2015] [mpm_prefork:notice] [pid 32307] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 18:08:58.498634 2015] [suexec:notice] [pid 32675] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 18:08:58.521203 2015] [so:warn] [pid 32675] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:08:58.523412 2015] [auth_digest:notice] [pid 32675] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 18:08:58.524465 2015] [lbmethod_heartbeat:notice] [pid 32675] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 18:08:58.524576 2015] [:warn] [pid 32675] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 18:08:58.524592 2015] [:warn] [pid 32675] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 18:08:58.598913 2015] [mpm_prefork:notice] [pid 32675] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 18:08:58.598990 2015] [core:notice] [pid 32675] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 18:09:01.199424 2015] [authz_core:error] [pid 32679] [client 127.0.0.1:46110] AH01630: client denied by server configuration: /snl
+[Fri Apr 03 18:10:53.869800 2015] [mpm_prefork:notice] [pid 32675] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 18:10:54.979254 2015] [suexec:notice] [pid 396] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 18:10:55.001423 2015] [so:warn] [pid 396] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:10:55.003736 2015] [auth_digest:notice] [pid 396] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 18:10:55.004810 2015] [lbmethod_heartbeat:notice] [pid 396] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 18:10:55.004936 2015] [:warn] [pid 396] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 18:10:55.004952 2015] [:warn] [pid 396] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 18:10:55.074910 2015] [mpm_prefork:notice] [pid 396] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 18:10:55.074988 2015] [core:notice] [pid 396] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 18:10:57.679866 2015] [:error] [pid 400] [client 127.0.0.1:46125] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 18:16:24.488736 2015] [mpm_prefork:notice] [pid 396] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 18:16:25.599173 2015] [suexec:notice] [pid 627] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 18:16:25.621838 2015] [so:warn] [pid 627] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:16:25.624118 2015] [auth_digest:notice] [pid 627] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 18:16:25.625179 2015] [lbmethod_heartbeat:notice] [pid 627] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 18:16:25.625289 2015] [:warn] [pid 627] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 18:16:25.625305 2015] [:warn] [pid 627] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 18:16:25.696103 2015] [mpm_prefork:notice] [pid 627] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 18:16:25.696181 2015] [core:notice] [pid 627] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 18:16:28.306127 2015] [authz_core:error] [pid 631] [client 127.0.0.1:46150] AH01630: client denied by server configuration: /snl
+[Fri Apr 03 18:18:52.450691 2015] [mpm_prefork:notice] [pid 627] AH00169: caught SIGTERM, shutting down
+[Fri Apr 03 18:18:53.566528 2015] [suexec:notice] [pid 808] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 03 18:18:53.590647 2015] [so:warn] [pid 808] AH01574: module wsgi_module is already loaded, skipping
+[Fri Apr 03 18:18:53.593484 2015] [auth_digest:notice] [pid 808] AH01757: generating secret for digest authentication ...
+[Fri Apr 03 18:18:53.594572 2015] [lbmethod_heartbeat:notice] [pid 808] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 03 18:18:53.594700 2015] [:warn] [pid 808] mod_wsgi: Compiled for Python/2.7.5.
+[Fri Apr 03 18:18:53.594718 2015] [:warn] [pid 808] mod_wsgi: Runtime using Python/2.7.8.
+[Fri Apr 03 18:18:53.670696 2015] [mpm_prefork:notice] [pid 808] AH00163: Apache/2.4.10 (Amazon) mod_wsgi/3.5 Python/2.7.8 configured -- resuming normal operations
+[Fri Apr 03 18:18:53.670774 2015] [core:notice] [pid 808] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 03 18:18:56.269855 2015] [:error] [pid 813] [client 127.0.0.1:46165] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+[Fri Apr 03 18:19:48.010308 2015] [:error] [pid 816] [client 172.31.10.41:47801] Target WSGI script not found or unable to stat: /opt/python/current/app/snl
+
+
+
+-------------------------------------
+/opt/python/log/supervisord.log
+-------------------------------------
+2015-04-03 16:55:09,838 CRIT Supervisor running as root (no user in config file)
+2015-04-03 16:55:09,946 INFO RPC interface 'supervisor' initialized
+2015-04-03 16:55:09,946 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2015-04-03 16:55:09,946 INFO supervisord started with pid 6079
+2015-04-03 16:55:10,957 INFO spawned: 'httpd' with pid 6158
+2015-04-03 16:55:11,959 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:07:09,151 INFO stopped: httpd (exit status 0)
+2015-04-03 17:07:10,188 INFO spawned: 'httpd' with pid 7086
+2015-04-03 17:07:11,464 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:10:26,096 INFO stopped: httpd (exit status 0)
+2015-04-03 17:10:27,108 INFO spawned: 'httpd' with pid 7280
+2015-04-03 17:10:28,184 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:17:53,133 INFO stopped: httpd (exit status 0)
+2015-04-03 17:17:54,145 INFO spawned: 'httpd' with pid 7575
+2015-04-03 17:17:55,219 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:20:16,343 INFO stopped: httpd (exit status 0)
+2015-04-03 17:20:17,359 INFO spawned: 'httpd' with pid 7754
+2015-04-03 17:20:18,431 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:23:29,601 INFO stopped: httpd (exit status 0)
+2015-04-03 17:23:30,613 INFO spawned: 'httpd' with pid 7940
+2015-04-03 17:23:31,688 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:26:38,118 INFO stopped: httpd (exit status 0)
+2015-04-03 17:26:39,135 INFO spawned: 'httpd' with pid 8130
+2015-04-03 17:26:40,206 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:44:40,194 INFO stopped: httpd (exit status 0)
+2015-04-03 17:44:41,211 INFO spawned: 'httpd' with pid 32122
+2015-04-03 17:44:42,282 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 17:46:53,123 INFO stopped: httpd (exit status 0)
+2015-04-03 17:46:54,136 INFO spawned: 'httpd' with pid 32307
+2015-04-03 17:46:55,212 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 18:08:57,403 INFO stopped: httpd (exit status 0)
+2015-04-03 18:08:58,419 INFO spawned: 'httpd' with pid 32675
+2015-04-03 18:08:59,491 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 18:10:53,886 INFO stopped: httpd (exit status 0)
+2015-04-03 18:10:54,898 INFO spawned: 'httpd' with pid 396
+2015-04-03 18:10:55,973 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 18:16:24,505 INFO stopped: httpd (exit status 0)
+2015-04-03 18:16:25,517 INFO spawned: 'httpd' with pid 627
+2015-04-03 18:16:26,593 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-03 18:18:52,467 INFO stopped: httpd (exit status 0)
+2015-04-03 18:18:53,483 INFO spawned: 'httpd' with pid 808
+2015-04-03 18:18:54,560 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+
+
+-------------------------------------
+/var/log/httpd/access_log
+-------------------------------------
+172.31.27.42 - - [03/Apr/2015:17:34:52 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:34:53 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:35:44 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:35:44 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:36:35 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:36:35 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:36:55 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36"
+172.31.10.41 - - [03/Apr/2015:17:37:27 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:37:46 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:37:46 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:37:51 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:37:51 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:38:18 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:38:43 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:39:09 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:39:35 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:40:01 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:40:26 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:40:52 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:41:18 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:41:43 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:42:09 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:42:35 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:43:01 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:43:26 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:43:52 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:44:18 +0000] "-" 408 - "-" "-"
+127.0.0.1 - - [03/Apr/2015:17:44:43 +0000] "GET / HTTP/1.1" 403 209 "-" "Python-urllib/2.6"
+172.31.10.41 - - [03/Apr/2015:17:46:08 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:46:30 +0000] "-" 408 - "-" "-"
+127.0.0.1 - - [03/Apr/2015:17:46:56 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.6"
+172.31.27.42 - - [03/Apr/2015:17:48:21 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:48:43 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:49:13 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:49:35 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:50:04 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:50:26 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:50:55 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:51:18 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:51:47 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:52:10 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:52:38 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:53:01 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:53:30 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:53:53 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:54:21 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:54:44 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:55:12 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:55:36 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:56:04 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:56:28 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:56:55 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:57:19 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:57:47 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:58:10 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:58:38 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:59:02 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:17:59:30 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:17:59:53 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:00:21 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:00:45 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:01:13 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:01:37 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:02:04 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:02:28 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:02:56 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:03:20 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:03:47 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:04:11 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:04:38 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:05:03 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:05:29 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:05:55 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:06:21 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:06:46 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:07:13 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:07:38 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:08:04 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:08:29 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:08:56 +0000] "-" 408 - "-" "-"
+127.0.0.1 - - [03/Apr/2015:18:09:01 +0000] "GET / HTTP/1.1" 403 209 "-" "Python-urllib/2.6"
+172.31.10.41 - - [03/Apr/2015:18:10:20 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:10:46 +0000] "-" 408 - "-" "-"
+127.0.0.1 - - [03/Apr/2015:18:10:57 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.6"
+172.31.27.42 - - [03/Apr/2015:18:12:37 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:12:44 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:13:28 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:13:36 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:14:20 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:14:27 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:15:11 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:15:18 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:16:02 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:16:10 +0000] "-" 408 - "-" "-"
+127.0.0.1 - - [03/Apr/2015:18:16:28 +0000] "GET / HTTP/1.1" 403 209 "-" "Python-urllib/2.6"
+172.31.27.42 - - [03/Apr/2015:18:17:53 +0000] "-" 408 - "-" "-"
+172.31.10.41 - - [03/Apr/2015:18:18:01 +0000] "-" 408 - "-" "-"
+172.31.27.42 - - [03/Apr/2015:18:18:45 +0000] "-" 408 - "-" "-"
+127.0.0.1 - - [03/Apr/2015:18:18:56 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.6"
+172.31.10.41 - - [03/Apr/2015:18:19:48 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36"
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+[2015-04-03T18:10:49.449Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Starting activity...
+[2015-04-03T18:10:52.800Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Completed activity. Result:
+  2015-04-03 18:10:52,788 ERROR    The specified WSGIPath of "snl/snl/wsgi.py" was not found in the source bundle
+[2015-04-03T18:10:52.800Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/pre.
+[2015-04-03T18:10:52.800Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage0] : Completed activity. Result:
+  Command CMD-ConfigDeploy stage 0 completed.
+[2015-04-03T18:10:52.801Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1] : Starting activity...
+[2015-04-03T18:10:52.801Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook] : Starting activity...
+[2015-04-03T18:10:52.801Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Starting activity...
+[2015-04-03T18:10:57.879Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING    pid 396, uptime 0:00:03
+[2015-04-03T18:10:57.879Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/enact.
+[2015-04-03T18:10:57.880Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployPostHook] : Starting activity...
+[2015-04-03T18:10:57.880Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployPostHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/post.
+[2015-04-03T18:10:57.880Z] INFO  [313]   - [CMD-ConfigDeploy/ConfigDeployStage1] : Completed activity. Result:
+  Command CMD-ConfigDeploy stage 1 completed.
+[2015-04-03T18:10:57.880Z] INFO  [313]   - [CMD-ConfigDeploy/AddonsAfter] : Starting activity...
+[2015-04-03T18:10:57.880Z] INFO  [313]   - [CMD-ConfigDeploy/AddonsAfter] : Completed activity.
+[2015-04-03T18:10:57.881Z] INFO  [313]   - [CMD-ConfigDeploy] : Completed activity. Result:
+  Command CMD-ConfigDeploy succeeded.
+[2015-04-03T18:16:19.564Z] INFO  [545]   - [CMD-ConfigDeploy] : Starting activity...
+[2015-04-03T18:16:20.077Z] INFO  [545]   - [CMD-ConfigDeploy/AddonsBefore] : Starting activity...
+[2015-04-03T18:16:20.077Z] INFO  [545]   - [CMD-ConfigDeploy/AddonsBefore] : Completed activity.
+[2015-04-03T18:16:20.078Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0] : Starting activity...
+[2015-04-03T18:16:20.078Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0/InfraWriteConfig] : Starting activity...
+[2015-04-03T18:16:20.086Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0/InfraWriteConfig] : Completed activity. Result:
+  Recreated directory /opt/elasticbeanstalk/deploy/configuration/.
+  Generate appsource url file at /opt/elasticbeanstalk/deploy/configuration/appsourceurl.
+  Generate container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2015-04-03T18:16:20.086Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook] : Starting activity...
+[2015-04-03T18:16:20.086Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Starting activity...
+[2015-04-03T18:16:23.407Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Completed activity. Result:
+  2015-04-03 18:16:23,395 ERROR    The specified WSGIPath of "/snl/snl/wsgi.py" was not found in the source bundle
+[2015-04-03T18:16:23.407Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/pre.
+[2015-04-03T18:16:23.407Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage0] : Completed activity. Result:
+  Command CMD-ConfigDeploy stage 0 completed.
+[2015-04-03T18:16:23.408Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1] : Starting activity...
+[2015-04-03T18:16:23.408Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook] : Starting activity...
+[2015-04-03T18:16:23.408Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Starting activity...
+[2015-04-03T18:16:28.516Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING    pid 627, uptime 0:00:03
+[2015-04-03T18:16:28.516Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/enact.
+[2015-04-03T18:16:28.516Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployPostHook] : Starting activity...
+[2015-04-03T18:16:28.516Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployPostHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/post.
+[2015-04-03T18:16:28.516Z] INFO  [545]   - [CMD-ConfigDeploy/ConfigDeployStage1] : Completed activity. Result:
+  Command CMD-ConfigDeploy stage 1 completed.
+[2015-04-03T18:16:28.517Z] INFO  [545]   - [CMD-ConfigDeploy/AddonsAfter] : Starting activity...
+[2015-04-03T18:16:28.517Z] INFO  [545]   - [CMD-ConfigDeploy/AddonsAfter] : Completed activity.
+[2015-04-03T18:16:28.517Z] INFO  [545]   - [CMD-ConfigDeploy] : Completed activity. Result:
+  Command CMD-ConfigDeploy succeeded.
+[2015-04-03T18:18:47.256Z] INFO  [728]   - [CMD-ConfigDeploy] : Starting activity...
+[2015-04-03T18:18:47.773Z] INFO  [728]   - [CMD-ConfigDeploy/AddonsBefore] : Starting activity...
+[2015-04-03T18:18:47.773Z] INFO  [728]   - [CMD-ConfigDeploy/AddonsBefore] : Completed activity.
+[2015-04-03T18:18:47.773Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0] : Starting activity...
+[2015-04-03T18:18:47.773Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0/InfraWriteConfig] : Starting activity...
+[2015-04-03T18:18:47.781Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0/InfraWriteConfig] : Completed activity. Result:
+  Recreated directory /opt/elasticbeanstalk/deploy/configuration/.
+  Generate appsource url file at /opt/elasticbeanstalk/deploy/configuration/appsourceurl.
+  Generate container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2015-04-03T18:18:47.782Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook] : Starting activity...
+[2015-04-03T18:18:47.782Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Starting activity...
+[2015-04-03T18:18:51.317Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Completed activity. Result:
+  2015-04-03 18:18:51,305 ERROR    The specified WSGIPath of "snl/snl/wsgi.py" was not found in the source bundle
+[2015-04-03T18:18:51.317Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0/ConfigDeployPreHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/pre.
+[2015-04-03T18:18:51.317Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage0] : Completed activity. Result:
+  Command CMD-ConfigDeploy stage 0 completed.
+[2015-04-03T18:18:51.318Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1] : Starting activity...
+[2015-04-03T18:18:51.318Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook] : Starting activity...
+[2015-04-03T18:18:51.319Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Starting activity...
+[2015-04-03T18:18:56.468Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING    pid 808, uptime 0:00:03
+[2015-04-03T18:18:56.469Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployEnactHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/enact.
+[2015-04-03T18:18:56.469Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployPostHook] : Starting activity...
+[2015-04-03T18:18:56.469Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1/ConfigDeployPostHook] : Completed activity. Result:
+  Successfully execute directory: /opt/elasticbeanstalk/hooks/configdeploy/post.
+[2015-04-03T18:18:56.469Z] INFO  [728]   - [CMD-ConfigDeploy/ConfigDeployStage1] : Completed activity. Result:
+  Command CMD-ConfigDeploy stage 1 completed.
+[2015-04-03T18:18:56.469Z] INFO  [728]   - [CMD-ConfigDeploy/AddonsAfter] : Starting activity...
+[2015-04-03T18:18:56.470Z] INFO  [728]   - [CMD-ConfigDeploy/AddonsAfter] : Completed activity.
+[2015-04-03T18:18:56.470Z] INFO  [728]   - [CMD-ConfigDeploy] : Completed activity. Result:
+  Command CMD-ConfigDeploy succeeded.
+[2015-04-03T18:20:07.840Z] INFO  [906]   - [CMD-TailLogs] : Starting activity...
+[2015-04-03T18:20:08.358Z] INFO  [906]   - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2015-04-03T18:20:08.358Z] INFO  [906]   - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2015-04-03T18:20:08.358Z] INFO  [906]   - [CMD-TailLogs/TailLogs] : Starting activity...
+[2015-04-03T18:20:08.358Z] INFO  [906]   - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2015-04-03T18:10:52.801Z] DEBUG [313]   : Loaded 2 actions for stage 1.
+[2015-04-03T18:10:52.801Z] INFO  [313]   : Running 1 of 2 actions: ConfigDeployEnactHook...
+[2015-04-03T18:10:57.880Z] INFO  [313]   : Running 2 of 2 actions: ConfigDeployPostHook...
+[2015-04-03T18:10:57.880Z] INFO  [313]   : Running AddonsAfter for command CMD-ConfigDeploy...
+[2015-04-03T18:10:57.880Z] INFO  [313]   : Command CMD-ConfigDeploy succeeded!
+[2015-04-03T18:10:57.883Z] INFO  [313]   : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","truncated":"false","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"Your WSGIPath refers to a file that does not exist.","severity":"ERROR","timestamp":1428084652}]}]}
+[2015-04-03T18:16:19.529Z] DEBUG [545]   : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-03T18:16:19.529Z] INFO  [545]   : Received command CMD-ConfigDeploy: {"command_name":"CMD-ConfigDeploy","request_id":"7442411f-da2d-11e4-9640-1d23ebbe5abc","resource_name":"AWSEBAutoScalingGroup","command_timeout":"600","api_version":"1.0"}
+[2015-04-03T18:16:19.529Z] DEBUG [545]   : Checking if the command processor should execute.
+[2015-04-03T18:16:19.562Z] DEBUG [545]   : Checking whether the command is applicable to instance (i-35bca0f6)..
+[2015-04-03T18:16:19.563Z] INFO  [545]   : Command is applicable to this instance (i-35bca0f6)..
+[2015-04-03T18:16:19.563Z] DEBUG [545]   : Checking if the received command stage is valid..
+[2015-04-03T18:16:19.563Z] INFO  [545]   : No stage_num in command. Valid stage..
+[2015-04-03T18:16:19.563Z] INFO  [545]   : Command processor should execute command.
+[2015-04-03T18:16:19.563Z] DEBUG [545]   : Storing current stage..
+[2015-04-03T18:16:19.563Z] DEBUG [545]   : Stage_num does not exist. Not saving null stage. Returning..
+[2015-04-03T18:16:19.564Z] INFO  [545]   : Executing command: CMD-ConfigDeploy...
+[2015-04-03T18:16:19.564Z] DEBUG [545]   : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-03T18:16:19.564Z] DEBUG [545]   : Refreshing metadata..
+[2015-04-03T18:16:20.074Z] DEBUG [545]   : Refreshed environment metadata.
+[2015-04-03T18:16:20.074Z] DEBUG [545]   : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-04-03T18:16:20.075Z] DEBUG [545]   : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-04-03T18:16:20.077Z] INFO  [545]   : Found enabled addons: [].
+[2015-04-03T18:16:20.077Z] DEBUG [545]   : Loaded definition of Command CMD-ConfigDeploy.
+[2015-04-03T18:16:20.077Z] INFO  [545]   : Executing command CMD-ConfigDeploy activities...
+[2015-04-03T18:16:20.077Z] DEBUG [545]   : Setting environment variables..
+[2015-04-03T18:16:20.077Z] INFO  [545]   : Running AddonsBefore for command CMD-ConfigDeploy...
+[2015-04-03T18:16:20.077Z] DEBUG [545]   : Running stages of Command CMD-ConfigDeploy from stage 0 to stage 1...
+[2015-04-03T18:16:20.077Z] INFO  [545]   : Running stage 0 of command CMD-ConfigDeploy...
+[2015-04-03T18:16:20.078Z] DEBUG [545]   : Loaded 2 actions for stage 0.
+[2015-04-03T18:16:20.078Z] INFO  [545]   : Running 1 of 2 actions: InfraWriteConfig...
+[2015-04-03T18:16:20.086Z] INFO  [545]   : Running 2 of 2 actions: ConfigDeployPreHook...
+[2015-04-03T18:16:23.407Z] INFO  [545]   : Running stage 1 of command CMD-ConfigDeploy...
+[2015-04-03T18:16:23.408Z] DEBUG [545]   : Loaded 2 actions for stage 1.
+[2015-04-03T18:16:23.408Z] INFO  [545]   : Running 1 of 2 actions: ConfigDeployEnactHook...
+[2015-04-03T18:16:28.516Z] INFO  [545]   : Running 2 of 2 actions: ConfigDeployPostHook...
+[2015-04-03T18:16:28.517Z] INFO  [545]   : Running AddonsAfter for command CMD-ConfigDeploy...
+[2015-04-03T18:16:28.517Z] INFO  [545]   : Command CMD-ConfigDeploy succeeded!
+[2015-04-03T18:16:28.519Z] INFO  [545]   : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","truncated":"false","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"Your WSGIPath refers to a file that does not exist.","severity":"ERROR","timestamp":1428084983}]}]}
+[2015-04-03T18:18:47.220Z] DEBUG [728]   : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-03T18:18:47.220Z] INFO  [728]   : Received command CMD-ConfigDeploy: {"command_name":"CMD-ConfigDeploy","request_id":"c2eea2d5-da2d-11e4-bf7e-cd8f81d33985","resource_name":"AWSEBAutoScalingGroup","command_timeout":"600","api_version":"1.0"}
+[2015-04-03T18:18:47.220Z] DEBUG [728]   : Checking if the command processor should execute.
+[2015-04-03T18:18:47.255Z] DEBUG [728]   : Checking whether the command is applicable to instance (i-35bca0f6)..
+[2015-04-03T18:18:47.255Z] INFO  [728]   : Command is applicable to this instance (i-35bca0f6)..
+[2015-04-03T18:18:47.255Z] DEBUG [728]   : Checking if the received command stage is valid..
+[2015-04-03T18:18:47.255Z] INFO  [728]   : No stage_num in command. Valid stage..
+[2015-04-03T18:18:47.255Z] INFO  [728]   : Command processor should execute command.
+[2015-04-03T18:18:47.255Z] DEBUG [728]   : Storing current stage..
+[2015-04-03T18:18:47.255Z] DEBUG [728]   : Stage_num does not exist. Not saving null stage. Returning..
+[2015-04-03T18:18:47.256Z] INFO  [728]   : Executing command: CMD-ConfigDeploy...
+[2015-04-03T18:18:47.256Z] DEBUG [728]   : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-03T18:18:47.256Z] DEBUG [728]   : Refreshing metadata..
+[2015-04-03T18:18:47.769Z] DEBUG [728]   : Refreshed environment metadata.
+[2015-04-03T18:18:47.769Z] DEBUG [728]   : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-04-03T18:18:47.771Z] DEBUG [728]   : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-04-03T18:18:47.772Z] INFO  [728]   : Found enabled addons: [].
+[2015-04-03T18:18:47.772Z] DEBUG [728]   : Loaded definition of Command CMD-ConfigDeploy.
+[2015-04-03T18:18:47.772Z] INFO  [728]   : Executing command CMD-ConfigDeploy activities...
+[2015-04-03T18:18:47.772Z] DEBUG [728]   : Setting environment variables..
+[2015-04-03T18:18:47.773Z] INFO  [728]   : Running AddonsBefore for command CMD-ConfigDeploy...
+[2015-04-03T18:18:47.773Z] DEBUG [728]   : Running stages of Command CMD-ConfigDeploy from stage 0 to stage 1...
+[2015-04-03T18:18:47.773Z] INFO  [728]   : Running stage 0 of command CMD-ConfigDeploy...
+[2015-04-03T18:18:47.773Z] DEBUG [728]   : Loaded 2 actions for stage 0.
+[2015-04-03T18:18:47.773Z] INFO  [728]   : Running 1 of 2 actions: InfraWriteConfig...
+[2015-04-03T18:18:47.782Z] INFO  [728]   : Running 2 of 2 actions: ConfigDeployPreHook...
+[2015-04-03T18:18:51.318Z] INFO  [728]   : Running stage 1 of command CMD-ConfigDeploy...
+[2015-04-03T18:18:51.318Z] DEBUG [728]   : Loaded 2 actions for stage 1.
+[2015-04-03T18:18:51.318Z] INFO  [728]   : Running 1 of 2 actions: ConfigDeployEnactHook...
+[2015-04-03T18:18:56.469Z] INFO  [728]   : Running 2 of 2 actions: ConfigDeployPostHook...
+[2015-04-03T18:18:56.469Z] INFO  [728]   : Running AddonsAfter for command CMD-ConfigDeploy...
+[2015-04-03T18:18:56.470Z] INFO  [728]   : Command CMD-ConfigDeploy succeeded!
+[2015-04-03T18:18:56.472Z] INFO  [728]   : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","truncated":"false","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"Your WSGIPath refers to a file that does not exist.","severity":"ERROR","timestamp":1428085131}]}]}
+[2015-04-03T18:20:07.835Z] DEBUG [906]   : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-03T18:20:07.835Z] INFO  [906]   : Received command CMD-TailLogs: {"command_name":"CMD-TailLogs","execution_data":"{\"aws_access_key_id\":\"ASIAIA4A67SZQB57S3WA\",\"policy\":\"eyJjb25kaXRpb25zIjpbWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLXB1Ymxpc2hfbWVjaGFuaXNtIiwiIl0sWyJlcSIsIiRhY2wiLCJwcml2YXRlIl0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJyZXNvdXJjZXNcL2Vudmlyb25tZW50c1wvbG9nc1wvIl0sWyJlcSIsIiRidWNrZXQiLCJlbGFzdGljYmVhbnN0YWxrLXVzLXdlc3QtMS0zMTM4MDQyOTI3NjMiXSxbInN0YXJ0cy13aXRoIiwiJHgtYW16LXNlY3VyaXR5LXRva2VuIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWZpbGVfbmFtZSIsIiJdLFsic3RhcnRzLXdpdGgiLCIkeC1hbXotbWV0YS10aW1lX3N0YW1wIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWJhdGNoX2lkIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRDb250ZW50LVR5cGUiLCIiXV0sImV4cGlyYXRpb24iOiIyMDE1LTA0LTAzVDE4OjUwOjA1LjU0MloifQ==\",\"security_token\":\"AQoDYXdzEKv\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/wEawAIpTSzQezZCqWW73\\\/YIsGjyiwtmpIOuZLXXV0Lpal8sGSL+0TFoyYYLiKN2PQ0KSYuL0BUVhJ1uItx2OGuOrVr572C1mKMl6mLjHNxVI9Xh27cL0hUhT7Hb9fmn9tmcPyipyiMVrgxa4PLTjHmyH5lalploxz167hRx\\\/nwyRqJUTYl1ZHve1CdllOsV3wgZUaR8dcBkF3izJdLMS73RPSgjppLJRuOlgGrRzMs5DU03GLRwPTInsRfC8D8xVvZqpwZs48XcCvHR7FhNE9UCgFIXSRGSQ8eWC5B1P7dlIzU1ODCTjWKEv8scZuMGlyBgFIKEbQOQHNnAONuDOCkPNybExxOw3MfqRhgHKJrk2vfjp4akqFOlzF3bHRqRmxJj2UvI2IN\\\/gr8e4KKdDcjhr1tJDf2Mi85VFiRgSxSWGg49wSDVs\\\/uoBQ==\",\"signature\":\"yUB8efJgqJNrX17qYFy2x3bLUHA=\"}","request_id":"0d3a6970-da2e-11e4-838a-110193f02733","resource_name":"AWSEBAutoScalingGroup","data":"0d3a6970-da2e-11e4-838a-110193f02733","command_timeout":"600","api_version":"1.0"}
+[2015-04-03T18:20:07.835Z] DEBUG [906]   : Checking if the command processor should execute.
+[2015-04-03T18:20:07.839Z] DEBUG [906]   : Checking whether the command is applicable to instance (i-35bca0f6)..
+[2015-04-03T18:20:07.839Z] INFO  [906]   : Command is applicable to this instance (i-35bca0f6)..
+[2015-04-03T18:20:07.839Z] DEBUG [906]   : Checking if the received command stage is valid..
+[2015-04-03T18:20:07.839Z] INFO  [906]   : No stage_num in command. Valid stage..
+[2015-04-03T18:20:07.839Z] INFO  [906]   : Command processor should execute command.
+[2015-04-03T18:20:07.839Z] DEBUG [906]   : Storing current stage..
+[2015-04-03T18:20:07.839Z] DEBUG [906]   : Stage_num does not exist. Not saving null stage. Returning..
+[2015-04-03T18:20:07.840Z] INFO  [906]   : Executing command: CMD-TailLogs...
+[2015-04-03T18:20:07.840Z] DEBUG [906]   : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-03T18:20:07.840Z] DEBUG [906]   : Refreshing metadata..
+[2015-04-03T18:20:08.354Z] DEBUG [906]   : Refreshed environment metadata.
+[2015-04-03T18:20:08.355Z] DEBUG [906]   : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-04-03T18:20:08.356Z] DEBUG [906]   : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-04-03T18:20:08.357Z] INFO  [906]   : Found enabled addons: [].
+[2015-04-03T18:20:08.357Z] DEBUG [906]   : Loaded definition of Command CMD-TailLogs.
+[2015-04-03T18:20:08.357Z] INFO  [906]   : Executing command CMD-TailLogs activities...
+[2015-04-03T18:20:08.357Z] DEBUG [906]   : Setting environment variables..
+[2015-04-03T18:20:08.357Z] INFO  [906]   : Running AddonsBefore for command CMD-TailLogs...
+[2015-04-03T18:20:08.358Z] DEBUG [906]   : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2015-04-03T18:20:08.358Z] INFO  [906]   : Running stage 0 of command CMD-TailLogs...
+[2015-04-03T18:20:08.358Z] DEBUG [906]   : Loaded 1 actions for stage 0.
+[2015-04-03T18:20:08.358Z] INFO  [906]   : Running 1 of 1 actions: TailLogs...
+
+
+

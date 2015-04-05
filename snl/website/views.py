@@ -112,11 +112,8 @@ def contact(request):
             html_content = '<h2>{}, thanks for requesting a free consultation!</h2> ' \
                            '<div>One of our attorneys will connect with you shortly</div>'.format(user.first_name)
             msg = EmailMultiAlternatives("{}'s Request with South Natick Law".format(user.first_name), text_content, settings.DEFAULT_FROM_EMAIL, [user.email])
-            msg_two = EmailMultiAlternatives("{}'s Request with South Natick Law".format(user.first_name), text_content, settings.DEFAULT_FROM_EMAIL, ['sbrichards@gmail.com', 'srichards@southnaticklaw.com'])
             msg.attach_alternative(html_content, "text/html")
-            msg_two.attach_alternative(html_content, "text/html")
             msg.send()
-            msg_two.send()
             request.session['contact_info'] = request.POST
             # After saving, redirect the user to the confirmation page
             return redirect("thanks.html")

@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'hf(ft0wh$xjqz%la)$l&4mtkw^ff&vj(#rm81(oio$gyyqp6@p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = False
 
@@ -106,17 +106,15 @@ TEMPLATE_DIRS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-# todo static file 500 error on local dev server
-STATIC_ROOT = os.path.join(BASE_DIR, "..", "snl", "website", "static")
-# STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, "..", "snl", "website", "static")
 # STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
 STATIC_URL = '/static/'
 
 
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'website', 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'website', 'static'),
+# )
 
 
 

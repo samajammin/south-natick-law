@@ -108,8 +108,8 @@ TEMPLATE_DIRS = (
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, "..", "snl", "website", "static")
-# STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
+# STATIC_ROOT = os.path.join(BASE_DIR, "..", "snl", "website", "static")
+STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
 STATIC_URL = '/static/'
 
 

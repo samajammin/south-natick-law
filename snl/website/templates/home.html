@@ -1,6 +1,5 @@
 {% extends "new-base.html" %}
 {% load staticfiles %}
-{#{% load bootstrap %}#}
 
 {% block title %}
     South Natick Law | MetroWest Attorneys
@@ -10,17 +9,10 @@
        <header id="home">
           <section class="hero" id="hero">
             <div class="container">
-{#              <div class="row">#}
-{#                <div class="col-md-12 text-right navicon">#}
-                    <!-- removed span elements to retain sliding features elsewhere -->
-{#                  <a id="nav-toggle" class="nav_slide_button" href="#"></a>#}
-{#                    <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>#}
-{#                </div>#}
-{#              </div>#}
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
                   <h1 class="animated fadeInDown"><strong>SOUTH NATICK LAW</strong></h1>
-                  <h4 class="animated fadeInUp delay-05s">McLaughlin, Richards, Biller & Schindel, LLP</h4>
+                  <h4 class="animated fadeInUp delay-05s">McLaughlin, Richards, Biller &amp; Schindel, LLP</h4>
                     <h2 class="animated fadeInUp delay-05s">Innovation • Experience • Results</h2>
                 </div>
               </div>
@@ -50,45 +42,45 @@
             <div class="row">
               <div class="col-md-12">
                 <h2 class="arrow">Love what you do, and you'll do it well</h2>
-{#              </div>#}
                 <div class="features-wrapper">
                   <div class="col-md-4 wp2">
                       <a href="{% url 'about' %}">
-                    <div class="icon">
-                      <i class="fa fa-university"></i>
-                    </div>
+                        <div class="icon">
+                            <i class="fa fa-university"></i>
+                        </div>
+
+                      </a>
                         <a href="{% url 'about' %}">
                             <h3>About Us</h3>
                         </a>
-                        <p>Whether your problem is complex or simple, we have the experience and expertise to find workable solutions at a reasonable cost...</p>
+                        <p>Whether your problem is complex or simple, we have the experience and expertise to find workable solutions at a reasonable cost.</p>
                   </div>
                   <div class="col-md-4 wp2 delay-05s">
                       <a href="{% url 'aop' %}">
-                    <div class="icon">
-                      <i class="fa fa-gavel"></i>
-                    </div>
+                        <div class="icon">
+                            <i class="fa fa-gavel"></i>
+                        </div>
                       </a>
                       <a href="{% url 'aop' %}">
                         <h3>Areas of Practice</h3>
                       </a>
-                        <p>Each attorney specializes in his or her expertise. Together we offer services in domestic relations, estate planning, real estate, probate, tax law and more...</p>
+                        <p>Each attorney specializes in his or her expertise. Together we offer services in domestic relations, estate planning, real estate, probate, tax law and more.</p>
                   </div>
                   <div class="col-md-4 wp2 delay-1s">
                       <a href="{% url 'blog' %}">
-                    <div class="icon">
-                      <i class="fa fa-book"></i>
-                    </div>
+                        <div class="icon">
+                            <i class="fa fa-book"></i>
+                        </div>
                       </a>
                       <a href="{% url 'blog' %}">
                         <h3>Resources</h3>
                       </a>
-                        <p>Looking to learn more about your needs before speaking with us? Find legal news and advice straight from our attorneys...</p>
+                        <p>Looking to learn more about your needs before speaking with us? Find legal news and advice straight from our attorneys.</p>
                   </div>
                 </div>
                   <div class="clearfix"></div>
                 </div>
               </div>
-{#            </div>#}
           </div>
         </section>
 
@@ -113,34 +105,6 @@
             <div class="row">
               <div id="portfolioSlider">
                 <ul class="slides">
-{#                  <li>#}
-{#                    <div class="col-md-6 wp4">#}
-{#                      <div class="overlay-effect effects clearfix">#}
-{#                        <div class="img">#}
-{#                          <img src="../static/img/portfolio-01.jpg" alt="Portfolio Item">#}
-{#                          <div class="overlay">#}
-{#                            <a href="#" class="expand"><i class="fa fa-search"></i><br>Learn More</a>#}
-{#                            <a class="close-overlay hidden">x</a>#}
-{#                          </div>#}
-{#                        </div>#}
-{#                      </div>#}
-{#                      <h3>Creative Minds</h3>#}
-{#                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>#}
-{#                    </div>#}
-{#                    <div class="col-md-6 wp4 delay-05s">#}
-{#                      <div class="overlay-effect effects clearfix">#}
-{#                        <div class="img">#}
-{#                          <img src="../static/img/portfolio-02.jpg" alt="Portfolio Item">#}
-{#                          <div class="overlay">#}
-{#                            <a href="#" class="expand"><i class="fa fa-search"></i><br>Learn More</a>#}
-{#                            <a class="close-overlay hidden">x</a>#}
-{#                          </div>#}
-{#                        </div>#}
-{#                      </div>#}
-{#                      <h3>Creative Hearts</h3>#}
-{#                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>#}
-{#                    </div>#}
-{#                  </li>#}
                   <li>
                     <div class="col-md-3 wp4">
                       <div class="overlay-effect effects clearfix">
@@ -208,42 +172,11 @@
           </div>
         </section>
 
-{#        <div class="ignite-cta text-center">#}
-{#          <div class="container">#}
-{#            <div class="row">#}
-{#              <div class="col-md-12">#}
-{#                <a href="{% url 'contact' %}" class="ignite-btn">Schedule a Free Consultation</a>#}
-{#              </div>#}
-{#            </div>#}
-{#          </div>#}
-{#        </div>#}
-
         <section class="subscribe text-center">
           <div class="container">
                 <a href="{% url 'contact' %}" class="ignite-btn">Schedule a Free Consultation</a>
           </div>
         </section>
-
-{#        <section class="team section-padding" id="team">#}
-{#          <div class="container">#}
-{#            <div class="row">#}
-{#              <div class="col-md-12 text-center">#}
-{#                <h2 class="arrow">Our Core Values</h2>#}
-{#              </div>#}
-{#            </div>#}
-{#            <div class="row">#}
-{#                <div class="col-md-12">#}
-{#                    <p>Over the years we have developed four pillars of practice that guide us in our representation of you:</p>#}
-{#                        <ol type="I">#}
-{#                            <li>We adhere to the highest level of integrity and ethics, both professionally and personally.</li>#}
-{#                            <li>We provide highly sophisticated advice and planning while maintaining the warm, personal touch of a small firm.</li>#}
-{#                            <li>We are committed to breaking every problem down into its simplest elements so we can explain the issues and solutions in a simple, straight forward manner.</li>#}
-{#                            <li>We work hard to stay current in our areas of expertise. We attend conferences and seminars and study new developments and trends in the law.</li>#}
-{#                        </ol>#}
-{#                    <p>In short, we utilize our combined knowledge and skill to obtain successful results for our clients both in and out of court. Whether your problem is complex or simple, we have the experience and expertise to find workable solutions at a reasonable cost.</p>#}
-{#                </div>#}
-{#            </div>#}
-{#        </section>#}
 
         <section class="team section-padding" id="team">
           <div class="container">
@@ -257,74 +190,41 @@
                     <p>Over the years we have developed <strong>four pillars of practice</strong> that guide us in our representation of you:</p>
                 </div>
             </div>
-              <div class="row text-center">
+            <div class="row text-center">
                   <div class="col-md-3">
-                            <span class="fa-stack fa-2x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary text-center roman"></i>
-                                  <span class="roman">I</span>
-                            </span>
-                            <p>We adhere to the highest level of integrity and ethics, both professionally and personally.</p>
-                                </div>
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary text-center roman"></i>
+                              <span class="roman">I</span>
+                        </span>
+                        <p>We adhere to the highest level of integrity and ethics, both professionally and personally.</p>
+                  </div>
                   <div class="col-md-3">
-                            <span class="fa-stack fa-2x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary roman"></i>
-                                  <span class="roman">II</span>
-                            </span>
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary roman"></i>
+                              <span class="roman">II</span>
+                        </span>
                         <p>We provide sophisticated advice and planning while maintaining the warm, personal touch of a small firm.</p>
-                      </div>
-                      <div class="col-md-3">
-                            <span class="fa-stack fa-2x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary roman"></i>
-                                  <span class="roman">III</span>
-
-                            </span>
-                          <p>We break every problem down into its simplest elements to explain issues and solutions in a simple, straight forward manner.</p>
-                          </div>
-                          <div class="col-md-3">
-                              <span class="fa-stack fa-2x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary roman"></i>
-                                  <span class="roman">IV</span>
-
-                            </span>
-                              <p>We stay current in our areas of expertise. We attend conferences and study new developments and trends in the law.</p>
-                              </div>
+                  </div>
+                  <div class="col-md-3">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary roman"></i>
+                              <span class="roman">III</span>
+                        </span>
+                      <p>We break every problem down into its simplest elements to explain issues and solutions in a simple, straight forward manner.</p>
+                  </div>
+                  <div class="col-md-3">
+                      <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary roman"></i>
+                          <span class="roman">IV</span>
+                      </span>
+                      <p>We stay current in our areas of expertise. We attend conferences and study new developments and trends in the law.</p>
+                  </div>
               </div>
-              <div class="row">
-
-                  <div class="col-md-12 text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
                     <p>In short, we utilize our combined knowledge and skill to obtain successful results for our clients both in and out of court. Whether your problem is complex or simple, we have the experience and expertise to find workable solutions at a reasonable cost.</p>
                 </div>
-              </div>
             </div>
+          </div>
         </section>
-
-{#        <section class="subscribe text-center">#}
-{#          <div class="container">#}
-{#            <h2><i class="fa fa-paper-plane"></i>#}
-{#                <span>Can't talk now? Submit your email and we'll find a time that works for you.</span></h2>#}
-{#            <form action="#">#}
-{#              <input type="text" name="" value="" placeholder="" required>#}
-{#              <input type="submit" name="" value="Send">#}
-{#            </form>#}
-{##}
-{#        <div class="ignite-cta text-center">#}
-{#          <div class="container">#}
-{#            <div class="row">#}
-{#              <div class="col-md-12">#}
-{#                <a href="{% url 'contact' %}" class="ignite-btn">Schedule a Free Consultation</a>#}
-{#              </div>#}
-{#            </div>#}
-{#          </div>#}
-{#        </div>#}
-{#              todo form integration on home page#}
-{#                <div class="col-md-12 col-sm-12">#}
-{#                        <form method="post">#}
-{#                            {% csrf_token %}#}
-{#                            {{ form }}#}
-{#                            <input type="submit">Get in Touch!>#}
-{#                        </form>#}
-{#                </div>#}
-{#          </div>#}
-{#        </section>#}
-
 {% endblock%}

@@ -229,7 +229,7 @@ Hero
 .hero { background: url('../img/hero3.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
 .hero h1 { font-size: 48px; letter-spacing: 8px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero h4 { color: #717880;}
+.hero h4 { color: #353535;}
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(150,119,98, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #785f4e; -moz-box-shadow: 0px 3px 0px 0px #785f4e; box-shadow: 0px 3px 0px 0px #785f4e; margin: 60px 0 0; font-weight: bold; }
 /*.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(150,119,98, 0.6); color: #fff; }*/

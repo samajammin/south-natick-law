@@ -41,7 +41,7 @@
 
                     <a href=" {% url 'view_post' slug=post.slug %}">
 {#                        <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">#}
-                        <img class="img-responsive img-hover" src="{{ MEDIA_URL }}"  alt="{{ post.image_alt_text }}">
+                        <img class="img-responsive center-block" src="{{ post.image.url }}"  alt="{{ post.image_alt_text }}">
                     </a>
                     <hr>
                     <p>{{ post.make_blurb|markdown}}</p>

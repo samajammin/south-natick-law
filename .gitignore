@@ -5,6 +5,5 @@
 !.elasticbeanstalk/*.global.yml
 
 #Pycharm
+.idea/
 .idea/*
-/.idea/*
-.idea/workspace.xml

@@ -21,7 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'hf(ft0wh$xjqz%la)$l&4mtkw^ff&vj(#rm81(oio$gyyqp6@p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+
+# Production
+# DEBUG = False
+# Dev
+DEBUG = True
 
 TEMPLATE_DEBUG = False
 
@@ -92,13 +96,19 @@ USE_L10N = True
 
 USE_TZ = True
 
-SITE_ID = 2
+#Production
+# SITE_ID = 2
+
+#Test
+SITE_ID = 1
 
 MARKDOWN_EDITOR_SKIN = 'simple'
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/"))
+# MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/"))
+MEDIA_ROOT = os.path.join(BASE_DIR, "..", "www", "media")
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'website/templates/'),

@@ -73,6 +73,8 @@ class Post(models.Model):
     published_date = models.DateField(auto_now_add=True)
     modified_date = models.DateField(auto_now=True, default= datetime.now())
     tags = models.ManyToManyField(PracticeArea, related_name='posts')
+    image = models.ImageField()
+    image_alt_text = models.CharField(max_length=100)
 
     def make_blurb(self):
         return self.body[:180] + "..."

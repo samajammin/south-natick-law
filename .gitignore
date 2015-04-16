@@ -7,3 +7,6 @@
 #Pycharm
 .idea/
 .idea/*
+
+#Media files
+www/

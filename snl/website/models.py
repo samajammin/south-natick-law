@@ -39,7 +39,7 @@ class Attorney(models.Model):
         super(Attorney, self).save(*args, **kwargs)
 
 
-# categories for blog post tags, attorney practice areas & contact form topic inqueries
+# categories for blog post tags, attorney practice areas & contact form topic inquiries
 class PracticeArea(models.Model):
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=150, unique=True)

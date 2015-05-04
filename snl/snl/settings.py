@@ -23,14 +23,13 @@ SECRET_KEY = 'hf(ft0wh$xjqz%la)$l&4mtkw^ff&vj(#rm81(oio$gyyqp6@p'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # Production
-# DEBUG = False
-# Dev
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+ADMINS = (('Sam', 'sbrichards@gmail.com'), ('Sam', 'srichards@southnaticklaw.com'))
 
 # Application definition
 
@@ -76,12 +75,25 @@ DEFAULT_FROM_EMAIL = 'SouthNatickLaw@gmail.com'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
@@ -97,10 +109,7 @@ USE_L10N = True
 USE_TZ = True
 
 #Production
-# SITE_ID = 2
-
-#Test
-SITE_ID = 1
+SITE_ID = 2
 
 MARKDOWN_EDITOR_SKIN = 'simple'
 

@@ -14,19 +14,19 @@ class FirmAdmin(admin.ModelAdmin):
 
 class AttorneyAdmin(admin.ModelAdmin):
     fields = ('first_name', 'last_name', 'title', 'email', 'phone_number', 'phone_extension', 'firm')
-    list_display = ('first_name', 'last_name', 'title', 'email', 'phone_extension')
+    list_display = ('first_name', 'last_name', 'title', 'email', 'phone_number', 'phone_extension')
     inlines = [PostInLine, ]
 
 class PostAdmin(MarkdownModelAdmin):
     fields = (('title', 'author'), 'tags', 'body', 'image', 'image_alt_text')
     # prepopulated_fields = {'slug': ('title',)}
-    list_display = ('title', 'author', 'published_date')
+    list_display = ('title', 'author', 'published_date', 'tags', 'body', 'image', 'image_alt_text')
     # list_filter = ('author', 'tags')
     # filter_horizontal = ('tags',)
 
 class PracticeAreaAdmin(admin.ModelAdmin):
     fields = ('name', 'description', 'attorneys')
-    list_display = ('name',)
+    list_display = ('name', 'description', 'attorneys')
     filter_horizontal = ('attorneys',)
 
 class ContactAdmin(admin.ModelAdmin):

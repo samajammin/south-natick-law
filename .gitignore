@@ -15,3 +15,6 @@ snl/local_settings.py
 
 #Media files
 www/
+
+# DS Store
+*.DS_Store

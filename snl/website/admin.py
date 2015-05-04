@@ -18,7 +18,7 @@ class AttorneyAdmin(admin.ModelAdmin):
     inlines = [PostInLine, ]
 
 class PostAdmin(MarkdownModelAdmin):
-    fields = (('title', 'author'), 'tags', 'body')
+    fields = (('title', 'author'), 'tags', 'body', 'image', 'image_alt_text')
     # prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'author', 'published_date')
     # list_filter = ('author', 'tags')

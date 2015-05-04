@@ -17,15 +17,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'hf(ft0wh$xjqz%la)$l&4mtkw^ff&vj(#rm81(oio$gyyqp6@p'
+
+if 'SECRET_KEY' in os.environ:
+    SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+# Production
 DEBUG = False
 
 TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+ADMINS = (('Sam', 'sbrichards@gmail.com'), ('Sam', 'srichards@southnaticklaw.com'))
 
 # Application definition
 
@@ -59,24 +64,37 @@ ROOT_URLCONF = 'snl.urls'
 
 WSGI_APPLICATION = 'snl.wsgi.application'
 
-# todo email confirmation from @southnaticklaw.com email
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'SouthNatickLaw@gmail.com'
-EMAIL_HOST_PASSWORD = '@BGrowing'
-DEFAULT_FROM_MAIL = 'SouthNatickLaw@gmail.com'
-DEFAULT_FROM_EMAIL = 'SouthNatickLaw@gmail.com'
+if 'EMAIL_HOST' in os.environ:
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = os.environ['EMAIL_HOST']
+    EMAIL_PORT = os.environ['EMAIL_PORT']
+    EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+    EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+    DEFAULT_FROM_MAIL = os.environ['DEFAULT_FROM_MAIL']
+    DEFAULT_FROM_EMAIL = os.environ['DEFAULT_FROM_EMAIL']
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
@@ -91,13 +109,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+#Production
 SITE_ID = 2
 
 MARKDOWN_EDITOR_SKIN = 'simple'
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/"))
+# MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/"))
+MEDIA_ROOT = os.path.join(BASE_DIR, "..", "www", "media")
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'website/templates/'),
@@ -106,10 +127,7 @@ TEMPLATE_DIRS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-# todo static file 500 error on local dev server
-# STATIC_ROOT = os.path.join(BASE_DIR, "website", "static")
-# STATIC_URL = '/static/'
-
+# STATIC_ROOT = os.path.join(BASE_DIR, "..", "snl", "website", "static")
 STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
 STATIC_URL = '/static/'
 
@@ -117,8 +135,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'website', 'static'),
 )
-
-
 
 try:
     from local_settings import *

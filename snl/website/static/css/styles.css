@@ -226,10 +226,10 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 /* ==========================================================================
 Hero
 ========================================================================== */
-.hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
+.hero { background: url('../img/hero3.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
 .hero h1 { font-size: 48px; letter-spacing: 8px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero h4 { color: #717880;}
+.hero h4 { color: #353535;}
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(150,119,98, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #785f4e; -moz-box-shadow: 0px 3px 0px 0px #785f4e; box-shadow: 0px 3px 0px 0px #785f4e; margin: 60px 0 0; font-weight: bold; }
 /*.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(150,119,98, 0.6); color: #fff; }*/
@@ -258,7 +258,7 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag { background: url('../img/plants-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag { background: url('../img/south-natick-law-office.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
 .swag h2 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag h2 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(150,119,98, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
@@ -286,7 +286,7 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 /* ==========================================================================
 Subscribe
 ========================================================================== */
-.subscribe { background: url('../img/keyboard-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 120px 0 140px; }
+.subscribe { background: url('../img/south-natick-law-room.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 120px 0 140px; }
 .subscribe h2 { color: #fff; margin-bottom: 40px; }
 .subscribe h2 span { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; margin-top: 20px; letter-spacing: 1px; }
 .subscribe input[type=text] { background-color: rgba(255, 255, 255, 0.1); border: solid 1px #fff; padding: 20px; width: 30%; color: #fff; }

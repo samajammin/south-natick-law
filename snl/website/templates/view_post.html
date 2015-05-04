@@ -8,8 +8,6 @@
     South Natick Law | {{ post.title }}
 {% endblock %}
 
-{# todo page formatting... post body#}
-{##}
 {% block content %}
 
 <section class="section-padding">
@@ -18,7 +16,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">{{ post.title }}
-                        <small>by <a href="{% url 'profile' post.author.first_name %}">{{ post.author }}</a>
+                        <small>by <a href="{% url 'profile' post.author.slug %}">{{ post.author }}</a>
                         </small>
                     </h1>
                 </div>
@@ -40,7 +38,7 @@
                     <hr>
 
                     <!-- Preview Image -->
-                    <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                    <img class="img-responsive center-block" src="{{ post.image.url }}" alt="{{ post.image_alt_text }}">
                     <hr>
 
                     <!-- Post Content -->
@@ -49,11 +47,12 @@
 
                 <ul class="pager">
                     <li class="previous">
-                        <a href="#">&larr; Older</a>
+{#                        todo previous/next navigation of posts by published date#}
+                        <a href="{% url 'blog' %}">&larr; Back to Blog</a>
                     </li>
-                    <li class="next">
-                        <a href="#">Newer &rarr;</a>
-                    </li>
+{#                    <li class="next">#}
+{#                        <a href="#">Newer &rarr;</a>#}
+{#                    </li>#}
                 </ul>
 
                     <!-- Blog Comments -->
@@ -148,34 +147,20 @@
             <div class="col-md-4">
 
                 <!-- Blog Categories Well -->
-    {#            todo filtering blog list by category#}
                 <div class="well">
                     <h4>Blog Categories</h4>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
                                 {% for tag in tags %}
-    {#                                 todo confirm this is setup correctly for tag_index view#}
                                     <li><a href="{% url 'tag_index' slug=tag.slug %}">{{ tag.name }}</a>
                                     </li>
-    {#                                <li><a href="#">Category Name</a>#}
-    {#                                </li>#}
-    {#                                <li><a href="#">Category Name</a>#}
-    {#                                </li>#}
-    {#                                <li><a href="#">Category Name</a>#}
-    {#                                </li>#}
                                 {% endfor %}
                             </ul>
                         </div>
                         <!-- /.col-lg-6 -->
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-    {#                            <li><a href="#">Category Name</a>#}
-    {#                            </li>#}
-    {#                            <li><a href="#">Category Name</a>#}
-    {#                            </li>#}
-    {#                            <li><a href="#">Category Name</a>#}
-    {#                            </li>#}
     {#                            <li><a href="#">Category Name</a>#}
     {#                            </li>#}
                             </ul>
@@ -186,14 +171,13 @@
                 </div>
 
                 <!-- Blog Contributors Well -->
-    {#            todo filtering blog list by category#}
                 <div class="well">
                     <h4>Blog Authors</h4>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
                                 {% for author in authors %}
-                                    <li><a href="{% url 'author_index' slug=author.slug%}">{{ author}}</a>
+                                    <li><a href="{% url 'author_index' slug=author.slug %}">{{author}}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -201,12 +185,6 @@
                         <!-- /.col-lg-6 -->
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-    {#                            <li><a href="#">Category Name</a>#}
-    {#                            </li>#}
-    {#                            <li><a href="#">Category Name</a>#}
-    {#                            </li>#}
-    {#                            <li><a href="#">Category Name</a>#}
-    {#                            </li>#}
     {#                            <li><a href="#">Category Name</a>#}
     {#                            </li>#}
                             </ul>
@@ -218,8 +196,8 @@
 
                 <!-- Side Widget Well -->
                 <div class="well">
-                    <h4>Blog description</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                    <h4>South Natick Law Blog</h4>
+                    <p>We keep you up to date on your latest local legal news and provide advice &amp; resources.</p>
                 </div>
 
             </div>

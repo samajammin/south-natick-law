@@ -39,7 +39,7 @@ class Attorney(models.Model):
         super(Attorney, self).save(*args, **kwargs)
 
 
-# categories for blog post tags, attorney practice areas & contact form topic inqueries
+# categories for blog post tags, attorney practice areas & contact form topic inquiries
 class PracticeArea(models.Model):
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=150, unique=True)
@@ -73,6 +73,8 @@ class Post(models.Model):
     published_date = models.DateField(auto_now_add=True)
     modified_date = models.DateField(auto_now=True, default= datetime.now())
     tags = models.ManyToManyField(PracticeArea, related_name='posts')
+    image = models.ImageField()
+    image_alt_text = models.CharField(max_length=100)
 
     def make_blurb(self):
         return self.body[:180] + "..."

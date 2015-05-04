@@ -79,7 +79,9 @@ def author_index(request, slug):
 
 def view_post(request, slug):
     post = Post.objects.get(slug=slug)
-    tags = post.tags.all()
+    post_tags = post.tags.all()
+    tags = PracticeArea.objects.all()
+    authors = Attorney.objects.all()
     if request.method == "POST":
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -91,7 +93,7 @@ def view_post(request, slug):
     else:
         form = CommentForm()
     comments = Comment.objects.all()
-    data = {"post": post, "comment_form": form, "comments": comments, "tags": tags}
+    data = {"post": post, "comment_form": form, "comments": comments, "tags": tags, "post_tags": post_tags, "authors": authors}
     return render(request, 'view_post.html', data)
 
 def faq(request):

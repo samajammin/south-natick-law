@@ -9,5 +9,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if not User.objects.filter(username="admin").exists():
-            User.objects.create_superuser("snladmin", "info@southnaticklaw.com", "snllaunchpad")
             User.objects.create_superuser(os.environ['ADMIN_USER'], os.environ['ADMIN_EMAIL'], os.environ['ADMIN_PASSWORD'])

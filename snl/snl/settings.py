@@ -17,8 +17,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ['SECRET_KEY']
-SECRET_KEY = 'hf(ft0wh$xjqz%la)$l&4mtkw^ff&vj(#rm81(oio$gyyqp6@p'
+
+if 'SECRET_KEY' in os.environ:
+    SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -63,14 +64,14 @@ ROOT_URLCONF = 'snl.urls'
 
 WSGI_APPLICATION = 'snl.wsgi.application'
 
-# todo email confirmation from @southnaticklaw.com email
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'SouthNatickLaw@gmail.com'
-EMAIL_HOST_PASSWORD = '@BGrowing'
-DEFAULT_FROM_MAIL = 'SouthNatickLaw@gmail.com'
-DEFAULT_FROM_EMAIL = 'SouthNatickLaw@gmail.com'
+if 'EMAIL_HOST' in os.environ:
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = os.environ['EMAIL_HOST']
+    EMAIL_PORT = os.environ['EMAIL_PORT']
+    EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+    EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+    DEFAULT_FROM_MAIL = os.environ['DEFAULT_FROM_MAIL']
+    DEFAULT_FROM_EMAIL = os.environ['DEFAULT_FROM_EMAIL']
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -134,8 +135,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'website', 'static'),
 )
-
-
 
 try:
     from local_settings import *

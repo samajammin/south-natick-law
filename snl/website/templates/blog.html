@@ -15,9 +15,9 @@
 {# http://stackoverflow.com/questions/3248682/django-get-url-of-current-page-including-parameters-in-a-template #}
 {% block head %}
     {% if tag %}
-        <link rel="canonical" href="http://www.southnaticklaw.com/blog/tag/{{ tag.slug }}/" />
+        <link rel="canonical" href="http://www.southnaticklaw.com/blog/tag/{{ tag.slug }}" />
     {% elif author %}
-        <link rel="canonical" href="http://www.southnaticklaw.com/blog/author/{{ author.slug }}/" />
+        <link rel="canonical" href="http://www.southnaticklaw.com/blog/author/{{ author.slug }}" />
     {% else %}
         <link rel="canonical" href="http://www.southnaticklaw.com/blog" />
     {% endif %}

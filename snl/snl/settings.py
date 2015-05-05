@@ -134,11 +134,11 @@ if 'AWS_STORAGE_BUCKET_NAME' in os.environ:
     # you run `collectstatic`).
     # STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATICFILES_LOCATION = 'static'
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_STORAGE = 'snl.custom_storages.StaticStorage'
     STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
     MEDIAFILES_LOCATION = 'media'
     MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    DEFAULT_FILE_STORAGE = 'snl.custom_storages.MediaStorage'
 
 try:
     from local_settings import *

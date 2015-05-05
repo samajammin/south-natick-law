@@ -8,7 +8,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
-import custom_storages
+# import custom_storages
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -22,8 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ['SECRET_KEY']
-else:
-    SECRET_KEY = 'hf(ft0wh$xjqz%la)$l&4mtkw^ff&vj(#rm81(oio$gyyqp6@p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -157,11 +155,11 @@ if 'AWS_STORAGE_BUCKET_NAME' in os.environ:
     # you run `collectstatic`).
     # STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATICFILES_LOCATION = 'static'
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_STORAGE = 'snl.website.custom_storages.StaticStorage'
     STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
     MEDIAFILES_LOCATION = 'media'
     MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    DEFAULT_FILE_STORAGE = 'snl.website.custom_storages.MediaStorage'
 
 try:
     from local_settings import *

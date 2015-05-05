@@ -117,27 +117,6 @@ SITE_ID = 1
 
 MARKDOWN_EDITOR_SKIN = 'simple'
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
-
-MEDIA_URL = "/media/"
-# MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/"))
-MEDIA_ROOT = os.path.join(BASE_DIR, "..", "www", "media")
-
-TEMPLATE_DIRS = (
-    os.path.join(PROJECT_ROOT, 'website/templates/'),
-)
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
-
-# STATIC_ROOT = os.path.join(BASE_DIR, "..", "snl", "website", "static")
-STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
-STATIC_URL = '/static/'
-
-
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'website', 'static'),
-)
 
 if 'AWS_STORAGE_BUCKET_NAME' in os.environ:
     AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']

@@ -56,7 +56,7 @@ def tag_index(request, slug):
         # If page is out of range (e.g. 9999), deliver last page of results.
         posts = paginator.page(paginator.num_pages)
 
-    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
+    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors, 'tag': tag})
 
 def author_index(request, slug):
     author = Attorney.objects.get(slug = slug)
@@ -75,7 +75,7 @@ def author_index(request, slug):
         # If page is out of range (e.g. 9999), deliver last page of results.
         posts = paginator.page(paginator.num_pages)
 
-    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
+    return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors, 'author': author})
 
 def view_post(request, slug):
     post = Post.objects.get(slug=slug)

@@ -13,8 +13,6 @@ from django.views.generic import TemplateView
 urlpatterns = patterns('',
     url(r'^$', 'website.views.home', name='home'),
     url(r'^about$', 'website.views.about', name='about'),
-    url(r'^about/the-attorneys$', 'website.views.about', name='about'),
-    url(r'^about/the-firm$', 'website.views.about', name='about'),
     url(r'^about/(?P<slug>\S+)$', 'website.views.profile', name='profile'),
 
     url(r'^areas-of-practice$', 'website.views.aop', name='aop'),

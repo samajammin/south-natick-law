@@ -15,7 +15,7 @@ urlpatterns = patterns('',
     url(r'^about$', 'website.views.about', name='about'),
 
     # catch name as a parameter & pass into view for url assignment
-    url(r'^about/(?P<slug>\S+)', 'website.views.profile', name='profile'),
+    url(r'^about/(?P<slug>\S+)$', 'website.views.profile', name='profile'),
     # url(r'^about/james', 'website.views.james', name='james'),
     # url(r'^about/richard', 'website.views.richard', name='richard'),
     # url(r'^about/caren', 'website.views.caren', name='caren'),
@@ -31,9 +31,9 @@ urlpatterns = patterns('',
     url(r'^blog$', 'website.views.blog', name='blog'),
     # url(r'^blog/(?P<post_id>\w+)/$', 'website.views.view_post', name='view_post'),
 
-    url(r'^blog/author/(?P<slug>\S+)/$', 'website.views.author_index', name='author_index'),
-    url(r'^blog/tag/(?P<slug>\S+)/$', 'website.views.tag_index', name='tag_index'),
-    url(r'^blog/(?P<slug>\S+)/$', 'website.views.view_post', name='view_post'),
+    url(r'^blog/author/(?P<slug>\S+)$', 'website.views.author_index', name='author_index'),
+    url(r'^blog/tag/(?P<slug>\S+)$', 'website.views.tag_index', name='tag_index'),
+    url(r'^blog/(?P<slug>\S+)$', 'website.views.view_post', name='view_post'),
 
     # url(r'^about$', 'website.views.about', name='about'),
     # url(r'^resources/', include('resources.urls')),

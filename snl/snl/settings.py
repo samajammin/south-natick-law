@@ -113,7 +113,7 @@ USE_L10N = True
 USE_TZ = True
 
 #Production
-SITE_ID = 1
+SITE_ID = 2
 
 MARKDOWN_EDITOR_SKIN = 'simple'
 

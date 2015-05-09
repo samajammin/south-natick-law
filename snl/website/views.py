@@ -16,7 +16,11 @@ def about(request):
 
 # renders any about/name profile pages
 def profile(request, slug):
-    return render(request, 'about/' + slug + '.html')
+    try:
+        attorney = Attorney.objects.get(slug = slug)
+    except:
+        return render(request, '404.html')
+    return render(request, 'about/' + attorney.slug + '.html')
 
 def aop(request):
     return render(request, 'areas-of-practice.html')
@@ -40,7 +44,10 @@ def blog(request):
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
 
 def tag_index(request, slug):
-    tag = PracticeArea.objects.get(slug = slug)
+    try:
+        tag = PracticeArea.objects.get(slug = slug)
+    except:
+        return render(request, '404.html')
     post_list = Post.objects.filter(tags = tag)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
@@ -59,7 +66,10 @@ def tag_index(request, slug):
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors, 'tag': tag})
 
 def author_index(request, slug):
-    author = Attorney.objects.get(slug = slug)
+    try:
+        author = Attorney.objects.get(slug = slug)
+    except:
+        return render(request, '404.html')
     post_list = Post.objects.filter(author = author)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
@@ -78,7 +88,10 @@ def author_index(request, slug):
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors, 'author': author})
 
 def view_post(request, slug):
-    post = Post.objects.get(slug=slug)
+    try:
+        post = Post.objects.get(slug=slug)
+    except:
+        return render(request, '404.html')
     post_tags = post.tags.all()
     tags = PracticeArea.objects.all()
     authors = Attorney.objects.all()

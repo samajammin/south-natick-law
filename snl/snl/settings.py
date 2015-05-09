@@ -34,6 +34,8 @@ ALLOWED_HOSTS = ['*']
 
 ADMINS = (('Sam', 'sbrichards@gmail.com'), ('Sam', 'srichards@southnaticklaw.com'))
 
+APPEND_SLASH = False
+
 # Application definition
 
 INSTALLED_APPS = (

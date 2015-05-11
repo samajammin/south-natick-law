@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 # Create your views here.
 from website.forms import ContactForm, CommentForm
@@ -16,10 +16,7 @@ def about(request):
 
 # renders any about/name profile pages
 def profile(request, slug):
-    try:
-        attorney = Attorney.objects.get(slug = slug)
-    except:
-        return render(request, '404.html')
+    attorney = get_object_or_404(Attorney, slug = slug)
     return render(request, 'about/' + attorney.slug + '.html')
 
 def aop(request):
@@ -30,7 +27,6 @@ def blog(request):
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
     authors = Attorney.objects.all()
-
     page = request.GET.get('page')
     try:
         posts = paginator.page(page)
@@ -44,10 +40,7 @@ def blog(request):
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors})
 
 def tag_index(request, slug):
-    try:
-        tag = PracticeArea.objects.get(slug = slug)
-    except:
-        return render(request, '404.html')
+    tag = get_object_or_404(PracticeArea, slug = slug)
     post_list = Post.objects.filter(tags = tag)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
@@ -66,10 +59,7 @@ def tag_index(request, slug):
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors, 'tag': tag})
 
 def author_index(request, slug):
-    try:
-        author = Attorney.objects.get(slug = slug)
-    except:
-        return render(request, '404.html')
+    author = get_object_or_404(Attorney, slug = slug)
     post_list = Post.objects.filter(author = author)
     paginator = Paginator(post_list, 3) # number of posts to show per page
     tags = PracticeArea.objects.all()
@@ -88,10 +78,7 @@ def author_index(request, slug):
     return render(request, 'blog.html', {'posts': posts, 'tags': tags, 'authors': authors, 'author': author})
 
 def view_post(request, slug):
-    try:
-        post = Post.objects.get(slug=slug)
-    except:
-        return render(request, '404.html')
+    post = get_object_or_404(Post, slug = slug)
     post_tags = post.tags.all()
     tags = PracticeArea.objects.all()
     authors = Attorney.objects.all()

@@ -1,0 +1,55 @@
+{% extends "new-base.html" %}
+{% load staticfiles %}
+
+{% block title %}Erin Nihill | Natick MA Estate Planning Attorney{% endblock %}
+
+{% block content %}
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Erin Nihill <small>Estate Planning Attorney</small></h1>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive img-rounded" src="{% static "img/nihill_full.jpeg" %}" alt="Erin C. Nihill">
+                <br>
+                <h2>Contact Details</h2>
+                <p><i class="fa fa-phone"></i>
+                    <abbr title="Phone">P</abbr>: (508) 651-1000</p>
+                <p><i class="fa fa-envelope-o"></i>
+                    <abbr title="Email">E</abbr>: <a href="mailto:lkaine@southnaticklaw.com">enihill@southnaticklaw.com</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i>
+                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+                <p><em></em></p><strong>ERIN CARLSON NIHILL, Esq</strong></em> joined the firm as Counsel in 2015.  Ms. Nihill is a graduate of Emory University with degrees in Psychology and Political Science and in 2003 graduated Cum Laude from the Boston College School of Law.</p>
+                <p>Ms. Nihill is a member of the Women’s Bar Association, the Massachusetts Bar Association (Real Estate and Probate Sections) and serves on the Board of the West Suburban Chapter of the Massachusetts Mothers of Twins Association (WSCMMOTA). Her practice includes estate planning, estate and trust administration, real estate and municipal permitting.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="subscribe text-center">
+    <div class="container">
+        <a href="{% url 'contact' %}" class="ignite-btn">Schedule a Free Consultation</a>
+    </div>
+</section>
+{% endblock %}

@@ -34,6 +34,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     # url(r'^feed/$', feed.LatestPosts(), name='feed'),
     url(r'^markdown/', include('django_markdown.urls')),
+    # url(r'^base$', TemplateView.as_view(template_name='new-base.html'), name="base"),
+    # url(r'^base-cta$', TemplateView.as_view(template_name='new-base-cta.html'), name="base-cta"),
     url(r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt'), name="robots"),
     url(r'^sitemap\.xml$', TemplateView.as_view(template_name='sitemap.xml'), name="sitemap"),
 )

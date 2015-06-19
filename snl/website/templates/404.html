@@ -1,4 +1,4 @@
-{% extends "new-base.html" %}
+{% extends "new-base-cta.html" %}
 
 {% block title %}South Natick Law | Page Not Found{% endblock %}
 {% block head %}<meta name="robots" content="noindex">{% endblock %}
@@ -10,13 +10,8 @@
                     <!-- end row -->
                         <h1>Page Not Found</h1>
                         <h4>It appears there's nothing here. <a href="{% url 'home' %}">Return to home.</a></h4>
+                    </div>
                 </div>
             </div>
-            <div>
-        </section>
-        <section class="subscribe text-center">
-          <div class="container">
-                <a href="{% url 'contact' %}" class="ignite-btn">Schedule a Free Consultation</a>
-          </div>
         </section>
 {% endblock %}

@@ -1,6 +1,12 @@
 {% extends "new-base.html" %}
 {% load bootstrap %}
 {% block title %}Contact South Natick Law | Schedule a Legal Consultation{% endblock %}
+{% block head %}
+
+{% endblock %}
+$('#submit_lead').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'submit lead attempt');
+});
 {% block content %}
 
     <section class="section-padding">
@@ -21,7 +27,7 @@
                         <form method="post">
                             {% csrf_token %}
                             {{ form | bootstrap }}
-                            <button type="submit" class="learn-more-btn">Contact Us</button>
+                            <button id="submit_lead" type="submit" class="learn-more-btn">Contact Us</button>
                         </form>
                 </div>
 {#                #}

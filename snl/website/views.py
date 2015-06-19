@@ -120,7 +120,7 @@ def contact(request):
             msg.send()
             request.session['contact_info'] = request.POST
             # After saving, redirect the user to the confirmation page
-            return redirect("thanks.html")
+            return redirect("thanks")
 
     # Else if the user is looking at the form page
     else:

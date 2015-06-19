@@ -11,8 +11,10 @@ from website.models import Contact, Post, Comment, PracticeArea, Attorney
 def home(request):
     return render(request, 'home.html')
 
+
 def about(request):
     return render(request, 'about/about.html')
+
 
 # renders any about/name profile pages
 def profile(request, slug):

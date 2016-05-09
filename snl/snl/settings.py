@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'django.contrib.redirects',
     'website',
     'django_extensions',
@@ -113,8 +114,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-#Production
-SITE_ID = 2
+#2 for 'southnaticklaw.com' for 'snl-eb.v64h93aecw.us-west-2.elasticbeanstalk.com' use 3
+SITE_ID = 3
 
 MARKDOWN_EDITOR_SKIN = 'simple'
 

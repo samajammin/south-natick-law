@@ -13,8 +13,14 @@ from django.views.generic import TemplateView
 urlpatterns = patterns('',
     url(r'^$', 'website.views.home', name='home'),
     url(r'^about$', 'website.views.about', name='about'),
+    url(r'^about/$', 'website.views.about', name='about'),
+    url(r'^about/caren-schindel', 'website.views.caren', name='caren'),
+    url(r'^about/erin-nihill', 'website.views.erin', name='erin'),
+    url(r'^about/george-richards', 'website.views.george', name='george'),
+    url(r'^about/james-mclaughlin', 'website.views.james', name='james'),
+    url(r'^about/leah-kaine', 'website.views.leah', name='leah'),
+    url(r'^about/richard-biller', 'website.views.richard', name='richard'),
     url(r'^about/(?P<slug>\S+)$', 'website.views.profile', name='profile'),
-
     url(r'^areas-of-practice$', 'website.views.aop', name='aop'),
 
     # todo content for FAQs and testimonials
@@ -23,6 +29,7 @@ urlpatterns = patterns('',
 
     # logic to match specific resources posts first
     url(r'^blog$', 'website.views.blog', name='blog'),
+    url(r'^blog/$', 'website.views.blog', name='blog'),
     url(r'^blog/author/(?P<slug>\S+)$', 'website.views.author_index', name='author_index'),
     url(r'^blog/tag/(?P<slug>\S+)$', 'website.views.tag_index', name='tag_index'),
     url(r'^blog/(?P<slug>\S+)$', 'website.views.view_post', name='view_post'),

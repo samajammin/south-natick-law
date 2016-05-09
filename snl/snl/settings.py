@@ -114,7 +114,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-#Production
+#2 for 'southnaticklaw.com' for 'snl-eb.v64h93aecw.us-west-2.elasticbeanstalk.com' use 3
 SITE_ID = 2
 
 MARKDOWN_EDITOR_SKIN = 'simple'

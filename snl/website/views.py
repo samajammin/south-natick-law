@@ -14,12 +14,29 @@ def home(request):
 
 def about(request):
     return render(request, 'about/about.html')
-
-
+    
 # renders any about/name profile pages
 def profile(request, slug):
     attorney = get_object_or_404(Attorney, slug = slug)
     return render(request, 'about/' + attorney.slug + '.html')
+
+def caren(request):
+    return render(request, 'about/caren-schindel.html')
+
+def erin(request):
+    return render(request, 'about/erin-nihill.html')
+
+def george(request):
+    return render(request, 'about/george-richards.html')
+
+def james(request):
+    return render(request, 'about/james-mclaughlin.html')
+
+def leah(request):
+    return render(request, 'about/leah-kaine.html')
+
+def richard(request):
+    return render(request, 'about/richard-biller.html')
 
 def aop(request):
     return render(request, 'areas-of-practice.html')

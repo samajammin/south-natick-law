@@ -1,3 +1,5 @@
+*THIS PROJECT HAS BEEN DEPRECATED. New repo can be found [here](https://github.com/sbrichards/snl).*
+
 # South Natick Law
 Small Firm Attention, Big Firm Sophistication
 
